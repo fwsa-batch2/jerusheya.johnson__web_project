@@ -3,29 +3,8 @@
   <head>
     <title>
     Registration Page</title>
+   <link rel="stylesheet" href="register.css">
   </head>
-  <style>
-    body{
-      background-image: url('sparkles.jpg');
-      background-repeat: no repeat;
-      background-attachment: fixed;
-      background-size: 100% 100%;
-    }
-    input{
-      border-radius: 20px;
-      border-style: outset;
-      background-color: transparent;
-      text-align: center;
-      border-color: black;
-      color: black;
-      border-width:3px;
-    }th{
-      font-size:100%;
-    }
-
-
-
-  </style>
   <body>
     <h1 style="color:black;font-size:300%;"><center>
       Registeration
@@ -36,78 +15,106 @@
     </h3></center>
     <form action="thankyou disney.html">
 
-        <center><table border="0">
-          <img src="micky.jpg" width="500px" height="400px"><br><br>
-          <tr><th style="color:#1c2e4a"><h1 style="font-size:40px" align="left">
-            Name: </h1></th><td>
-              <input style="width:300px; color:black; height:40px; font-size:120%;"
-              type="text" name="name" placeholder="enter your name" required></td></tr>
-          <tr><th style="color:#1c2e4a" align="left;"><h1 style="font-size:40px" align="left">
-            No.of.visitors:</h1> </th><td>
-              <input style="width:300px; color:black; height:40px; font-size:120%;"
-              type="number" name="number" placeholder="enter no.of.visitors" ></td></tr>
-          <tr><th style="color:#1c2e4a" align="left;"><h1 style="font-size:40px" align="left">
-            Email ID: </h1></th><td>
-              <input style="width:300px; color:black; height:40px; font-size:120%;"
-              type="email" name="email id" placeholder="enter email ID" required></td></tr>
-          <tr ><th style="color:#1c2e4a" align="left;"><h1 style="font-size:40px" align="left">
-            Password:</h1></th><td>
-              <input style="width:300px; color:black; height:40px; font-size:120%;"
-              type="password" name="password" placeholder="enter password" required>
-          </td></tr>
-          <tr><th style="color:#1c2e4a;"><h1 style="font-size:40px" align="left">
-            Phone number: </h1></th><td>
-              <input style="width:300px; color:black; height:40px; font-size:120%;
-              "type="number" name="phone number" placeholder="enter phone number" required></td></tr>
-         <tr><th style="color:#1c2e4a"><h1 style="font-size:40px" align="left">
-           Place:</h1></th><td>
-             <input style="width:300px; color:black; height:40px; font-size:120%;"
-             type="text" name=" place" placeholder="enter desired place" required></td>
-
-        </center>
-        <br><br>
         <center>
-        <tr><th style="color:#1c2e4a" align:"left;"><h1 style="font-size:40px" align="left">
-          visitor's name: </h1></th><td>
+          <table border="0">
+          <img src="micky.jpg" width="500px" height="400px"><br><br>
+        <tr>
+          <th>
+           <h1>
+            Name: 
+           </h1>
+          </th>
+          <td>
+              <input 
+              type="text" name="name" placeholder="enter your name" required>
+          </td>
+        </tr>
+        <tr>
+          <th>
+            <h1>
+            No.of.visitors:
+           </h1> 
+          </th>
+          <td>
+              <input 
+              type="number" name="number" placeholder="enter no.of.visitors" required>
+          </td>
+        </tr>
+        <tr>
+          <th>
+            <h1>
+            Email ID: 
+            </h1>
+          </th
+          ><td>
+              <input 
+              type="email" name="email id" placeholder="enter email ID" required>
+            </td>
+        </tr>
+        <tr>
+          <th>
+            <h1>
+            Password:
+            </h1>
+          </th>
+          <td>
+              <input 
+              type="password" name="password" placeholder="enter password" required>
+          </td>
+        </tr>
+        <tr>
+          <th>
+            <h1>
+            Phone number: 
+            </h1>
+          </th>
+          <td>
+              <input 
+              type="number" name="phone number" placeholder="enter phone number" required>
+            </td>
+        </tr>
+        <tr>
+          <th>
+            <h1>
+           Place:
+            </h1>
+          </th>
+          <td>
+             <input 
+             type="text" name=" place" placeholder="enter desired place" required>
+          </td>
 
-          <input style="width:300px; color:black; height:40px; font-size:120%;"
+        
+        <br>
+        <br>
+      
+        <tr>
+          <th>
+            <h1>
+          visitor's name: 
+            </h1>
+        </th>
+        <td>
+
+          <input 
            type="text" name="name" placeholder="visitor 1"><br>
-          <input style="width:300px; color:black; height:40px; font-size:120%;"
+          <input 
            type="text" name="name" placeholder="visitor 2"><br>
-          <input style="width:300px; color:black; height:40px; font-size:120%;"
+          <input 
            type="text" name="name" placeholder="visitor 3"><br>
-          <button style="width:300px; color:black; height:40px; font-size:120%;border-radius: 20px;
-          border-style: outset;
-          background-color: transparent;
-          text-align: center;
-          border-color: black;
-          color: black;
-          border-width:3px;"
+          <button class="tree"
            type="text" name="name" placeholder="more">more<button><br>
       </td>
-    </tr>
+    </tr><br>
+    <br>
 
-        </table></center>
-      </form><center>
-      <button style="width:150px; color:black; height:50px; font-size:120%;border-radius: 20px;
-      border-style: solid;
-      background-color:#3b0054;
-      text-align: center;
-      border-color: transparent;
-      color: white;
-      border-width:3px;
-      margin-right:30px;
-      cursor:pointer;"> reset</button>
-      <button style="width:150px; color:black; height:50px; font-size:120%;border-radius: 20px;
-      border-style: solid;
-      background-color: #3b0054;
-      text-align: center;
-      border-color: transparent;
-      color: white;
-      border-width:3px;
-      cursor:pointer;">
-      <a href="file:///home/jerusheyajohnson/Desktop/disney%20world.html/thankyou%20disney.html" style="color:white;">submit</a> </button>
+    </table>
     </center>
+    <center>
+      <button class="plant" type="reset"> reset</button>
+      <button class="plant" type="submit">
+      <a href="./thankyou disney.html" style="color:white; text-decoration: none;">submit</a> </button>
+    </form></center>
 
   </body>
 </html>

@@ -1,0 +1,46 @@
+
+     .body{
+       background-image: url('sparkles.jpg');
+       background-repeat: no repeat;
+       background-attachment: fixed;
+       background-size: 100% 100%;
+     }
+     input{
+       border-radius:30px;
+       border-style: outset;
+       width: 400px;
+       height: 40px;
+       outline: none;
+       background-color: #D6EEEE;
+       color: black;
+       font-size: 150%;
+       text-align: center;
+       border-color: black;
+
+     }
+     body{
+        background-image: url('sparkles.jpg');
+        background-repeat: no repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+      }
+     label{
+       font-size: 200%;
+       margin-right: 400px;
+     }
+     button{
+       background-color: pink;
+       padding: 10px;
+       width:150px;
+       height:60px;
+       text-align:center;
+       color: black;
+       font-size:200%;
+       border-radius:30px;
+       border-color:#1c2e4a;
+     }
+     h1{
+        color:#1c2e4a;
+        margin-top:60px;
+        font-size:400%;
+     }
