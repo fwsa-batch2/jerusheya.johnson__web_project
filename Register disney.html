@@ -17,102 +17,125 @@
 
         <center>
           <table border="0">
+            <tr>
+            <td style="padding: 20px;">
           <img src="micky.jpg" width="500px" height="400px"><br><br>
-        <tr>
-          <th>
-           <h1>
-            Name: 
-           </h1>
-          </th>
-          <td>
-              <input 
-              type="text" name="name" placeholder="enter your name" required>
           </td>
-        </tr>
-        <tr>
-          <th>
-            <h1>
+          <td>
+            <table style="margin:20px;">
+        <td style="padding:20px;">
+        <label>
+          <h2>
+          First name:
+          </h2>
+        </label>
+        <input 
+              type="text" name="name" placeholder=" first name"  required>
+        <br>
+        <label>
+          <h2>
             No.of.visitors:
-           </h1> 
-          </th>
-          <td>
-              <input 
-              type="number" name="number" placeholder="enter no.of.visitors" required>
-          </td>
-        </tr>
-        <tr>
-          <th>
-            <h1>
+           </h2> 
+        </label>
+        <input 
+              type="number" name="number" placeholder="enter no.of.visitors"  required>
+        <br>
+        <label>
+          <h2>
             Email ID: 
-            </h1>
-          </th
-          ><td>
-              <input 
-              type="email" name="email id" placeholder="enter email ID" required>
-            </td>
-        </tr>
-        <tr>
-          <th>
-            <h1>
+          </h2>
+        </label>
+        <input 
+              type="email" name="email id" placeholder="enter email ID"  required>
+        <br>
+        <label>
+          <h2>
             Password:
-            </h1>
-          </th>
-          <td>
-              <input 
-              type="password" name="password" placeholder="enter password" required>
-          </td>
-        </tr>
-        <tr>
-          <th>
-            <h1>
-            Phone number: 
-            </h1>
-          </th>
-          <td>
-              <input 
-              type="number" name="phone number" placeholder="enter phone number" required>
-            </td>
-        </tr>
-        <tr>
-          <th>
-            <h1>
+          </h2>
+        </label>
+         <input 
+              type="password" name="password" placeholder="enter password"   required>
+         <br>
+         </td>
+         <td>
+         <label>
+           <h2>
+             Last name:
+           </h2>
+         </label>
+         <input 
+               type="name" name="lastname" placeholder="lastname"  required>
+          <br>
+         <label>
+            <h2>
+            Phone:
+            </h2>
+          </label>
+          <input 
+              type="number" name="phone number" placeholder="enter phone number"  required>
+          <br>
+          <label>
+            <h2>
            Place:
-            </h1>
-          </th>
-          <td>
-             <input 
-             type="text" name=" place" placeholder="enter desired place" required>
-          </td>
-
+            </h2>
+          </label>
+          <input 
+             type="text" name=" place" placeholder="enter desired place"  required>
         
         <br>
-        <br>
-      
-        <tr>
-          <th>
-            <h1>
-          visitor's name: 
-            </h1>
-        </th>
-        <td>
+        <label>
+            <h2>
+          Date of journey:
+            </h2>
+          </label>
 
           <input 
-           type="text" name="name" placeholder="visitor 1"><br>
-          <input 
-           type="text" name="name" placeholder="visitor 2"><br>
-          <input 
-           type="text" name="name" placeholder="visitor 3"><br>
-          <button class="tree"
-           type="text" name="name" placeholder="more">more<button><br>
+           type="date"  placeholder="date" style="color: gray" ><br>
+        <br>
+           </td>
+        </table>
       </td>
     </tr><br>
     <br>
+    <tr>
+      <td colspan="2">
+       <h2 style="text-align: center;">Will you be requiring any of the following?</h2>
+       <br>
+       <br>
+       <p1>list any allergies that you have(including food or drug allergies):</p1>
+       <input type="text" placeholder="any allergies" style="color:gray; width:400px;">
+       <br>
+       <br>
+       <form>
+             
+              <p1>Special seating</p1>
+               &nbsp;&nbsp;
+              <p1><input type="radio" value="yes">Yes</p1>
+              <p1><input type="radio" value="no">No</p1>
+  
+            &nbsp;&nbsp;&nbsp;&nbsp;
+              <p1>Handicapped accomodation</p1></span>
+              &nbsp;&nbsp;
+            
+              <p1><input type="radio" value="yes">Yes</p1>
+              <p1><input type="radio" value="no">No</p1>
+            
+       </form>
+       <br>
+       <br>
+       <label style="text-align: left;"><p1>Questions/Comments</p1></label>
+       <br>
+       <input type="text" style="width: 400px; height:100px; border: white; background-color: white; margin:10px;">   
+      </td>
+    </tr>
 
     </table>
+    <br>
+    <br>
     </center>
     <center>
       <button class="plant" type="reset"> reset</button>
-      <button class="plant" type="submit" style="color:white; text-decoration: none;">submit </button>
+      <button class="plant" type="submit" style="text-decoration: none;">submit </button>
     </form></center>
 
   </body>
