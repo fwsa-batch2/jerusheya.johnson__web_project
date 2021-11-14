@@ -18,6 +18,10 @@
        border-color: black;
 
      }
+     input:hover{
+       width: 350px;
+       height: 40px;
+     }
      body{
       background-image: url('disney background.jpg');
       background-repeat: no repeat;
@@ -40,15 +44,33 @@
        
        border-radius:30px;
      }
+     button:hover{
+       color:white;
+       background-color:rgb(2, 2, 7) ;
+     }
      h1{
         color:rgb(2, 2, 49);
         margin-top:60px;
         
      }
-     p1{
+     a{
        color:white;
+     }
+     a:hover{
+        color:rgb(174, 219, 250);
      }
      a{
        color: white;
        text-decoration: none;
      }
+     table{
+      border-color: transparent; 
+      border-radius: 20px; 
+      margin-top: 60px;
+      animation:move 5s infinite;
+     }
+     @keyframes move{
+       100% {box-shadow: 50px 50px 20px 20px rgb(0, 0, 73)}
+     }
+    
+    
