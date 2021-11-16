@@ -25,3 +25,10 @@ body{
     text-decoration: none;
     color:white;
   }
+  p, h1 {
+    color:rgb(3, 3, 71);
+  
+  }
+  pre{
+    font-family: Arial, Helvetica, sans-serif;
+  }
