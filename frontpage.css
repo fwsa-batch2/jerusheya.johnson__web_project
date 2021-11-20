@@ -53,3 +53,7 @@ body{
   li a:hover{
     background-color: rgb(7, 7, 7);
   }
+  hr{
+    width:80%;
+    margin:0 auto;
+  }
