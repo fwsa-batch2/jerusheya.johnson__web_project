@@ -1,68 +1,45 @@
 body{
-    background-image: url('disney background.jpg');
-    background-repeat: no repeat;
-    background-attachment: fixed;
-    background-size: 100% 100%;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size:medium;
-  }
-  tr{
-    border-style: groove;
-  }
-  table{
-    border-style: hidden; 
-    border-color: transparent; 
-    background-color:rgb(3, 3, 71);
-    border-radius: 140px;
-    margin-top: 250px;
-    color: white;
-    width: 50%;
-    height: 100px;
-    box-shadow: 20px 15px 8px 2px gray;
-    
-  }
-  input{
-    background:transparent;
-    border:none;
-    border-bottom: 1px solid white;
-    text-align:center;
-    font-size:20px;
-    
-    color:white;
-    border-color: white;
-    margin-bottom: 20px;
-  }
-  button{
-    padding: 15px; 
-    background-color:white; 
-    color:rgb(3, 3, 71); 
-    font-size: 20px;
-    margin-top: 10px; 
-    border-radius: 20px;
-    border-bottom:1x solid rgb(3, 3, 71);
-    border-width: 3px;
-    background-color: rgb(136, 219, 252);
-    
-  }
-  a{
-    text-decoration: none;
-    color: rgb(3, 3, 71);
-  }
-  ul{
-    list-style-type: none;
-    margin:0;
-    padding:0;
-    overflow:hidden;
-    background-color: rgb(5, 5, 8);
-  
-    top: 0;
-    width: 100%;
-  
-  }
-  li{
-    color:white;
-    display: block;
-    font-size: 30px;
-    padding-bottom: 20px;
-  
-} 
+  background-image: url('disney background.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: 100%;
+}
+table, th, td {
+   border: 3 collapse black;
+   border-radius: 10px;
+   padding: 15px;
+   box-shadow: 15px 0px 30px;
+   color: black;
+   background-color:honeydew;
+}
+table{
+  text-align: center;
+  font-size: 30px;
+  border-collapse:collapse; 
+  width:60%; 
+  height:1%
+}
+th,td{
+  width: 150px;
+  height: 20PX;
+}
+tr:hover{
+  background-color:darkgray;
+  cursor: pointer;
+}
+h1{
+  color:honeydew; 
+  font-size:50px; 
+  padding:30px;
+}
+th{
+  width:150px; 
+  height:100px; 
+  background-color:honeydew
+}
+td{
+  background-color: honeydew; 
+  width: 200px; 
+  height:20px;
+  padding:10px
+}
