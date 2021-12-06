@@ -1,10 +1,5 @@
 
-     .body{
-       background-image: url('sparkles.jpg');
-       background-repeat: no repeat;
-       background-attachment: fixed;
-       background-size: 100% 100%;
-     }
+     
      input{
        border-radius:30px;
        border-style: outset;
@@ -23,7 +18,7 @@
        height: 40px;
      }
      body{
-      background-image: url('disney background.jpg');
+      background-image: url('../images/disney background.jpg');
       background-repeat: no repeat;
       background-attachment: fixed;
       background-size: 100% 100%;
