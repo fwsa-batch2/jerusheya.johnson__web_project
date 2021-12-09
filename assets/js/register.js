@@ -24,7 +24,6 @@ function loginAlert() {
 
 
     if(isEmailAlreadyExist){
-       
         alert("Email alreay exist");
         return ;
     }
@@ -32,6 +31,7 @@ function loginAlert() {
     const isMatch = checkPassword();
         
     if (isMatch) {
+        console.log()
         userList.push(customerDetail);
         localStorage.setItem("usersname", JSON.stringify(userList));
         window.location.href = "../pages/disney front page.html"
@@ -64,8 +64,9 @@ function emailValid(current_email) {
 
     let isUsed = false;
 
+if(userList){
+
     for (i = 0; i < userList.length; i++) {
-    
         const user = userList[i];
         const email = user.email;
 
@@ -76,5 +77,5 @@ function emailValid(current_email) {
     }
 
    return isUsed;
-}
+}}
 onPageLoad();
