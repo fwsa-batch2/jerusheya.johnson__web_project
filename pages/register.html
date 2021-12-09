@@ -20,21 +20,29 @@
             font-size: x-large;
             margin:30px;
         }
+        .button{
+            font-size: x-large;
+            margin:30px;
+            border-bottom:1x solid rgb(3, 3, 71);
+            border-color: rgb(3, 3, 71);
+        }
     </style>
 </head>
 <body>
     <center>
-    <h1 style="padding-top:20px;">Register New Account</h1>
+    <h1 style="padding-top:50px;">Register New Account</h1>
     </center>
     <br>
     <center>
-    <table style="text-align: center; padding:50px;margin-top: 50px;">
+    <form onsubmit="loginAlert()">
+    <table style="text-align: center; padding:50px;margin-top: 100px;">
         <tr>
             <td>
                <label>Username</label>
             </td>
             <td>
-               <input type="text" placeholder="Username">
+               <input type="text" placeholder="Username" id="username" minlength="3" maxlength="9" 
+               pattern="[A-Za-z]" title="name should be in alphabets only" required>
             </td>
         </tr>
         <tr>
@@ -42,7 +50,7 @@
               <label>Email</label>
             </td>
             <td>
-                <input type="email" placeholder="email"> 
+                <input type="email" placeholder="email" id="email" required> 
             </td>
         </tr>
         <tr>
@@ -50,7 +58,8 @@
                 <label>Password</label>
             </td>
             <td>
-                <input type="password" placeholder="password">
+                <input type="password" placeholder="password" id="password" 
+                minlength="6" maxlength="6"required>
             </td>
         </tr>
         <tr>
@@ -58,14 +67,16 @@
                 <label>Confirm password</label>
             </td>
             <td>
-                <input type="password" placeholder="confirm password">
+                <input type="password" placeholder="confirm password" id="cpassword" required>
             </td>
         </tr>
     </table>
     </center>
     <center>
-        <button><a href="../pages/Login disney.html">back</a></button>
-        <button><a href="../pages/disney front page.html">log in</a></button>
+       <button><a href="../pages/Login disney.html">back</a></button>
+        <button class="button"> login </button>
     </center>
+</form>
+<script src="../assets/js/register.js"></script>
 </body>
 </html>

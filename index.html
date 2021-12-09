@@ -1,63 +1,71 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>
+
+<head>
+  <title>
     LOGIN PAGE
-    </title>
-    <link rel="stylesheet" href="./assets/css/login.css"> 
-  </head>
-  
-  
-  <body>
-    <h1>
+  </title>
+  <link rel="stylesheet" href="../assets/css/login.css">
+</head>
+
+
+<body>
+  <h1>
     <center>
       <strong>DISNEY HOLIDAY HYPE
         <br>
-       <small>travel to disney world</small>
+        <small>travel to disney world</small>
     </center>
   </h1>
-    <center>
-      <table >
-        <tr>
-          <td style="background-color: white;">
-             <iframe src="https://www.youtube.com/embed/mEyUzQUH-IY" alt="about diney world" width="500px" height="600px"></iframe>
-          </td>
-          <td style="background-color: rgb(3, 3, 71); padding:40px;"> 
-             <center>
-              <form action="../pages/gif.html">
+  <center>
+    <table>
+      <tr>
+        <td style="background-color: white;">
+          <iframe src="https://www.youtube.com/embed/mEyUzQUH-IY" alt="about diney world" width="500px"
+            height="600px"></iframe>
+        </td>
+        <td style="background-color: rgb(3, 3, 71); padding:40px;">
+          <center>
+            <form onsubmit="submitHandler()">
               <div>
-              <h1 style="color:white ; padding: 20px; margin-bottom: 30px;">
-              Login</h1>
-              <label for="username:" style="text-align: center;" >
-               Username</label><br>
-              <input type="text" name="username" placeholder="username" required>
-              <br>
-              <br>
-              <br>
-              <label for="password:" style="text-align: center;"><br>
-               Password</label><br>
-               <input type="password" name="password" placeholder="password" required>
+                <h1 style="color:white ; padding: 20px; margin-bottom: 30px;">
+                  Login</h1>
+                <label for="username:" style="text-align: center;">
+                  Username</label><br>
+                <input type="text" id="username" placeholder="username" required>
+                <br>
+                <br>
+                <br>
+                <label for="password:" style="text-align: center;"><br>
+                  Password</label><br>
+                <input type="password" id="password" placeholder="password" required>
               </div>
               <br>
               <br>
               <br>
-              <button type="submit">
+              <button type="submit" id="buttonLogin">
                 LOGIN
               </button>
             </form>
             <br>
             <br>
-          <span>
-            <center><p1>
-              <a href="./pages/forget password.html"> Forget Password?</a>
-                &nbsp;&nbsp;
+            <span>
+              <center>
+                <p1>
+                  <a href="../pages/forget password.html"> Forget Password?</a>
+                  &nbsp;&nbsp;
 
-              <a href="./pages/new user.html"> New User?</a>
-          </p1></center>
-          </span>
-      </td>
-    </tr>
+
+                  <a href="../pages/register.html"> New User?</a>
+                </p1>
+              </center>
+            </span>
+        </td>
+      </tr>
     </table>
+    <script type="text/javascript" src="../assets/js/login.js">
 
-  </body>
+    </script>
+</body>
+
 </html>
