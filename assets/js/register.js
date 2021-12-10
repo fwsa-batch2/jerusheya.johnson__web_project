@@ -1,7 +1,8 @@
 let userList = [];
 
 function onPageLoad() {
-    const users = JSON.parse(localStorage.getItem('usersname'));
+    const store = localStorage.getItem('usersname');
+    const users = JSON.parse(store);
     
     userList = users;
 }
@@ -13,12 +14,12 @@ function loginAlert() {
     const password = document.getElementById("password").value;
     const confirmPassword = document.getElementById("cpassword").value;
 
-    const customerDetail = {
+    const customerDetail = [{
         "username": username,
         "email": email,
         "password": password,
         "confirmPassword": confirmPassword
-    }
+    }]
 
     const isEmailAlreadyExist = emailValid(email);
 
