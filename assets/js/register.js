@@ -33,7 +33,7 @@ function loginAlert() {
         
     if (isMatch) {
         console.log()
-        userList.push(customerDetail);
+        customerDetail.push(userList);
         localStorage.setItem("usersname", JSON.stringify(userList));
         window.location.href = "../pages/disney front page.html"
     } else {
