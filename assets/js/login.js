@@ -25,12 +25,13 @@ function submitHandlers() {
 
 
   if (isEmailAlreadyExist) {
-    window.location.href = "../pages/disney front page.html";
+    alert("dear customer!As you are a new user please signin");
+    return;
+   
   }
   else{
 
-    alert("dear customer!As you are a new user please signin");
-    return;
+    window.location.href = "../pages/disney front page.html";
   }
 
   userdetails.push(customerDetail);
