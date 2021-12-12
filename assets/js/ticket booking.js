@@ -1,8 +1,8 @@
-let userdetails=[];
+let ticketbooking=[];
 function onPageLoad(){
       const users = JSON.parse(localStorage.getItem('loginersname'));
       if (users) {
-          userdetails = users;
+          ticketbooking = users;
       }
   }
   

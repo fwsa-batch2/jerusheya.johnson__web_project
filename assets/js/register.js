@@ -1,10 +1,14 @@
 let userList = [];
 
 function onPageLoad() {
-    const store = localStorage.getItem('usersname');
+    const store = localStorage.getItem('registersname');
     const users = JSON.parse(store);
+    if (users == null){
+        userList = []
+      }else {
+        userList = users;
+      }
     
-    userList = users;
 }
 
 function loginAlert() {
@@ -14,12 +18,12 @@ function loginAlert() {
     const password = document.getElementById("password").value;
     const confirmPassword = document.getElementById("cpassword").value;
 
-    const customerDetail = [{
+    let customerDetail = {
         "username": username,
         "email": email,
         "password": password,
         "confirmPassword": confirmPassword
-    }]
+    }
 
     const isEmailAlreadyExist = emailValid(email);
 
@@ -34,7 +38,7 @@ function loginAlert() {
     if (isMatch) {
         console.log()
         userList.push(customerDetail);
-        localStorage.setItem("usersname", JSON.stringify(userList));
+        localStorage.setItem("registersname", JSON.stringify(userList));
         window.location.href = "../pages/disney front page.html"
     } else {
         alert("please check your password")
@@ -61,11 +65,11 @@ function checkPassword() {
 
 function emailValid(current_email) {
 
-    const userList = JSON.parse(localStorage.getItem("usersname"));
+    const usernames = JSON.parse(localStorage.getItem("registersname"));
 
     let isUsed = false;
 
-if(userList){
+if(usernames){
 
     for (i = 0; i < userList.length; i++) {
         const user = userList[i];

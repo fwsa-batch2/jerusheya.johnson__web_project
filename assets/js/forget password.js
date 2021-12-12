@@ -1,8 +1,11 @@
-let userdetails=[];
+let forgetpassword=[];
 function onPageLoad(){
-      const users = JSON.parse(localStorage.getItem('forgetpassword'));
-      if (users) {
-          userdetails = users;
+      const users = JSON.parse(localStorage.getItem('forgetor_email'));
+      if (users==null) {
+          forgetpassword = [];
+      }
+      else{
+          forgetpassword=users;
       }
   }
   
@@ -11,12 +14,12 @@ function onPageLoad(){
       const  email= document.getElementById("email").value;
      
   
-      const customerDetail = {
+      let emaildetails = {
           "email": email
       }
-      userdetails.push(customerDetail);
-      localStorage.setItem("forgetpassword", JSON.stringify(userdetails));
-
+      forgetpassword.push(emaildetails);
+      let forget=JSON.stringify(forgetpassword);
+      localStorage.setItem("forgetor_email", forget);
       window.location.href = "../pages/disney front page.html";
   }
   

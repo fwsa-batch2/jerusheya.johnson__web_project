@@ -25,27 +25,24 @@ function submitHandlers() {
 
 
   if (isEmailAlreadyExist) {
-    alert("dear customer!As you are a new user please signin");
-    return;
-   
-  }
-  else{
-
+        
+    userdetails.push(customerDetail);
+    let login = JSON.stringify(userdetails);
+    localStorage.setItem("loginersname", login);
     window.location.href = "../pages/disney front page.html";
   }
-
-  userdetails.push(customerDetail);
-
-  console.log(userdetails);
-
-  let login = JSON.stringify(userdetails);
-  localStorage.setItem("loginersname", login);
-  
-
+  else{ 
+    alert("dear customer!As you are a new user please signin");
+    return;
+  }
+ console.log(userdetails);
 }
+
+
+
 function emailValid(current_email) {
 
-  const userList = JSON.parse(localStorage.getItem("usersname"));
+  const userList = JSON.parse(localStorage.getItem("registersname"));
 
   let isUsed = false;
 
