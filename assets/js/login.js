@@ -25,15 +25,16 @@ function submitHandlers() {
 
 
   if (isEmailAlreadyExist) {
-        
     userdetails.push(customerDetail);
     let login = JSON.stringify(userdetails);
     localStorage.setItem("loginersname", login);
     window.location.href = "../pages/disney front page.html";
+   
+   
   }
   else{ 
     alert("dear customer!As you are a new user please signin");
-    return;
+   
   }
  console.log(userdetails);
 }
