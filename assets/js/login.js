@@ -13,7 +13,7 @@ function onPageLoad() {
 function submitHandlers() {
   event.preventDefault();
   let username = document.getElementById("username").value;
-  let email = document.getElementById("email").value;
+  let email = document.getElementById("email").value.toLowerCase();
 
 
   let customerDetail = {
@@ -36,7 +36,10 @@ function submitHandlers() {
     alert("dear customer!As you are a new user please signin");
    
   }
- console.log(userdetails);
+    
+  
+
+
 }
 
 
@@ -60,6 +63,7 @@ function emailValid(current_email) {
 
   return isUsed;
 }
+
 onPageLoad();
 
 

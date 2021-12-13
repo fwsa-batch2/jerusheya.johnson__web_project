@@ -1,0 +1,38 @@
+body{
+    background-image: url('../images/disney background.jpg');
+    background-repeat: no repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+  }
+  h2{
+    color:#00008B;
+  }
+  .h3{
+    font-size:400%;
+    color:rgb(3, 3, 71);
+    font-family: Arial, Helvetica, sans-serif;
+    
+  }
+  button{
+    border-radius: 20px;
+    background-color:rgb(3, 3, 71) ; 
+    font-size:20px; 
+    width:100px; 
+    height:40px;
+    
+
+  }
+  a{
+    color:white;
+    text-decoration: none;
+  }
+#list{
+    color:#00008B;
+}
+#tablecost{
+    font-size: 30px; 
+    color:rgb(3, 3, 71);
+}
+#head{
+    color:#3b0054
+}

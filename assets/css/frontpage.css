@@ -102,4 +102,22 @@ body{
       padding: 20px;
       text-align: center;
     }
-  
+    #head1{
+      font-size:200%;
+      color:black;
+    }
+    .head2{
+      color:white;
+    }
+    #unorderedlist{
+      background-color: transparent; 
+      height:50px;
+    }
+    #dlist{
+      font-size:100%; 
+      list-style-type: none;
+    }
+    #contactdiv{
+      background-color: rgb(1, 1, 65);
+      margin-top:230vh;
+    }
