@@ -1,7 +1,7 @@
 let userdetails = [];
 
 function onPageLoad() {
-  const users = JSON.parse(localStorage.getItem('loginersname'));
+  let users = JSON.parse(localStorage.getItem('loginersname'));
   
   if (users == null){
     userdetails = []
@@ -12,16 +12,16 @@ function onPageLoad() {
 
 function submitHandlers() {
   event.preventDefault();
-  const username = document.getElementById("username").value;
-  const email = document.getElementById("email").value;
+  let username = document.getElementById("username").value;
+  let email = document.getElementById("email").value;
 
 
-  const customerDetail = {
+  let customerDetail = {
     "username": username,
     "email": email
   }
 
-  const isEmailAlreadyExist = emailValid(email);
+  let isEmailAlreadyExist = emailValid(email);
 
 
   if (isEmailAlreadyExist) {
@@ -43,14 +43,14 @@ function submitHandlers() {
 
 function emailValid(current_email) {
 
-  const userList = JSON.parse(localStorage.getItem("registersname"));
+  let userList = JSON.parse(localStorage.getItem("registersname"));
 
   let isUsed = false;
 
   for (i = 0; i < userList.length; i++) {
 
-    const user = userList[i];
-    const email = user.email;
+    let user = userList[i];
+    let email = user.email;
 
     if (current_email == email) {
       isUsed = true;

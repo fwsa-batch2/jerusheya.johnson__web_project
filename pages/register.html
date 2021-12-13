@@ -41,8 +41,8 @@
                <label>Username</label>
             </td>
             <td>
-               <input type="text" placeholder="Username" id="username" minlength="3" maxlength="9" 
-             title="name should be in alphabets only" required>
+               <input type="text" placeholder="Username" id="username" pattern="[A-Za-z]{3,15}"
+             title="please enter a valid username" required>
             </td>
         </tr>
         <tr>
@@ -58,8 +58,9 @@
                 <label>Password</label>
             </td>
             <td>
-                <input type="password" placeholder="password" id="password" 
-                minlength="6" maxlength="6"required>
+                <input type="password" placeholder="password" id="password" pattern="[A-Za-z0-9@#$%^&*!_]{6,6}"
+                title="please give a valid password"
+               required>
             </td>
         </tr>
         <tr>
@@ -67,9 +68,15 @@
                 <label>Confirm password</label>
             </td>
             <td>
-                <input type="password" placeholder="confirm password" id="cpassword" 
+                <input type="password" placeholder="confirm password" id="cpassword" pattern="[A-Za-z0-9@#$%^&*!_]{6,6}"
                 minlength="6" maxlength="6"required>
             </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+        <span margin="center"><input type="checkbox" onchange="showPassword()" id="checkbox"><p1>Show password</p1></span>
+           </td>
         </tr>
     </table>
     </center>

@@ -1,6 +1,6 @@
 let ticketbooking=[];
 function onPageLoad(){
-      const users = JSON.parse(localStorage.getItem('loginersname'));
+      let users = JSON.parse(localStorage.getItem('loginersname'));
       if (users) {
           ticketbooking = users;
       }
@@ -8,16 +8,16 @@ function onPageLoad(){
   
   function submitHandlers() {
       event.preventDefault();
-      const  name = document.getElementById("name").value;
-      const  number= document.getElementById("number").value;
-      const  emailid= document.getElementById("email Id").value;
-      const  password= document.getElementById("password").value;
-      const  number= document.getElementById("lastname").value;
-      const  emailid= document.getElementById("phone number").value;
-      const  password= document.getElementById("place").value;
-      const  password= document.getElementById("place").value;
+      let  name = document.getElementById("name").value;
+      let  number= document.getElementById("number").value;
+      let  emailid= document.getElementById("email Id").value;
+      let  password= document.getElementById("password").value;
+      let  number= document.getElementById("lastname").value;
+      let  emailid= document.getElementById("phone number").value;
+      let  password= document.getElementById("place").value;
+      let  password= document.getElementById("place").value;
   
-      const customerDetail = {
+      let customerDetail = {
           "username": username,
           "email": email
       }
