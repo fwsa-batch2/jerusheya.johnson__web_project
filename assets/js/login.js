@@ -21,7 +21,7 @@ function submitHandlers() {
     "password": password
   }
 
-  let isEmailAlreadyExist = useremailValid(email,password);
+  const isEmailAlreadyExist = useremailValid(email,password);
 
 
   if (isEmailAlreadyExist) {
@@ -46,7 +46,7 @@ function submitHandlers() {
 
 
 function useremailValid(current_email,current_password) {
-
+  event.preventDefault();
   let userList = JSON.parse(localStorage.getItem("registersname"));
 
   let isUsed = false;
