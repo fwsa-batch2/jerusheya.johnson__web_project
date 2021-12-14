@@ -21,14 +21,14 @@ function submitHandlers() {
     "password": password
   }
 
-  let isEmailAlreadyExist = useremailValid(email,password);
+  const isEmailAlreadyExist = useremailValid(email,password);
 
 
   if (isEmailAlreadyExist) {
     userdetails.push(customerDetail);
     let login = JSON.stringify(userdetails);
     localStorage.setItem("loginersname", login);
-    window.location.href = "./pages/disney front page.html";
+    window.location.href = "../pages/disney front page.html";
    
    
   }
@@ -46,7 +46,7 @@ function submitHandlers() {
 
 
 function useremailValid(current_email,current_password) {
-
+  event.preventDefault();
   let userList = JSON.parse(localStorage.getItem("registersname"));
 
   let isUsed = false;
