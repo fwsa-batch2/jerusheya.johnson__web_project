@@ -12,23 +12,23 @@ function onPageLoad() {
 
 function submitHandlers() {
   event.preventDefault();
-  let username = document.getElementById("username").value;
   let email = document.getElementById("email").value.toLowerCase();
+  let password = document.getElementById("password").value;
 
 
   let customerDetail = {
-    "username": username,
-    "email": email
+    "email": email,
+    "password": password
   }
 
-  let isEmailAlreadyExist = emailValid(email);
+  let isEmailAlreadyExist = useremailValid(email,password);
 
 
   if (isEmailAlreadyExist) {
     userdetails.push(customerDetail);
     let login = JSON.stringify(userdetails);
     localStorage.setItem("loginersname", login);
-    window.location.href = "./pages/disney front page.html";
+    window.location.href = "../pages/disney front page.html";
    
    
   }
@@ -45,7 +45,7 @@ function submitHandlers() {
 
 
 
-function emailValid(current_email) {
+function useremailValid(current_email,current_password) {
 
   let userList = JSON.parse(localStorage.getItem("registersname"));
 
@@ -55,8 +55,8 @@ function emailValid(current_email) {
 
     let user = userList[i];
     let email = user.email;
-
-    if (current_email == email) {
+    let password =user.password;
+    if (current_password === password && current_email === email) {
       isUsed = true;
       break;
     }
