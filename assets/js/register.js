@@ -40,7 +40,7 @@ function loginAlert() {
         console.log()
         userList.push(customerDetail);
         localStorage.setItem("registersname", JSON.stringify(userList));
-        window.location.href = "../pages/disney front page.html"
+        window.location.href = "../pages/gif.html"
     } 
     else {
         alert("please check your password")

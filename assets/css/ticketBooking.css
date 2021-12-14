@@ -37,7 +37,7 @@ table{
   height:50px; 
   border-radius: 20px;
   border-style: solid;
-  background-color:whitesmoke;
+  /* background-color:whitesmoke; */
   text-align: center;
   border-color: rgb(2, 2, 70);
   border-width:3px;
@@ -50,16 +50,13 @@ h2 {
   color:white;
 
 }
-p1{
-  color: white;
-  text-align: left;
-}
 input{
-  border-style: outset;
-  border-radius: 20px;
-  background-color: white;
-  color:rgb(3, 3, 71);
+  border-bottom:1px solid white;
+  background-color:transparent;
+  color:white;
 }
+
+
 tr{
   padding: 20px;
 }
@@ -107,8 +104,24 @@ button{
   background-color: white; 
   margin:10px; 
   text-align: left;
-  color:black
+  color:black;
+  border-radius: 20px;
 }
-#label{
+.label{
   text-align: left;
+  color: white;
+}
+#number{
+  width: 170px; 
+  height:40px; 
+}
+#number:hover{
+  width:200px;
+}
+#date{
+  width: 170px; 
+  height:40px;
+}
+#date:hover{
+  width:200px;
 }

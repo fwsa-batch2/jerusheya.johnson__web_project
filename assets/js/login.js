@@ -28,7 +28,7 @@ function submitHandlers() {
     userdetails.push(customerDetail);
     let login = JSON.stringify(userdetails);
     localStorage.setItem("loginersname", login);
-    window.location.href = "../pages/disney front page.html";
+    window.location.href = "../pages/gif.html";
    
    
   }

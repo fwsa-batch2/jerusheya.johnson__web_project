@@ -13,7 +13,7 @@
     <h3 id="head3">
       <i>welcome to the land of dreams!
     </h3></center>
-    <form action="../pages/thankyou disney.html">
+    <form onsubmit="submitHandlers()">
 
         <center>
           <table border="0">
@@ -30,7 +30,7 @@
           </h2>
         </label>
         <input 
-              type="text" id="name" placeholder=" first name"  required>
+              type="text" id="name" placeholder=" first name" pattern="[A-Za-z]{3,15}" required>
         <br>
         <label>
           <h2>
@@ -54,7 +54,7 @@
           </h2>
         </label>
          <input 
-              type="password" id="password" placeholder="enter password"   required>
+              type="password" id="password" placeholder="enter password" pattern="[A-Za-z0-9@#$%^&*!_]{6,6}"  required>
          <br>
          </td>
          <td>
@@ -64,7 +64,7 @@
            </h2>
          </label>
          <input 
-               type="name" id="lastname" placeholder="lastname"  required>
+               type="name" id="lastname" placeholder="lastname" pattern="[A-Za-z]{3,15}" required>
           <br>
          <label>
             <h2>
@@ -72,7 +72,7 @@
             </h2>
           </label>
           <input 
-              type="tel" name="phone number" placeholder="enter phone number" min="9000000000" minlength="10" maxlength="10"   required>
+              type="tel" id="phone number" placeholder="enter phone number" min="9000000000" minlength="10" maxlength="10"   required>
           <br>
           <label>
             <h2>
@@ -80,7 +80,7 @@
             </h2>
           </label>
           <input 
-             type="text" name=" place" placeholder="enter desired place"  required>
+             type="text" id="place"name="place" placeholder="enter desired place"  required>
         
         <br>
         <label>
@@ -90,7 +90,7 @@
           </label>
 
           <input 
-           type="date" min="2021-12-01"  max="2022-01-30" placeholder="date" style="color:gray" required><br>
+           type="date" id="date" min="2021-12-01"  max="2022-01-30" placeholder="date" style="color:gray" required><br>
         <br>
            </td>
         </table>
@@ -102,30 +102,32 @@
        <h2 id="head2">Will you be requiring any of the following?</h2>
        <br>
        <br>
-       <p1>list any allergies that you have(including food or drug allergies):</p1>
+       <p1 class="label">list any allergies that you have(including food or drug allergies):</p1>
        <input type="text" placeholder="any allergies" id="input1">
        <br>
        <br>
        <form>
              
-              <p1>Special seating</p1>
+              <p1 class="label">Special seating</p1>
                &nbsp;&nbsp;
-              <p1><input type="radio" value="yes">Yes</p1>
-              <p1><input type="radio" value="no">No</p1>
+              <p1 class="label"><input type="radio" id="yesSpecialSeat" value="yes">Yes</p1>
+              <p1 class="label"><input type="radio" id="noSpecialSeat" value="no">No</p1>
   
             &nbsp;&nbsp;&nbsp;&nbsp;
-              <p1>Handicapped accomodation</p1></span>
+              <p1 class="label">Handicapped accomodation</p1></span>
               &nbsp;&nbsp;
             
-              <p1><input type="radio" value="yes">Yes</p1>
-              <p1><input type="radio" value="no">No</p1>
+              <p1 class="label"><input type="radio" id="yesHandicap" value="yes">Yes</p1>
+              <p1 class="label"><input type="radio" id="noHandicap" value="no">No</p1>
             
        </form>
        <br>
        <br>
-       <label id="label"><p1>Questions/Comments</p1></label>
+       <label class="label">
+        <p1>Questions/Comments</p1></label>
        <br>
-       <input type="text" id="input2">   
+       <textarea name="message" rows="10" cols="30" id="input2" ></textarea>
+         
       </td>
     </tr>
 
@@ -137,6 +139,6 @@
       <button class="plant" type="reset"> reset</button>
       <button class="plant" type="submit">submit </button>
     </form></center>
-
+<script  src="../assets/js/ticket booking.js"></script>
   </body>
 </html>

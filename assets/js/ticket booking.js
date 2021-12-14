@@ -1,7 +1,8 @@
 let ticketbooking=[];
 function onPageLoad(){
-      let users = JSON.parse(localStorage.getItem('loginersname'));
-      if (users) {
+    
+      let users = JSON.parse(localStorage.getItem('ticketdetails'));
+      if (users != null) {
           ticketbooking = users;
       }
   }
@@ -10,23 +11,38 @@ function onPageLoad(){
       event.preventDefault();
       let  name = document.getElementById("name").value;
       let  number= document.getElementById("number").value;
-      let  emailid= document.getElementById("email Id").value;
+      let  emailid= document.getElementById("email id").value;
       let  password= document.getElementById("password").value;
-      let  number= document.getElementById("lastname").value;
-      let  emailid= document.getElementById("phone number").value;
-      let  password= document.getElementById("place").value;
-      let  password= document.getElementById("place").value;
+      let  lastname= document.getElementById("lastname").value;
+      let  phonenumber= document.getElementById("phone number").value;
+      let  place= document.getElementById("place").value;
+      let  date= document.getElementById("date").value;
+      let  allergies= document.getElementById("input1").value;
+      let  yesSpecialSeat= document.getElementById("yesSpecialSeat").value;
+      let  noSpecialSeat= document.getElementById("noSpecialSeat").value;
+      let  yesHandicap= document.getElementById("yesHandicap").value;
+      let  noHandicap= document.getElementById("noHandicap").value;
   
-      let customerDetail = {
-          "username": username,
-          "email": email
+      let ticketdetails = {
+          "name": name,
+          "number": number,
+          "emailid":emailid,
+          "password":password,
+          "lastname":lastname,
+          "phonenumber":phonenumber,
+          "place":place,
+          "date":date,
+          "allergies":allergies,
+          "yesSpecialSeat":yesSpecialSeat,
+          "noSpecialSeat":noSpecialSeat,
+          "yesHandicap":yesHandicap,
+          "noHandicap":noHandicap
       }
-      userdetails.push(customerDetail);
-      localStorage.setItem("loginersname", JSON.stringify(userdetails));
-      window.location.href = "../pages/disney front page.html";
+      console.log(ticketdetails);
+      ticketbooking.push(ticketdetails);
+      localStorage.setItem("ticketdetails", JSON.stringify(ticketbooking));
+      window.location.href = "../pages/thankyou disney.html";
   }
-  function welcomeBox(){
-      alert("welcome to our site!");
-   }
+  
 
   onPageLoad();

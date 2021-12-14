@@ -27,7 +27,7 @@ function onPageLoad(){
          forgetpassword.push(emaildetails);
          let forget = JSON.stringify(forgetpassword);
          localStorage.setItem("forgetor_email", forget);
-         window.location.href = "../pages/disney front page.html";
+         window.location.href = "../pages/gif.html";
    
    
      }
