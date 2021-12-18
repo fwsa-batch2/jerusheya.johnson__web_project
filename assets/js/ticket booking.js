@@ -9,6 +9,7 @@ function onPageLoad(){
   
   function submitHandlers() {
       event.preventDefault();
+      console.group("submitHandler");
       let  name = document.getElementById("name").value;
       let  number= document.getElementById("number").value;
       let  emailid= document.getElementById("email id").value;
@@ -41,7 +42,9 @@ function onPageLoad(){
       console.log(ticketdetails);
       ticketbooking.push(ticketdetails);
       localStorage.setItem("ticketdetails", JSON.stringify(ticketbooking));
+      console.groupEnd("submitHandler");
       window.location.href = "../pages/thankyou disney.html";
+
   }
   
 

@@ -38,8 +38,9 @@
                 <label>Password</label>
             </td>
             <td>
-                <input type="password" placeholder="password" id="password" pattern="[A-Za-z0-9@#$%^&*!_]{6,6}"
-                minlength="6" maxlength="6" title="please give a valid password"
+                <input type="password" placeholder="password" id="password" pattern="/^[a-zA-Z0-9!@#\$%\^\&*_=+-]{8,12}$/g"
+                minlength="6" maxlength="15" title="At least 1 Uppercase, 1 Lowercase, 1 Number, 1 Symbol, symbol allowed --> !@#$%^&*_=+-
+                Min 8 chars and Max 12 chars"
                required>
             </td>
         </tr>
@@ -48,8 +49,9 @@
                 <label>Confirm password</label>
             </td>
             <td>
-                <input type="password" placeholder="confirm password" id="cpassword" pattern="[A-Za-z0-9@#$%^&*!_]{6,6}"
-                minlength="6" maxlength="6"required>
+                <input type="password" placeholder="confirm password" id="cpassword" pattern="/^[a-zA-Z0-9!@#\$%\^\&*_=+-]{8,12}$/g"
+                minlength="6" maxlength="15" title="At least 1 Uppercase, 1 Lowercase, 1 Number, 1 Symbol, symbol allowed --> !@#$%^&*_=+-
+                Min 8 chars and Max 12 chars" required>
             </td>
         </tr>
         <tr>

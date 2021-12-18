@@ -1,18 +1,21 @@
 let userList = [];
 
 function onPageLoad() {
+    console.group("onpageload");
     let store = localStorage.getItem('registersname');
     let users = JSON.parse(store);
+    console.log(users);
     if (users == null){
         userList = []
       }else {
         userList = users;
       }
-    
+      console.groupEnd("onpageload");
 }
 
 function loginAlert() {
     event.preventDefault();
+    console.group("login");
     let username = document.getElementById("username").value;
     let email = document.getElementById("email").value.toLowerCase();
     let password = document.getElementById("password").value;
@@ -24,18 +27,18 @@ function loginAlert() {
         "password": password,
        }
 
-    
+    console.log(customerDetail);
    
-    const isEmailAlreadyExist = emailValid(email);
-
+     isEmailAlreadyExist = emailValid(email);
+    console.log(isEmailAlreadyExist);
 
     if(isEmailAlreadyExist){
         alert("Email alreay exist or enter a valid email");
         return ;
     }
     
-    const isMatch = checkPassword();
-        
+    let isMatch = checkPassword();
+     console.log(isMatch) ;  
     if (isMatch) {
         console.log()
         userList.push(customerDetail);
@@ -46,7 +49,7 @@ function loginAlert() {
         alert("please check your password")
     }
 
-   
+   console.groupEnd("login");
 
 }
 
@@ -54,22 +57,27 @@ function loginAlert() {
 
 function checkPassword() {
     event.preventDefault();
+    console.group("checkpassword");
     let password = document.getElementById("password").value;
     let confirmPassword = document.getElementById("cpassword").value;
+    
     if (password == confirmPassword) {
         console.log("password matched");
+        console.groupEnd("checkpassword");
         return true;
     }
+    
     else {
         return false;
     }
+   
 }
 
 
 
 
 function emailValid(current_email) {
-
+    console.group("emailvalid");
     let usernames = JSON.parse(localStorage.getItem("registersname"));
 
     let isUsed = false;
@@ -82,14 +90,16 @@ if(usernames){
 
         if (current_email == email) {
             isUsed = true;
+            console.log(isUsed);
             break;
         }
     }
-
+    console.group("emailvalid");
    return isUsed;
 }
 }
 function showPassword(){
+    console.group("showpassword");
     let checkBox=document.getElementById("checkbox");
     if(checkBox.checked){
         document.getElementById("password").type="text";
@@ -99,7 +109,7 @@ function showPassword(){
         document.getElementById("password").type="password";
         document.getElementById("cpassword").type="text";
     }
-
+    console.groupEnd("showpassword");
 
 }
 onPageLoad();
