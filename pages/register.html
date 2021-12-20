@@ -15,7 +15,12 @@
     <br>
     <center>
     <form onsubmit="loginAlert()">
-    <table>
+        <table id="shadow">
+    <tr>
+    <td > <img src="../assets/images/register1.jpg" alt="mickymouse" width="600px" height="600px" id="image"></td>   
+   
+        <td>
+            <table id="innertable">
         <tr>
             <td>
                <label>Username</label>
@@ -38,7 +43,7 @@
                 <label>Password</label>
             </td>
             <td>
-                <input type="password" placeholder="password" id="password" pattern="/^[a-zA-Z0-9!@#\$%\^\&*_=+-]{8,12}$/g"
+                <input type="password" placeholder="password" id="password" pattern="/^[a-zA-Z0-9!@#\$%\^\&*_=+-]{6,15}$/g"
                 minlength="6" maxlength="15" title="At least 1 Uppercase, 1 Lowercase, 1 Number, 1 Symbol, symbol allowed --> !@#$%^&*_=+-
                 Min 8 chars and Max 12 chars"
                required>
@@ -49,7 +54,7 @@
                 <label>Confirm password</label>
             </td>
             <td>
-                <input type="password" placeholder="confirm password" id="cpassword" pattern="/^[a-zA-Z0-9!@#\$%\^\&*_=+-]{8,12}$/g"
+                <input type="password" placeholder="confirm password" id="cpassword" pattern="/^[a-zA-Z0-9!@#\$%\^\&*_=+-]{6,15}$/g"
                 minlength="6" maxlength="15" title="At least 1 Uppercase, 1 Lowercase, 1 Number, 1 Symbol, symbol allowed --> !@#$%^&*_=+-
                 Min 8 chars and Max 12 chars" required>
             </td>
@@ -60,12 +65,16 @@
         <span margin="center"><input type="checkbox" onchange="showPassword()" id="checkbox"><p1>Show password</p1></span>
            </td>
         </tr>
+        <tr>
+            <td><button id="button"><a href="../pages/Login disney.html">back</a></button></td>
+            <td><button class="button"> login </button></td>
+        </tr>
+    </table>
+    </td>
+    </tr>
     </table>
     </center>
-    <center>
-       <button><a href="../pages/Login disney.html">back</a></button>
-        <button class="button"> login </button>
-    </center>
+    
 </form>
 <script src="../assets/js/register.js"></script>
 </body>

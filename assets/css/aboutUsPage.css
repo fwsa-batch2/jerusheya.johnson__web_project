@@ -5,7 +5,7 @@ body{
     background-size: 100% 100%;
   }
   h2{
-    color:#00008B;
+    color:rgb(3, 3, 71);
   }
   .h3{
     font-size:400%;
@@ -27,12 +27,52 @@ body{
     text-decoration: none;
   }
 #list{
-    color:#00008B;
+    color:rgb(3, 3, 71);
 }
 #tablecost{
     font-size: 30px; 
-    color:rgb(3, 3, 71);
+    color:rgb(23, 23, 53);
 }
+
 #head{
-    color:#3b0054
+    color:white;
 }
+#innerlist{
+  background-color:rgb(23, 23, 53);
+  height:50px;
+}
+li{
+  color:white;
+  display: block;
+  font-size: 30px;
+  padding-bottom: 20px;
+
+} 
+.opacity{
+  filter:brightness(60%);
+}
+.container
+  {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  .bottom{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .head2, .contact{
+    color:white;
+  }
+  .list{
+    color:rgb(13, 13, 83);
+  }
+  
+  .cost{
+    color:rgb(13, 13, 83);
+  }
+  td{
+    padding:50px;
+  }
