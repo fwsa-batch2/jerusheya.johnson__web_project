@@ -10,3 +10,6 @@ function hairband(){
 function lunchbox(){
     window.location.href="../pages/lunchbox.html"
 }
+function Tshirt(){
+    window.location.href="../pages/tshirts.html"
+}

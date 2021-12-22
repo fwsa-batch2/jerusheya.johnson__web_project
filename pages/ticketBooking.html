@@ -1,25 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
     Ticket Booking Page</title>
    <link rel="stylesheet" href="../assets/css/ticketBooking.css">
   </head>
   <body>
-    <h1 id="head1" ><center>
+    <h1 id="head1" >
       Book your tickets.
-    </h1></center>
-      <center>
+    </h1>
     <h3 id="head3">
       <i>welcome to the land of dreams!
-    </h3></center>
+    </h3>
     <form onsubmit="submitHandlers()">
 
-        <center>
-          <table border="0">
+     
+          <table border="0" id="boxshadow">
             <tr>
             <td id="column">
-          <img src="../assets/images/register page.jpg" width="500px;" height="400px"><br><br>
+          <img src="../assets/images/ticketbooking.jpg" width="500px;" height="400px"><br><br>
           </td>
           <td>
             <table id="innerTable">
@@ -134,11 +136,10 @@
     </table>
     <br>
     <br>
-    </center>
-    <center>
-      <button class="plant" type="reset"> reset</button>
-      <button class="plant" type="submit">submit </button>
-    </form></center>
+   
+      <button class="plant" type="reset" id="button1"> reset</button>
+      <button class="plant" type="submit" id="button2">submit </button>
+    </form>
 <script  src="../assets/js/ticket booking.js"></script>
   </body>
 </html>

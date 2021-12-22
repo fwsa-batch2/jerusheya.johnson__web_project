@@ -27,7 +27,6 @@ table{
   background-color: rgb(2, 2, 70) ;
   text-align: center;
   border-color: black;
-  color: black;
   border-width:3px;
   
 }
@@ -37,7 +36,6 @@ table{
   height:50px; 
   border-radius: 20px;
   border-style: solid;
-  /* background-color:whitesmoke; */
   text-align: center;
   border-color: rgb(2, 2, 70);
   border-width:3px;
@@ -75,6 +73,7 @@ button{
   padding-top:50px;
   color:black;
   font-size:200%;
+  text-align: center;
 }
 #registerTable{
   text-align: center; 
@@ -84,6 +83,7 @@ button{
 #head3{
   color:#00008B;
   font-size:200%;
+  text-align: center;
 }
 #column{
   padding: 20px;
@@ -115,13 +115,21 @@ button{
   width: 170px; 
   height:40px; 
 }
-#number:hover{
-  width:200px;
-}
+
 #date{
   width: 170px; 
   height:40px;
 }
-#date:hover{
-  width:200px;
+
+#boxshadow{
+  box-shadow: 8px 24px 28px 10px rgb(32, 32, 51);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#button1{
+  margin-left: 500px;
+}
+#button2{
+  margin-left: 400px;
 }

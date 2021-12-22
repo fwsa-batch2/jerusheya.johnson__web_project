@@ -1,0 +1,45 @@
+body{
+    background-image: url('../assets/images/disney background.jpg');
+    background-repeat: no repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+  }
+  td{
+    padding: 20px;
+  }
+  th{
+    padding:20px;
+  }
+  button{
+    border-radius: 20px;
+    background-color:rgb(3, 3, 71) ; 
+    font-size:20px; 
+    width:100px; 
+    height:40px;
+  }
+  a{
+    color:white;
+    text-decoration: none;
+  }
+  .center {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .button{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #head1{
+    font-size: 250%; 
+    color:#1c2e4a; 
+    text-align: center;
+  }
+  .head2{
+    text-align: center;
+  }

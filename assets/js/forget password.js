@@ -40,8 +40,6 @@ function onPageLoad(){
          alert("dear customer!As you are a new user please signin");
    
      }
-     let onpageload=onPageLoad();
-     console.log(onpageload);
     console.groupEnd("signIn") 
    
 

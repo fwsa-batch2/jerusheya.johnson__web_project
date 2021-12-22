@@ -1,6 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thank You</title>
     <style>
 
@@ -12,24 +15,33 @@
           font-family: Arial, Helvetica, sans-serif;
           color:rgb(3, 3, 71);
         }
-      
-
+        .center {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+        }
+        .head1{
+          font-size: 30px;
+          text-align: center;
+        }
+        #head2{
+          font-size:20px;
+          text-align: center;
+        }
+        #margin{
+          margin-top: 3%;
+        }
     </style>
   </head>
   <body>
-    <center>
-      <h1 style="font-size: 100%;">
+    <h1 class="head1" id="margin">
        Your response have been successfully submitted
       </h1>
-    </center>
-    <center>
-    <img src="../assets/images/thankyou blue.gif" alt="thank you" width="700px" height="500px">
-    </center>
-    <center>
-      <h1 style="font-size:200%;">Thank you for visiting us!!</h1>
-      <h1 style="font-size:100%;">Welcome back!</h1>
-      <h1>We will contact you soon....</h1>
+    <img src="../assets/images/thankyou blue.gif" alt="thank you" width="700px" height="500px" class="center">
+      <h1 id="head2">Thank you for visiting us!!</h1>
+      <h1 class="head1">Welcome back!</h1>
+      <h1 class="head1">We will contact you soon....</h1>
 
-    </center>
+    
   </body>
 </html>

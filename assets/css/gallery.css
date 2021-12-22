@@ -54,3 +54,15 @@ body{
     background-color: rgb(13, 13, 83); 
     height:50px;
   }
+  .center {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .head1{
+    text-align: center;
+  }
+  #button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
