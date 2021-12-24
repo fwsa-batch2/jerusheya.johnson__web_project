@@ -47,7 +47,7 @@ function onPageLoad(){
 
   }
   function emailValid(current_email) {
-    //  console.group("emailValid");
+     console.group("emailValid");
     const userList = JSON.parse(localStorage.getItem("registersname"));
   
     let isUsed = false;
@@ -58,7 +58,7 @@ function onPageLoad(){
       const email = user.email;
       
       if (current_email == email) {
-        // console.log("current_email==email");
+        console.log("current_email==email");
         isUsed = true;
         break;
       }

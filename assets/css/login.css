@@ -45,15 +45,13 @@
         
      }
      a{
-       color:white;
-     }
+      color: white;
+      text-decoration: none;
+    }
      a:hover{
         color:rgb(174, 219, 250);
      }
-     a{
-       color: white;
-       text-decoration: none;
-     }
+     
      table{
       border-color: transparent; 
       border-radius: 20px; 

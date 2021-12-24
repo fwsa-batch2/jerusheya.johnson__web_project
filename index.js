@@ -55,7 +55,7 @@ function useremailValid(current_email,current_password) {
 
   let isUsed = false;
   
-  for (i = 0; i < userList.length; i++) {
+  for (let i = 0; i < userList.length; i++) {
 
     let user = userList[i];
     let email = user.email;
