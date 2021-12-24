@@ -107,7 +107,7 @@ function showPassword(){
     }
     else{
         document.getElementById("password").type="password";
-        document.getElementById("cpassword").type="text";
+        document.getElementById("cpassword").type="password";
     }
     console.groupEnd("showpassword");
 
