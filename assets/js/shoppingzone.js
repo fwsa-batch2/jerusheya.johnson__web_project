@@ -13,3 +13,9 @@ function lunchbox(){
 function Tshirt(){
     window.location.href="../pages/tshirts.html"
 }
+function handbag(){
+    window.location.href="../pages/Handbag.html"
+}
+function shoulderbag(){
+    window.location.href="../pages/Schoolbags.html"
+}
