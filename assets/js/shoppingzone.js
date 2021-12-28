@@ -19,3 +19,12 @@ function handbag(){
 function shoulderbag(){
     window.location.href="../pages/Schoolbags.html"
 }
+function waterbottle(){
+    window.location.href="../pages/waterbottles.html"
+}
+function rockerchair(){
+    window.location.href="../pages/rockerchair.html"
+}
+function portabledesk(){
+    window.location.href="../pages/portabletable.html"
+}
