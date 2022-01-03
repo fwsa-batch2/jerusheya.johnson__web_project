@@ -28,3 +28,28 @@ function rockerchair(){
 function portabledesk(){
     window.location.href="../pages/portabletable.html"
 }
+function clutch(){
+    window.location.href="../pages/clutches.html"
+}
+function mug(){
+    window.location.href="../pages/mug.html"
+}
+function plates(){
+    window.location.href="../pages/plates.html"
+}
+function blanket(){
+    window.location.href="../pages/blanket.html"
+}
+function watches(){
+    window.location.href="../pages/watches.html"
+}
+function phonecover(){
+    window.location.href="../pages/phonecover.html"
+}
+
+
+
+
+
+
+
