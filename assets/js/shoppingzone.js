@@ -47,9 +47,9 @@ function phonecover(){
     window.location.href="../pages/phonecover.html"
 }
 
-
-
-
+function purse(){
+    window.location.href=""
+}
 
 
 
