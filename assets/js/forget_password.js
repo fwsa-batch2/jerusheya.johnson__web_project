@@ -98,6 +98,7 @@ function submitOtp() {
   event.preventDefault();
   const otpFromUser = document.getElementById('otp').value;
   if (otpFromUser == otp){
+    alert("enter new password");
     document.getElementById('password').disabled = false;
     document.getElementById('cpassword').disabled = false;
   } else{

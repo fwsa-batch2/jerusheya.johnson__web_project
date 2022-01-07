@@ -15,7 +15,7 @@
     <h3 id="head3">
       <em>welcome to the land of dreams!
     </h3>
-    <form onsubmit="submitHandlers()">
+    <form onsubmit="sendEmail()" method="post">
 
      
           <table border="0" id="boxshadow">
@@ -52,14 +52,7 @@
         <input 
               type="email" id="email id" placeholder="enter email ID"  required>
         <br>
-        <label>
-          <h2>
-            Password:
-          </h2>
-        </label>
-         <input 
-              type="password" id="password" placeholder="enter password" pattern="[A-Za-z0-9@#$%^&*!_]{6,6}"  required>
-         <br>
+        
          </td>
          <td>
          <label>
@@ -77,25 +70,17 @@
           </label>
           <input 
               type="tel" id="phone number" placeholder="enter phone number" min="9000000000" minlength="10" maxlength="10"   required>
-          <br>
-          <label>
-            <h2>
-           Place:
-            </h2>
-          </label>
-          <input 
-             type="text" id="place"name="place" placeholder="enter desired place"  required>
-        
-        <br>
-        <label>
-            <h2>
-          Date of journey:
-            </h2>
-          </label>
-
-          <input 
-           type="date" id="date" min="2021-12-01"  max="2022-01-30" placeholder="date" style="color:gray" required><br>
-        <br>
+              <br>
+              <label>
+                  <h2>
+                Date of journey:
+                  </h2>
+                </label>
+      
+                <input 
+                 type="date" id="date" min="2021-12-01"  max="2022-01-30" placeholder="date" style="color:gray" required><br>
+              <br>
+       
            </th>
         </table>
       </td>
@@ -142,6 +127,8 @@
       <button class="plant" type="reset" id="button1"> reset</button>
       <button class="plant" type="submit" id="button2">submit </button>
     </form>
+
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
 <script  src="../assets/js/ticket booking.js"></script>
   </body>
 </html>
