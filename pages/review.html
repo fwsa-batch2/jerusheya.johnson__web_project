@@ -1,0 +1,85 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review</title>
+    <style>
+        body{
+            background-image: url('../assets/images/disney\ background.jpg');
+            background-repeat: no repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size:medium;
+        }
+        select {
+            width : 200px;
+            border-radius : 10%;
+        }
+       #decorate {
+            background-image:linear-gradient(to left, rgb(92, 175, 211), #19305a);
+            padding:10px 10px;
+            width : 300px;
+            margin-left : 750px;
+            border-radius: 10px;
+        }
+        span {
+            font-size : 45px;
+            color: white;
+        }
+        input {
+            width : 250px;
+            border-radius: 10px;
+            padding : 10px 10px;
+        }
+        textarea {
+            width : 500px;
+            height : 200px;
+            border-radius : 15px;
+            color: rgb(27, 27, 61);
+            font-size: 20px;
+            box-shadow: 2px 12px 20px 4px #19305a;
+        }
+        button {
+            background-image:linear-gradient(to left, rgb(92, 175, 211), #19305a);
+            padding : 10px 10px;
+            color : white;
+            font-weight: bold;
+            border-radius : 10px;
+        }
+        #ratinghead{
+            text-align: center; 
+            color:rgb(36, 36, 75);
+            margin-top: 4%;
+        }
+        #name{
+            text-align: center;
+            color: rgb(24, 24, 63);
+        }
+    </style>
+</head>
+<body>
+<div style="text-align: center;">
+    <h2 id="ratinghead">RATINGS</h2>
+    <br><br>
+    <div id="decorate">
+    <span id="change" onclick="change()">&#9734;</span>
+    <span id="change1" onclick="change1()">&#9734;</span>
+    <span id="change2" onclick="change2()">&#9734;</span>
+    <span id="change3" onclick="change3()">&#9734;</span>
+    <span id="change4" onclick="change4()">&#9734;</span>
+    </div><br><br>
+    <form onsubmit="storing(event)">
+    <input type="text"id="name" placeholder="Your Name" pattern="[A-Za-z]{1,15}"required><br><br>
+    <br>
+    <textarea pattern="[A-Za-z]{1,255}" id="feedback" placeholder="Send Feedback here" required></textarea><br><br>
+    <br>
+    <br>
+    
+    <button >Submit</button></form>
+</div>
+<script src="../assets/js/reviewPage.js"></script>
+</body>
+</html>
+
