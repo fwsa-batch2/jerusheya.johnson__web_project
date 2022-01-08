@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/payment.css">
+</head>
+<body>
+    <h1 id="head1">Please enter payment details to confirm your tickets</h1>
+    <table border="0" id="box">
+        <caption></caption>
+        <tr>
+        <th scope="row">
+     <img src="../assets/images/paymet.gif" alt="payment" width="400px" height="400px" id="gif">
+     </th>
+     <td id="column">
+          <h3 class="label">Cardname holder</h3>
+          <input type="text" placeholder="enter cardname holder" pattern="[A-Za-z]{3,15}" id="cardholder" required>
+          <br>
+          <h3 class="label">Card number</h3>
+          <input type="tel" placeholder="enter card number" minlength="16" maxlength="16" id="cardno" 
+          title="enter 16 digits" required>
+          <br>
+          <h3 class="label">Expiration date</h3>
+          <input type="date" placeholder="mm/yy" min="02/22" max="03/24" id="exdate"
+          title="minimum 02/22 to 03/24" required>
+          <br> 
+          <h3 class="label">CVV</h3>
+          <input type="text" placeholder="xxx" minlength="3" maxlength="3" id="cvv"
+           title="enter the last 3 digits" required>
+     </td>
+     </tr>
+     </table>
+     <button onclick="submitHandlers()" class="payment"><h2>Pay now</h2></button>
+     <script src="../assets/js/payment.js"></script>
+</body>
+</html>

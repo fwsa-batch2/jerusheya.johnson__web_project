@@ -1,0 +1,63 @@
+#box{
+    box-shadow: 8px 24px 28px 10px gray;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    padding:4%;
+    background-color: rgb(20, 20, 77);
+    
+}
+body{
+    background-image: url('../images/disney background.jpg');
+    background-repeat: no repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  #head1{
+    margin-left: 25%;
+    color:rgb(23, 23, 65);
+    padding:2%;
+  }
+  input{
+    border-style: outset;
+    background-color: transparent;
+    text-align: center;
+    border:none;
+    border-bottom:1px solid white;
+    height:40px; 
+    color:white;
+    padding:3%;
+  }
+  .label{
+    margin-left: 25%;
+    color:white;
+    padding:2%;
+  }
+  #column{
+      padding:4%;
+    }
+  #gif{
+      margin-left: 0%;
+  }
+  .payment{
+    
+    background-color: white;
+    width:300px;
+    height:20px;
+    margin-left: 38%;
+    margin-top: -6%;
+    padding:1%;
+    position: absolute;
+   
+}
+h2{
+  font-size: 25px;
+  font-family: fantasy;
+  text-align: center;
+  color:rgb(24, 24, 39);
+  position: absolute;
+  margin-left: 35%;
+  margin-top: -6%;
+  padding:1%;
+}
