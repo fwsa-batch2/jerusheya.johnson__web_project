@@ -42,7 +42,7 @@ table{
   border-radius: 20px;
   cursor:pointer;
   font-size: x-large;
-  margin:30px;
+  /* margin:30px; */
   color:white;
   background-image:linear-gradient(to left, rgb(92, 160, 189), #19305a);
 }
