@@ -58,4 +58,14 @@
 * After clicking next button it enters into thankyou page that says payment done.
 * All the details are stored in local storage.
 
+### Payment Page
+
+* It stores the details entered and redirect to thankyou page
+
+### Reveiw page
+
+* After filling the requires details it will display the details in other page
+* Only alphabets are allowed in name and text area.
+* Name can be within 3 to 15 letters and the text area allows 3 to 225 letters.
+
                                                                                                  
