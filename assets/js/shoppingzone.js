@@ -1,6 +1,4 @@
-function category(){
-    window.location.href="../pages/category.html"
-}
+
 function wallets(){
     window.location.href="../pages/wallets.html"
 }
@@ -47,9 +45,8 @@ function phonecover(){
     window.location.href="../pages/phonecover.html"
 }
 
-function purse(){
-    window.location.href=""
-}
+
+
 
 
 

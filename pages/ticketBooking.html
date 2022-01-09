@@ -22,7 +22,8 @@
             <caption></caption>
             <tr>
             <th id="column" scope="row">
-          <img src="../assets/images/ticketbooking.jpg" alt="ticketbooking flight image" width="500px;" height="400px"><br><br>
+          <img src="../assets/images/disneytravel.jpg" alt="ticketbooking flight image" id="image"
+          width="500px;" height="400px"><br><br>
           </th>
           <td>
             <table id="innerTable">
@@ -34,7 +35,7 @@
           </h2>
         </label>
         <input 
-              type="text" id="name" placeholder=" first name" pattern="[A-Za-z]{3,15}" required>
+              type="text" id="name" placeholder=" first name" pattern="[A-Za-z]{3,15}" class="input" required>
         <br>
         <label>
           <h2>
@@ -42,7 +43,7 @@
            </h2> 
         </label>
         <input 
-              type="number" id="number" placeholder="enter no.of.visitors" min="1" max="100" required>
+              type="number" id="number" placeholder="enter no.of.visitors" min="1" max="100" class="input" required>
         <br>
         <label>
           <h2>
@@ -50,7 +51,7 @@
           </h2>
         </label>
         <input 
-              type="email" id="email id" placeholder="enter email ID"  required>
+              type="email" id="email id" placeholder="enter email ID" class="input" required>
         <br>
         
          </td>
@@ -61,7 +62,7 @@
            </h2>
          </label>
          <input 
-               type="name" id="lastname" placeholder="lastname" pattern="[A-Za-z]{3,15}" required>
+               type="name" id="lastname" placeholder="lastname" pattern="[A-Za-z]{3,15}" class="input" required>
           <br>
          <label>
             <h2>
@@ -69,7 +70,8 @@
             </h2>
           </label>
           <input 
-              type="tel" id="phone number" placeholder="enter phone number" min="9000000000" minlength="10" maxlength="10"   required>
+              type="tel" id="phone number" placeholder="enter phone number" class="input"
+              min="9000000000" minlength="10" maxlength="10"   required>
               <br>
               <label>
                   <h2>
@@ -78,7 +80,8 @@
                 </label>
       
                 <input 
-                 type="date" id="date" min="2021-12-01"  max="2022-01-30" placeholder="date" style="color:gray" required><br>
+                 type="date" id="date" min="2021-12-01"  max="2022-01-30" class="input"
+                 placeholder="date" style="color:gray" required><br>
               <br>
        
            </th>
@@ -92,7 +95,9 @@
        <br>
        <br>
        <p1 class="label">list any allergies that you have(including food or drug allergies):</p1>
-       <input type="text" placeholder="any allergies" id="input1">
+       <input type="text" placeholder="any allergies" id="input1" class="input">
+       <br>
+       <br>
        <br>
        <br>
        <form>
@@ -116,7 +121,8 @@
         <p1>Questions/Comments</p1></label>
        <br>
        <textarea name="message" rows="10" cols="30" id="input2" ></textarea>
-         
+        <br>
+        <br> 
       </td>
     </tr>
 

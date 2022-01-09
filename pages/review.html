@@ -4,6 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Review</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         body{
             background-image: url('../assets/images/disney\ background.jpg');
@@ -41,7 +42,7 @@
             font-size: 20px;
             box-shadow: 2px 12px 20px 4px #19305a;
         }
-        button {
+        .button {
             background-image:linear-gradient(to left, rgb(92, 175, 211), #19305a);
             padding : 10px 10px;
             color : white;
@@ -57,19 +58,27 @@
             text-align: center;
             color: rgb(24, 24, 63);
         }
+        #submit{
+            width:100px;
+            background-color: rgb(40, 40, 83);
+            color:whitesmoke;
+        }
+        .checked {
+            color: orange;
+        }
     </style>
 </head>
 <body>
 <div style="text-align: center;">
+   
     <h2 id="ratinghead">RATINGS</h2>
     <br><br>
     <div id="decorate">
-    <span id="change" onclick="change()">&#9734;</span>
-    <span id="change1" onclick="change1()">&#9734;</span>
-    <span id="change2" onclick="change2()">&#9734;</span>
-    <span id="change3" onclick="change3()">&#9734;</span>
-    <span id="change4" onclick="change4()">&#9734;</span>
-    </div><br><br>
+        
+    </div>
+      <br>
+      <br>
+    <br><br>
     <form onsubmit="storing(event)">
     <input type="text"id="name" placeholder="Your Name" pattern="[A-Za-z]{1,15}"required><br><br>
     <br>
@@ -77,7 +86,7 @@
     <br>
     <br>
     
-    <button >Submit</button></form>
+    <button class="button">Submit</button></form>
 </div>
 <script src="../assets/js/reviewPage.js"></script>
 </body>
