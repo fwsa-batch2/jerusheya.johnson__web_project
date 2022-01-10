@@ -32,6 +32,7 @@ table{
   border-width:3px;
   
 }
+
 .plant{
   width:150px;  
   height:50px; 
@@ -42,10 +43,39 @@ table{
   border-radius: 20px;
   cursor:pointer;
   font-size: x-large;
-  /* margin:30px; */
   color:white;
-  background-image:linear-gradient(to left, rgb(92, 160, 189), #19305a);
+  background-image:linear-gradient(to left, rgb(167, 214, 235), #19305a);
 }
+#lname{
+  position: absolute;
+  top: 333px;
+}
+#lastname{
+  position: absolute;
+  top: 385px;
+  left:1203px;
+}
+#phone{
+  position: absolute;
+  top: 430px;
+}
+#phonenumber{
+  position: absolute;
+  top: 485px;
+  left:1203px;
+}
+#doj{
+  position: absolute;
+  top: 530px;
+}
+#date{
+  margin-top:235px;
+  width: 186px; 
+  height:40px;
+  left:-13px;
+  
+}
+
 h2 {
   text-align:left;
   color:rgb(24, 24, 51);
@@ -111,10 +141,7 @@ tr{
   height:40px; 
 }
 
-#date{
-  width: 170px; 
-  height:40px;
-}
+
 
 #boxshadow{
   box-shadow: 2px 15px 28px 8px rgb(24, 24, 51);

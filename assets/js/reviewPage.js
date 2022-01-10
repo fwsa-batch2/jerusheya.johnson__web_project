@@ -17,12 +17,14 @@ function storing(event) {
     let name = document.getElementById("name").value;
     let feedback = document.getElementById("feedback").value;
     let rstar=document.getElementById("decorate").innerHTML;
+    let date=document.getElementById("date").value;
     let Feedback = {
         "name": name,
         "review":rstar,
-        "feedback": feedback
+        "feedback": feedback,
+        "date":date
     }
-    review.push(Feedback);
+    review.unshift(Feedback);
     localStorage.setItem("Ratings", JSON.stringify(review));
     window.location.href="../pages/reviewDisplayPage.html";
 }

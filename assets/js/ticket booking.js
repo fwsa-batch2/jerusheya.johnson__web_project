@@ -14,7 +14,7 @@ function onPageLoad(){
   let  number= document.getElementById("number").value;
   let  emailid= document.getElementById("email id").value;
   let  lastname= document.getElementById("lastname").value;
-  let  phonenumber= document.getElementById("phone number").value;
+  let  phonenumber= document.getElementById("phonenumber").value;
   let  date= document.getElementById("date").value;
   let  allergies= document.getElementById("input1").value;
   let  yesSpecialSeat= document.getElementById("yesSpecialSeat").checked;
@@ -68,7 +68,7 @@ function StorageOfdetails(){
   let  number= document.getElementById("number").value;
   let  emailid= document.getElementById("email id").value;
   let  lastname= document.getElementById("lastname").value;
-  let  phonenumber= document.getElementById("phone number").value;
+  let  phonenumber= document.getElementById("phonenumber").value;
   let  date= document.getElementById("date").value;
   let  allergies= document.getElementById("input1").value;
   let  yesSpecialSeat= document.getElementById("yesSpecialSeat").checked;
