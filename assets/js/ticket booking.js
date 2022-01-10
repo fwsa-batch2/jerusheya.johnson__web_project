@@ -17,10 +17,9 @@ function onPageLoad(){
   let  phonenumber= document.getElementById("phone number").value;
   let  date= document.getElementById("date").value;
   let  allergies= document.getElementById("input1").value;
-  let  yesSpecialSeat= document.getElementById("yesSpecialSeat").value;
-  let  noSpecialSeat= document.getElementById("noSpecialSeat").value;
-  let  yesHandicap= document.getElementById("yesHandicap").value;
-  let  noHandicap= document.getElementById("noHandicap").value;
+  let  yesSpecialSeat= document.getElementById("yesSpecialSeat").checked;
+  let  yesHandicap= document.getElementById("yesHandicap").checked;
+ 
 
  let passengerTicket={
     "name": name,
@@ -31,9 +30,7 @@ function onPageLoad(){
     "date":date,
     "allergies":allergies,
     "yesSpecialSeat":yesSpecialSeat,
-    "noSpecialSeat":noSpecialSeat,
     "yesHandicap":yesHandicap,
-    "noHandicap":noHandicap
 }
 return passengerTicket;
  } 
@@ -74,10 +71,8 @@ function StorageOfdetails(){
   let  phonenumber= document.getElementById("phone number").value;
   let  date= document.getElementById("date").value;
   let  allergies= document.getElementById("input1").value;
-  let  yesSpecialSeat= document.getElementById("yesSpecialSeat").value;
-  let  noSpecialSeat= document.getElementById("noSpecialSeat").value;
-  let  yesHandicap= document.getElementById("yesHandicap").value;
-  let  noHandicap= document.getElementById("noHandicap").value;
+  let  yesSpecialSeat= document.getElementById("yesSpecialSeat").checked;
+  let  yesHandicap= document.getElementById("yesHandicap").checked;
 
  let passengerTicket={
     "name": name,
@@ -88,9 +83,7 @@ function StorageOfdetails(){
     "date":date,
     "allergies":allergies,
     "yesSpecialSeat":yesSpecialSeat,
-    "noSpecialSeat":noSpecialSeat,
-    "yesHandicap":yesHandicap,
-    "noHandicap":noHandicap
+    "yesHandicap":yesHandicap
 }
   console.table(passengerTicket);
   ticketbooking.push(passengerTicket);
