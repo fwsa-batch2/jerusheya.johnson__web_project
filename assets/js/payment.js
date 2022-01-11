@@ -12,7 +12,7 @@ function onPageLoad() {
   console.groupEnd("onPageLoad")
 }
 
-function submitHandlers() {
+function submitHandlers(event) {
   event.preventDefault();
   console.group("submitHandlers");
   let cardholder = document.getElementById("cardholder").value;

@@ -9,7 +9,6 @@ function onPageLoad(){
   }
  
   function ticket(){
-  
   let  name = document.getElementById("name").value;
   let  number= document.getElementById("number").value;
   let  emailid= document.getElementById("email id").value;
@@ -35,9 +34,9 @@ function onPageLoad(){
 return passengerTicket;
  } 
 
- const tickets = ticket();
+ let tickets = ticket();
   
-function sendEmail() {
+function sendEmail(event) {
   event.preventDefault();
  
 
@@ -60,7 +59,7 @@ function sendEmail() {
   
 
   
-function StorageOfdetails(){
+function StorageOfdetails(event){
 
    event.preventDefault();
 

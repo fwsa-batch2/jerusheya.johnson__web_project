@@ -13,7 +13,7 @@ function onPageLoad() {
       console.groupEnd("onpageload");
 }
 
-function loginAlert() {
+function loginAlert(event) {
     event.preventDefault();
     console.group("login");
     let username = document.getElementById("username").value;
@@ -55,7 +55,7 @@ function loginAlert() {
 
 
 
-function checkPassword() {
+function checkPassword(event) {
     event.preventDefault();
     console.group("checkpassword");
     let password = document.getElementById("password").value;

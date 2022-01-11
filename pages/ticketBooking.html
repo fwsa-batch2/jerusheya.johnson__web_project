@@ -17,7 +17,7 @@
   <h3 id="head3">
     <em>welcome to the land of dreams!
   </h3>
-  <form onsubmit="sendEmail()" method="post">
+  <form onsubmit="sendEmail(event)" method="post">
 
 
     <table border="0" id="boxshadow">
@@ -129,7 +129,7 @@
 
     <button class="plant" type="reset" id="button1"> reset</button>
     <button class="plant" type="submit" id="button2">submit </button>
-    <button class="plant" onclick="StorageOfdetails()" id="button3">next </button>
+    <button class="plant" onclick="StorageOfdetails(event)" id="button3">next </button>
   </form>
 
   <script src="https://smtpjs.com/v3/smtp.js"></script>

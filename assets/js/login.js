@@ -12,7 +12,7 @@ function onPageLoad() {
   console.groupEnd("onPageLoad")
 }
 
-function submitHandlers() {
+function submitHandlers(event) {
   event.preventDefault();
   console.group("submitHandlers");
   let email = document.getElementById("email").value.toLowerCase();

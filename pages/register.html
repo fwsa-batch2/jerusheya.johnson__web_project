@@ -12,7 +12,7 @@
     
     <h1 id="head1">Register New Account</h1>
     <br>
-    <form onsubmit="loginAlert()">
+    <form onsubmit="loginAlert(event)">
         <table id="shadow">
             <caption></caption>
     <tr>
@@ -62,7 +62,7 @@
         <tr>
             <th scope="row"></th>
             <td>
-        <span margin="center"><input type="checkbox" onchange="showPassword()" id="checkbox"><p1>Show password</p1></span>
+        <span margin="center"><input type="checkbox" onchange="showPassword(event)" id="checkbox"><p1>Show password</p1></span>
            </td>
         </tr>
         <tr>

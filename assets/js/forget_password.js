@@ -77,11 +77,11 @@ function random() {
   let otp=Math.floor(Math.random()*999999);
   return otp;
 }
-let otp = random();
-function sendEmail() {
+let otpentered = random();
+function sendEmail(event) {
   event.preventDefault();
   let email = document.getElementById("email").value.toLowerCase();
-  console.log(otp);
+  console.log(otpentered);
   Email.send({
        Host : "smtp.gmail.com",
        Username : "disneyholidayhype@gmail.com",
@@ -89,15 +89,15 @@ function sendEmail() {
        To : email,
        From : "disneyholidayhype@gmail.com",
        Subject : "This is your otp",
-       Body : otp,
+       Body : otpentered,
    }).then(
      message => alert('Mail Delivered successfully!')
    );
 }
-function submitOtp() {
+function submitOtp(event) {
   event.preventDefault();
   let otpFromUser = document.getElementById('otp').value;
-  if (otpFromUser == otp){
+  if (otpFromUser == otpentered){
     alert("enter new password");
     document.getElementById('password').disabled = false;
     document.getElementById('cpassword').disabled = false;
@@ -105,7 +105,7 @@ function submitOtp() {
     alert('the entered otp is invalid');
   }
 }
-function updatePass() {
+function updatePass(event) {
   event.preventDefault();
      let currentEmail=document.getElementById("email").value;
      console.log(currentEmail);
@@ -130,7 +130,7 @@ function updatePass() {
     }
     console.groupEnd("emailValid");
 }
-function backToPage() {
+function backToPage(event) {
     event.preventDefault();
     window.location.replace("../pages/Login disney.html")
 }
