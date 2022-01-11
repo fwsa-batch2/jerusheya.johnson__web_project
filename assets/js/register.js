@@ -84,9 +84,9 @@ function emailValid(current_email) {
 
 if(usernames){
 
-    for (let i = 0; i < userList.length; i++) {
-        let user = userList[i];
-        let email = user.email;
+    for (let i of userList) {
+      
+        let email = i.email;
 
         if (current_email == email) {
             isUsed = true;

@@ -55,10 +55,9 @@ function useremailValid(current_email,current_password) {
 
   let isUsed = false;
   
-  for (let i = 0; i < userList.length; i++) {
+  for (let i of userList) {
 
-    let user = userList[i];
-    let email = user.email;
+    let email = i.email;
     let password =user.password;
     if (current_password === password && current_email === email) {
       console.log("password and email already exists");

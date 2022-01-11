@@ -126,10 +126,10 @@ function updatePass(event) {
      let emailverification = JSON.parse(localStorage.getItem("registersname"));
      console.log(emailverification);
   
-    for (let i = 0; i < emailverification.length; i++) {
+    for (let i of emailverification) {
   
-      let usermail = emailverification[i];
-      let gmail = usermail.email;
+     
+      let gmail = i.email;
     
 
       if (currentEmail == gmail) {
