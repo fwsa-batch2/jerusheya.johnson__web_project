@@ -20,7 +20,7 @@ function onPageLoad(){
   let  yesHandicap= document.getElementById("yesHandicap").checked;
  
 
- return passengerTicket={
+ let passengerTicket={
     "name": name,
     "number": number,
     "emailid":emailid,
@@ -31,7 +31,7 @@ function onPageLoad(){
     "yesSpecialSeat":yesSpecialSeat,
     "yesHandicap":yesHandicap,
 }
-
+return passengerTicket;
  } 
 
  let tickets = ticket();

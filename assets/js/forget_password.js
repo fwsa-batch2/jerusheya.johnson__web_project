@@ -74,7 +74,7 @@ function onPageLoad(){
 
 
 function random() {
-  return Math.floor(Math.random()*999999);;
+  return Math.floor(Math.random()*999999);
 }
 let otpentered = random();
 function sendEmail(event) {
