@@ -52,14 +52,22 @@
 * It is categorised by the common names of the products like bags,waterbottles,etc......
 
 ### Ticketbooking
-
+* Firstname and Lastname allows only alphabets and should be between 3 to 10 letters.
+* Number of visitors must be greater than 0 and less than 100.
+* Phone number must be 10 digits and it should be numbers as well.
+* Date of Journey must be after jan 30 and before dec 30 of 2022.
+* The above mentioned fields are mandatory.
+* it includes some extra informations as well(optional).
 * It gets some informations about passanger details.
 * After entering submit it delivers the message to the registered email id.
 * After clicking next button it enters into thankyou page that says payment done.
 * All the details are stored in local storage.
 
 ### Payment Page
-
+* Cardholder name should be between 3 to 15 letters.
+* Cardnumber must be 12 digits.
+* Expire date should be between  02/22 to 03/24.
+* CVV numbers should be 3 digits only.
 * It stores the details entered and redirect to thankyou page
 
 ### Reveiw page
@@ -67,5 +75,6 @@
 * After filling the requires details it will display the details in other page
 * Only alphabets are allowed in name and text area.
 * Name can be within 3 to 15 letters and the text area allows 3 to 225 letters.
+* A person can only use a name once to submit the review or it will show an alert as you have submitted your response
 
                                                                                                  
