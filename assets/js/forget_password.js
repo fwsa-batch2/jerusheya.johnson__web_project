@@ -31,7 +31,7 @@ function onPageLoad(){
       console.log(isEmailAlreadyExist);
      
 
-     if (isEmailAlreadyExist , isMatch) {
+     if (isEmailAlreadyExist) {
          forgetpassword.push(emaildetails);
          let forget = JSON.stringify(forgetpassword);
          localStorage.setItem("forgetor_email", forget);
