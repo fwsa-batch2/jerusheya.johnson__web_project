@@ -35,7 +35,7 @@ function onPageLoad(){
          let forget = JSON.stringify(forgetpassword);
          localStorage.setItem("forgetor_email", forget);
          sendEmail();
-        window.location.href = "../pages/OTP.html";
+        window.location.href = "/pages/Login disney.html";
      }
      else{ 
          alert("dear customer!As you are a new user please signin");
@@ -51,12 +51,12 @@ function onPageLoad(){
   
     let isUsed = false;
   
-    for (let i = 0; i < userList.length; i++) {
+    for (let i of userList) {
   
-      let  user = userList[i];
-      let email = user.email;
+      let  user = i.email;
+     
       
-      if (current_email == email) {
+      if (current_email == user) {
         console.log("current_email==email");
         isUsed = true;
         break;
