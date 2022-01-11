@@ -26,12 +26,30 @@ function storing(event) {
         "feedback": feedback,
         "date":date
     }
-    name();
+    let alreadyExists=exist(name);
+    if(alreadyExists){
+      alert("you have already submitted your response")
+  }
+    else{
     review.unshift(Feedback);
     localStorage.setItem("Ratings", JSON.stringify(review));
     window.location.href="../pages/reviewDisplayPage.html";
+    }
 }
 
+function exist(current_name){
+  let userList = JSON.parse(localStorage.getItem("Ratings"));
+  let isUsed = false;
+    for (let i of userList) {
+  
+      let name = i.name;
+      if (current_name === name) {
+        isUsed = true;
+        break;
+      }
+    }
+    return isUsed;
+  }
 
 function reviewStar(){
     let star="";

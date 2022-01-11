@@ -32,18 +32,13 @@ function submitHandlers(event) {
     let login = JSON.stringify(userdetails);
     localStorage.setItem("loginersname", login);
     window.location.href = "../pages/gif.html";
-   
-   
   }
   else{ 
+   alert("dear customer!As you are a new user please signin");
    
-    alert("dear customer!As you are a new user please signin");
-    return;
   }
    console.groupEnd("submitHandlers") ;
-  
-
-
+ 
 }
 
 
@@ -58,7 +53,7 @@ function useremailValid(current_email,current_password) {
   for (let i of userList) {
 
     let email = i.email;
-    let password =user.password;
+    let password =i.password;
     if (current_password === password && current_email === email) {
       console.log("password and email already exists");
       isUsed = true;

@@ -38,7 +38,7 @@ function submitHandlers(event) {
   else{ 
    
     alert("dear customer!As you are a new user please signin");
-    return;
+    
   }
    console.groupEnd("submitHandlers") ;
   
@@ -58,7 +58,7 @@ function useremailValid(current_email,current_password) {
 
    
     let email = i.email;
-    let password =user.password;
+    let password =i.password;
     if (current_password === password && current_email === email) {
       console.log("password and email already exists");
       isUsed = true;
