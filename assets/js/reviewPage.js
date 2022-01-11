@@ -11,7 +11,9 @@ function getback() {
     
 }
 
-console.log(review);
+ 
+          
+          
 function storing(event) {
     event.preventDefault();
     let name = document.getElementById("name").value;
@@ -24,6 +26,7 @@ function storing(event) {
         "feedback": feedback,
         "date":date
     }
+    name();
     review.unshift(Feedback);
     localStorage.setItem("Ratings", JSON.stringify(review));
     window.location.href="../pages/reviewDisplayPage.html";
