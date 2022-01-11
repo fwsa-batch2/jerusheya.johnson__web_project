@@ -70,8 +70,8 @@
                   Phone:
                 </h2>
               </label>
-              <input type="tel" id="phonenumber" placeholder="enter phone number" class="input" min="9000000000"
-                minlength="10" maxlength="10" required>
+                <input type="tel" id="phonenumber" title="Value must be less than or equal to 9999999999" min="6000000000" max="9999999999"  placeholder="Enter your phone no" 
+                 class="input" pattern="[0-9]+" minlength="10" maxlength="10" required>
               <br>
               <label><h2 id="doj">Date of Journey:</h2></label>
               <input type="date" id="date" min="2022-01-30" max="2022-12-30" class="input"
@@ -100,14 +100,14 @@
 
             <p1 class="label">Special seating</p1>
             &nbsp;&nbsp;
-            <p1 class="label"><input type="checkbox" id="yesSpecialSeat" required></p1>
+            <p1 class="label"><input type="checkbox" id="yesSpecialSeat" ></p1>
 
 
             &nbsp;&nbsp;&nbsp;&nbsp;
             <p1 class="label">Handicapped accomodation</p1></span>
             &nbsp;&nbsp;
 
-            <p1 class="label"><input type="checkbox" id="yesHandicap" required></p1>
+            <p1 class="label"><input type="checkbox" id="yesHandicap"></p1>
 
 
           </form>
@@ -117,9 +117,14 @@
             <p1>Questions/Comments</p1>
           </label>
           <br>
-          <textarea name="message" rows="10" cols="30" id="input2"></textarea>
+          <br>
+          <textarea id="textarea" name="message" rows="10" cols="30" id="input2"></textarea>
           <br>
           <br>
+          <p1>Please click the submit button to receive mail</p1>
+          <br>
+          <br>
+          
         </td>
       </tr>
 

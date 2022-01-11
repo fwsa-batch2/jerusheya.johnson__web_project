@@ -140,7 +140,13 @@ tr{
   width: 170px; 
   height:40px; 
 }
-
+#textarea{
+  box-shadow: 2px 15px 28px 8px rgb(24, 24, 51);
+  width:400px;
+  height:100px;
+  background-color: transparent;
+  border-color: transparent;
+}
 
 
 #boxshadow{
