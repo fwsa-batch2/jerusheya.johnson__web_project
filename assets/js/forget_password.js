@@ -1,7 +1,7 @@
 let forgetpassword=[];
 function onPageLoad(){
   console.group("onPageLoad");
-      const users = JSON.parse(localStorage.getItem('forgetor_email'));
+      let users = JSON.parse(localStorage.getItem('forgetor_email'));
       console.log(users);
       
       if (users==null) {
@@ -17,7 +17,7 @@ function onPageLoad(){
     event.preventDefault();
       console.group("signIn");
      
-      const  email= document.getElementById("email").value.toLowerCase();
+      let  email= document.getElementById("email").value.toLowerCase();
      
   
       let emaildetails = {
@@ -26,7 +26,7 @@ function onPageLoad(){
 
      console.table(emaildetails);
 
-    const isEmailAlreadyExist = emailValid(email);
+    let isEmailAlreadyExist = emailValid(email);
     
       console.log(isEmailAlreadyExist);
 
@@ -47,14 +47,14 @@ function onPageLoad(){
   }
   function emailValid(current_email) {
      console.group("emailValid");
-    const userList = JSON.parse(localStorage.getItem("registersname"));
+    let userList = JSON.parse(localStorage.getItem("registersname"));
   
     let isUsed = false;
   
-    for (i = 0; i < userList.length; i++) {
+    for (let i = 0; i < userList.length; i++) {
   
-      const user = userList[i];
-      const email = user.email;
+      let  user = userList[i];
+      let email = user.email;
       
       if (current_email == email) {
         console.log("current_email==email");
@@ -62,7 +62,7 @@ function onPageLoad(){
         break;
       }
     }
-    // console.groupEnd("emailValid");
+    console.groupEnd("emailValid");
     return isUsed;
    
   }
@@ -74,10 +74,10 @@ function onPageLoad(){
 
 
 function random() {
-  const otp=Math.floor(Math.random()*999999);
+  let otp=Math.floor(Math.random()*999999);
   return otp;
 }
-const otp = random();
+let otp = random();
 function sendEmail() {
   event.preventDefault();
   let email = document.getElementById("email").value.toLowerCase();
@@ -96,7 +96,7 @@ function sendEmail() {
 }
 function submitOtp() {
   event.preventDefault();
-  const otpFromUser = document.getElementById('otp').value;
+  let otpFromUser = document.getElementById('otp').value;
   if (otpFromUser == otp){
     alert("enter new password");
     document.getElementById('password').disabled = false;
@@ -128,7 +128,7 @@ function updatePass() {
         break;
       }
     }
-    // console.groupEnd("emailValid");
+    console.groupEnd("emailValid");
 }
 function backToPage() {
     event.preventDefault();
