@@ -29,7 +29,7 @@ function loginAlert(event) {
 
     console.log(customerDetail);
    
-     isEmailAlreadyExist = emailValid(email);
+    let  isEmailAlreadyExist = emailValid(email);
     console.log(isEmailAlreadyExist);
 
     if(isEmailAlreadyExist){
@@ -84,7 +84,7 @@ function emailValid(current_email) {
 
 if(usernames){
 
-    for (i = 0; i < userList.length; i++) {
+    for (let i = 0; i < userList.length; i++) {
         let user = userList[i];
         let email = user.email;
 

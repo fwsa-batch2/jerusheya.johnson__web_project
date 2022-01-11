@@ -46,7 +46,7 @@ function reviewStar(){
        let lenelement="";
        for( let j=0;j<len;j++){
             document.getElementsByClassName("fa-star")[j].onclick=function (){  
-            document.getElementsByClassName("fa-star")[j].classList.toggle("checked")
+            document.getElementsByClassName("fa-star")[j].classList.toggle("checked");
             lenelement=j;
         }
 

@@ -74,8 +74,7 @@ function onPageLoad(){
 
 
 function random() {
-  let otp=Math.floor(Math.random()*999999);
-  return otp;
+  return Math.floor(Math.random()*999999);;
 }
 let otpentered = random();
 function sendEmail(event) {
@@ -112,7 +111,7 @@ function updatePass(event) {
      let emailverification = JSON.parse(localStorage.getItem("registersname"));
      console.log(emailverification);
   
-    for (i = 0; i < emailverification.length; i++) {
+    for (let i = 0; i < emailverification.length; i++) {
   
       let usermail = emailverification[i];
       let gmail = usermail.email;

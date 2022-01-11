@@ -12,7 +12,7 @@ function onPageLoad() {
   console.groupEnd("onPageLoad")
 }
 
-function submitHandlers() {
+function submitHandlers(event) {
   event.preventDefault();
   console.group("submitHandlers");
   let email = document.getElementById("email").value.toLowerCase();
@@ -49,7 +49,6 @@ function submitHandlers() {
 
 
 function useremailValid(current_email,current_password) {
-  event.preventDefault();
   console.group("useremailValid");
   let userList = JSON.parse(localStorage.getItem("registersname"));
 

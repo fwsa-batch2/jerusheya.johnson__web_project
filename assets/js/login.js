@@ -49,13 +49,13 @@ function submitHandlers(event) {
 
 
 function useremailValid(current_email,current_password) {
-  event.preventDefault();
+  
   console.group("useremailValid");
   let userList = JSON.parse(localStorage.getItem("registersname"));
 
   let isUsed = false;
   
-  for (i = 0; i < userList.length; i++) {
+  for (let i = 0; i < userList.length; i++) {
 
     let user = userList[i];
     let email = user.email;
