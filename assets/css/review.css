@@ -1,0 +1,83 @@
+
+body{
+    background-image: url('../images/disney\ background.jpg');
+    background-repeat: no repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:medium;
+}
+select {
+    width : 200px;
+    border-radius : 10%;
+}
+#decorate {
+    background-image:linear-gradient(to left, rgb(92, 175, 211), #19305a);
+    padding:10px 10px;
+    width : 300px;
+    margin-left : 750px;
+    border-radius: 10px;
+}
+span {
+    font-size : 45px;
+    color: white;
+}
+input {
+    width : 250px;
+    border-radius: 10px;
+    padding : 10px 10px;
+}
+textarea {
+    width : 500px;
+    height : 200px;
+    border-radius : 15px;
+    color: rgb(27, 27, 61);
+    font-size: 20px;
+    box-shadow: 2px 12px 20px 4px #19305a;
+}
+.button {
+    background-image:linear-gradient(to left, rgb(92, 175, 211), #19305a);
+    padding : 10px 10px;
+    color : white;
+    font-weight: bold;
+    border-radius : 10px;
+}
+#ratinghead{
+    text-align: center; 
+    color:rgb(36, 36, 75);
+    margin-top: 4%;
+}
+#name{
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    width:300px;
+    height:30px;
+    border-radius: 50px;
+    background-image:linear-gradient(to left, rgb(92, 175, 211), #19305a);
+    position: absolute;
+    margin-left: 41%;
+    margin-top: -5px;
+    padding-top:10px;
+}
+#date{
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    width:300px;
+    height:30px;
+    border-radius: 20px;
+    background-image:linear-gradient(to left, rgb(92, 175, 211), #19305a);
+    position: absolute;
+    margin-left: 41%;
+    margin-top: -1px;
+    padding-top:10px;
+}
+#submit{
+    width:100px;
+    background-color: rgb(40, 40, 83);
+    color:whitesmoke;
+}
+.checked {
+    color: orange;
+}

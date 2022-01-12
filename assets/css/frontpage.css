@@ -140,4 +140,26 @@ body{
       margin-left: auto;
       margin-right: auto;
     }
-    
+    .register{
+      margin-left: 83%;
+      }
+    .register1{
+      margin-left: 73%;
+      }
+    button{
+      position:absolute;
+      margin-top: -3.5%;
+      width:100px;
+      height:15px;
+      color:white;
+      font-size: 21px;
+      text-align: center;
+      background-image:linear-gradient(to left, rgb(5, 119, 148), #111d3a);
+      text-decoration: none;
+      border-color: transparent;
+      padding-bottom: 2% ;
+      border-radius: 50px;
+    }
+    button:hover{
+      text-decoration: underline;
+    }
