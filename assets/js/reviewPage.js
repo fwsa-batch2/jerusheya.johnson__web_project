@@ -19,13 +19,32 @@ function storing(event) {
     let name = document.getElementById("name").value;
     let feedback = document.getElementById("feedback").value;
     let rstar=document.getElementById("decorate").innerHTML;
-    let date=document.getElementById("date").value;
+    
+    let month = [
+      "Jan",
+      "Feb",
+      "Mar",
+      "Apr",
+      "May",
+      "Jun",
+      "Jul",
+      "Aug",
+      "Sep",
+      "Oct",
+      "Nov",
+      "Dec",
+    ];
+    
+    let date = new Date().getDate(); 
+    let mon = month[new Date().getMonth()];
+    let year = new Date().getFullYear();
     let Feedback = {
-        "name": name,
-        "review":rstar,
-        "feedback": feedback,
-        "date":date
-    }
+      "name": name,
+      "review":rstar,
+      "feedback": feedback,
+      "date":date + "-" + mon + "-" + year,
+  }
+    
     let alreadyExists=exist(name);
     if(alreadyExists){
       alert("you have already submitted your response")
@@ -65,7 +84,7 @@ function reviewStar(){
        for( let j=0;j<len;j++){
             document.getElementsByClassName("fa-star")[j].onclick=function (){  
             document.getElementsByClassName("fa-star")[j].classList.toggle("checked");
-            lenelement=j;
+           lenelement=lenelement+j;
         }
 
        }

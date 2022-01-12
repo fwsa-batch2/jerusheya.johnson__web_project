@@ -70,7 +70,7 @@
 * CVV numbers should be 3 digits only.
 * It stores the details entered and redirect to thankyou page
 
-### Reveiw page
+### Review page
 
 * After filling the requires details it will display the details in other page
 * Only alphabets are allowed in name and text area.
