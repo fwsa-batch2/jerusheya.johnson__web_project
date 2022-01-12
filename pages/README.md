@@ -71,7 +71,7 @@
 * It stores the details entered and redirect to thankyou page
 
 ### Review page
-
+* Only logged in users can enter review page or it will throw an alert and redirect to login page.
 * After filling the required details it will display the details in other page
 * Loginers name and today's date will automatically show here.
 * Text area allows 3 to 225 letters.

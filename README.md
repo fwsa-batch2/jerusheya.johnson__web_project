@@ -71,7 +71,7 @@
 * It stores the details entered and redirect to thankyou page
 
 ### Review page
-
+* Only logged in users can enter review page or it will throw an alert and redirect to login page.
 * After filling the requires details it will display the details in other page
 * Only alphabets are allowed in name and text area.
 * Name can be within 3 to 15 letters and the text area allows 3 to 225 letters.
