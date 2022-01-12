@@ -57,7 +57,29 @@
         }
         #name{
             text-align: center;
-            color: rgb(24, 24, 63);
+            font-size: 20px;
+            color: white;
+            width:300px;
+            height:30px;
+            border-radius: 50px;
+            background-image:linear-gradient(to left, rgb(92, 175, 211), #19305a);
+            position: absolute;
+            margin-left: 41%;
+            margin-top: -5px;
+            padding-top:10px;
+        }
+        #date{
+            text-align: center;
+            font-size: 20px;
+            color: white;
+            width:300px;
+            height:30px;
+            border-radius: 20px;
+            background-image:linear-gradient(to left, rgb(92, 175, 211), #19305a);
+            position: absolute;
+            margin-left: 41%;
+            margin-top: -1px;
+            padding-top:10px;
         }
         #submit{
             width:100px;
@@ -74,6 +96,8 @@
    
     <h2 id="ratinghead">RATINGS</h2>
     <br><br>
+    <p1>Please give your stars as reviews</p1>
+    <br><br>
     <div id="decorate">
         
     </div>
@@ -81,13 +105,12 @@
       <br>
     <br><br>
     <form onsubmit="storing(event)">
-    <input type="text"id="name" placeholder="Your Name" pattern="[A-Za-z]{1,15}"required>
-    
+    <div id="name"></div>
+    <br><br>
     <br><br>
     <br>
-    <input    type="date" id="date" min="2022-01-12"  max="2022-12-30" class="input" title="please select between jan30-2022 to dec30-2022"
-    placeholder="date"  required><br><br>
-    <br>
+    <div id="date"></div><br><br>
+    <br><br>
     <textarea pattern="[A-Za-z]{1,255}" id="feedback" placeholder="Send Feedback here" required></textarea><br><br>
     <br>
     <br>

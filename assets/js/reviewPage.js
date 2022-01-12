@@ -11,40 +11,33 @@ function getback() {
     
 }
 
- 
-          
-          
+let getitem=JSON.parse(localStorage.getItem("loginersname"));
+let reviewername=getitem.username;
+let name = document.getElementById("name").innerHTML=reviewername;
+let month = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+let date = new Date().getDate(); 
+let mon = month[new Date().getMonth()];
+let year = new Date().getFullYear();
+document.getElementById("date").innerHTML=date + "-" + mon + "-" + year;
+console.log(getitem);
+
+
 function storing(event) {
     event.preventDefault();
-    let name = document.getElementById("name").value;
     let feedback = document.getElementById("feedback").value;
     let rstar=document.getElementById("decorate").innerHTML;
-    
-    let month = [
-      "Jan",
-      "Feb",
-      "Mar",
-      "Apr",
-      "May",
-      "Jun",
-      "Jul",
-      "Aug",
-      "Sep",
-      "Oct",
-      "Nov",
-      "Dec",
-    ];
-    
+    let month = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
     let date = new Date().getDate(); 
     let mon = month[new Date().getMonth()];
     let year = new Date().getFullYear();
+    console.log(date + "-" + mon + "-" + year);
     let Feedback = {
-      "name": name,
+      "name": reviewername,
       "review":rstar,
       "feedback": feedback,
       "date":date + "-" + mon + "-" + year,
   }
-    
+    let name = document.getElementById("name").innerHTML=reviewername;
     let alreadyExists=exist(name);
     if(alreadyExists){
       alert("you have already submitted your response")

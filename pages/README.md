@@ -72,9 +72,9 @@
 
 ### Review page
 
-* After filling the requires details it will display the details in other page
-* Only alphabets are allowed in name and text area.
-* Name can be within 3 to 15 letters and the text area allows 3 to 225 letters.
-* A person can only use a name once to submit the review or it will show an alert as you have submitted your response
+* After filling the required details it will display the details in other page
+* Loginers name and today's date will automatically show here.
+* Text area allows 3 to 225 letters.
+* A person can only use a name once to submit the review or it will show an alert as you have submitted your response.
 
                                                                                                  

@@ -1,16 +1,3 @@
-let userdetails = [];
-
-function onPageLoad() {
-  console.group("onPageLoad");
-  let users = JSON.parse(localStorage.getItem('loginersname'));
-  console.log(users)
-  if (users == null){
-    userdetails = []
-  }else {
-    userdetails = users;
-  }
-  console.groupEnd("onPageLoad")
-}
 
 function submitHandlers(event) {
   event.preventDefault();
@@ -18,18 +5,22 @@ function submitHandlers(event) {
   let email = document.getElementById("email").value.toLowerCase();
   let password = document.getElementById("password").value;
 
-
-  let customerDetail = {
-    "email": email,
-    "password": password
+  let customerDetail = {};
+  let usernames=JSON.parse(localStorage.getItem("registersname"));
+  for( let i of usernames){
+    if(email==i.email){
+      customerDetail=i;
+      break;
+    }
+   
   }
+
   console.table(customerDetail);
   let isEmailAlreadyExist = useremailValid(email,password);
 
   console.log(isEmailAlreadyExist);
   if (isEmailAlreadyExist) {
-    userdetails.push(customerDetail);
-    let login = JSON.stringify(userdetails);
+    let login = JSON.stringify(customerDetail);
     localStorage.setItem("loginersname", login);
     window.location.href = "../pages/gif.html";
   }
@@ -40,7 +31,6 @@ function submitHandlers(event) {
    console.groupEnd("submitHandlers") ;
  
 }
-
 
 
 function useremailValid(current_email,current_password) {
@@ -63,7 +53,4 @@ function useremailValid(current_email,current_password) {
   console.groupEnd("useremailValid");
   return isUsed;
 }
-
-onPageLoad();
-
 
