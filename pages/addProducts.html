@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+          background-image: url('../assets/images/disney\ background.jpg');
+          background-repeat: no repeat;
+          background-attachment: fixed;
+          background-size: 100% 100%;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size:medium;
+      }
+        form{
+            margin-left: 38%;
+            background-image:linear-gradient(to left, rgb(5, 119, 148), #111d3a);
+            width:13%;
+            height: 50%;
+            position: absolute;
+            margin-top: 3%;
+            padding: 100px;
+            border-radius: 20px;
+        }
+        input{
+            margin:20px;
+            width:200px;
+            height:35px;
+            font-size: 15px;
+            text-align: center;
+            color: rgb(27, 27, 56);
+            border-radius: 20px;
+        }
+    
+        ::placeholder{
+            color:rgb(26, 26, 58);
+            font-size: 15px;
+        }
+       .text{
+           border-radius: 20px;
+       }
+       #button{
+           margin-left: 50px;
+           width:150px;
+           height: 35px;
+           border-radius: 20px;
+           background-image:linear-gradient(to left, white, rgb(78, 124, 143));
+       }
+       h1{
+           color: rgb(26, 26, 70);
+           text-align: center;
+           margin-top: 4%;
+       }
+    </style>
+</head>
+<body>
+    <h1>Add category to shopping page</h1>
+    <form onsubmit="addProduct(event)">
+        <input type="url" id="image" placeholder="url">
+        <br><br>
+        <input type="text" placeholder="product name" id="productname">
+        <br><br>
+        <input type="text" placeholder="category name" id="categoryname">
+        <br><br>
+        <input type="text" placeholder="Cost" id="Cost">
+        <br><br>
+        <button type="submit" id="button">Update</button>
+    </form>
+    <script src="../assets/js/addProduct.js"></script>
+</body>
+</html>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
