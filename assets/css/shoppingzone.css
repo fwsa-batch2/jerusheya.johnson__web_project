@@ -10,7 +10,11 @@ body{
     background-color: rgb(8, 8, 39);
     position: absolute;
     width:100%;
-    height:8%
+    height:8%;
+}
+#gif{
+    position: absolute;
+    margin-top: 5%;
 }
 #head1{
     color:white;
@@ -18,16 +22,7 @@ body{
     margin-top: 1%; 
     margin-left: 3%;
 }
-#search{
-    position: absolute;
-    margin-top: 1%; 
-    margin-left: 50%;
-}
-#searchButton{
-    position: absolute;
-    margin-top: 2%; 
-    margin-left: 70%;
-}
+
 #head2{
     color:rgb(13, 13, 49); 
     font-size: 30px;
@@ -42,7 +37,9 @@ body{
     box-shadow: 2px 12px 20px 4px gray;
     border-radius: 4%;
 }
-
+.span:hover{
+    transform: scale(1.04); transition: 1s; 
+}
 h2,h3{
     color: rgb(8, 8, 39);
    
@@ -52,6 +49,7 @@ h2,h3{
     height:30%;
     margin-left: 30px;
 }
+
 .id{
     background-color: transparent;
     border-radius: 5px;
@@ -78,7 +76,7 @@ li{
 }
 .ShoppingImages:hover{
     width: 300px ;
-    height: 300px;
+    height: 300px; 
 }
 .pic{
     padding:80px;
@@ -125,4 +123,17 @@ li{
     margin-left:15%;
     margin-top:0%;
 }
-
+#search{
+    width:15%;
+    height:25%;
+    position: absolute;
+    margin-top: 1.5%; 
+    margin-left: 70%;
+    font-size: 80%;
+    border-radius: 10px;
+}
+#searchButton{
+    position: absolute;
+    margin-top: 1.5%; 
+    margin-left: 90%;
+}
