@@ -68,19 +68,19 @@
 <body>
     <h1>Add product details</h1>
     <form onsubmit="addProductDetail(event)">
-        <input type="url" id="image" placeholder="url">
+        <input type="url" id="image" placeholder="url" required>
         <br><br>
-        <input type="text" placeholder="product name" id="productname">
+        <input type="text" placeholder="product name" id="productname" required>
         <br><br>
-        <input type="text" placeholder="Cost" id="Cost">
+        <input type="text" placeholder="Cost" id="Cost" required>
         <br><br>
-        <textarea type="text" placeholder="Detail" id="specificationDetail"></textarea>
+        <textarea type="text" placeholder="Detail" id="specificationDetail" required></textarea>
         <br><br>
-        <input type="text" placeholder="country of manufacture" id="country">
+        <input type="text" placeholder="country of manufacture" id="country" required>
         <br><br>
-        <input type="text" placeholder="weight" id="weight">
+        <input type="text" placeholder="weight" id="weight" required>
         <br><br>
-        <input type="text" placeholder="color" id="color">
+        <input type="text" placeholder="color" id="color" required>
         <br><br>
         <button type="submit" id="button">Update</button>
     </form>

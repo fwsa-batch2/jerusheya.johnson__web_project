@@ -5,69 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Login Page</title>
-    <style>
-        body{
-            background-image: url('../assets/images/disney\ background.jpg');
-            background-repeat: no repeat;
-            background-attachment: fixed;
-            background-size: 100% 100%;
-            font-family: Arial, Helvetica, sans-serif;
-            font-size:medium;
-        }
-        .center{
-            margin-left: 24%;
-            margin-top: 10%;
-            position: absolute;
-        }
-        table{
-            box-shadow: 4px 20px 28px 8px rgb(37, 37, 61);
-            border-color: transparent;
-        }
-        th{
-            background-color: rgb(28, 28, 63);
-        }
-        td{
-            background-color: white;
-
-        }
-        #form{
-            padding: 50px;
-        }
-        #image{
-            padding: 50px;
-            width:500px;
-            height: 400px;
-        }
-        input{
-            margin:20px;
-            width:260px;
-            height: 30px;
-            border-radius: 20px;
-            font-size: 14px;
-            text-align: center;
-            background-color: rgb(28, 28, 63);
-            color:white;
-        }
-        ::placeholder{
-            color:white;
-        }
-        #button{
-            color:white;
-            background-image:linear-gradient(to left, rgb(92, 160, 189), #19305a);
-            padding:10px;
-            margin-left: 120px;
-            margin-top: 30px;
-            border-radius: 20px;
-            width:100px;
-        }
-    </style>
+    <style src="../assets/css/adminPage.css"></style>
+    
 </head>
 <body>
     <table class="center">
         <caption></caption>
         <tr>
         <th scope="row">
-        <img src="../assets/images/adminlogin-removebg-preview.png" id="image"></th>
+        <img src="../assets/images/adminlogin-removebg-preview.png" alt="login" id="image"></th>
        <td><form onsubmit="adminlogin()" id="form">
             <input  type="email" id="email" placeholder="email"  required>
             <br>

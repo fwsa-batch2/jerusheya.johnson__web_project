@@ -27,10 +27,7 @@ function storing(event) {
     event.preventDefault();
     let feedback = document.getElementById("feedback").value;
     let rstar=document.getElementById("decorate").innerHTML;
-    let month = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
-    let date = new Date().getDate(); 
-    let mon = month[new Date().getMonth()];
-    let year = new Date().getFullYear();
+    
     console.log(date + "-" + mon + "-" + year);
     let Feedback = {
       "name": reviewername,
@@ -55,8 +52,8 @@ function exist(current_name){
   let isUsed = false;
     for (let i of userList) {
   
-      let name = i.name;
-      if (current_name === name) {
+      let names = i.name;
+      if (current_name === names) {
         isUsed = true;
         break;
       }

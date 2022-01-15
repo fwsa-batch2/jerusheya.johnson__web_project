@@ -2,13 +2,16 @@
 
 ### Features
 
-1. REGISTERATION PAGE (Completed)
-2. LOGIN PAGE (Completed)
-3. FORGET PASSWORD AND OTP RECEIVING (Completed)
-4. TICKETBOOKING(Completed)
-5. LIST OF PLACES(Completed)
-5. SHOPPING ZONE(On Progress)
-6. SHOP BY CATEGORY(On Progress)
+1.  REGISTERATION PAGE (Completed)
+2.  LOGIN PAGE (Completed)
+3.  FORGET PASSWORD (Completed)
+4.  TICKETBOOKING(Completed)
+5.  PAYMENT PAGE(Completed)
+6.  REVIEW PAGE(Completed)
+7.  ADMIN LOGIN PAGE(Completed)
+8.  UPDATE CATEGORY(Completed)
+9.  UPDATE PRODUCTS(Completed)
+10. UPDATE PRODUCT DETAILS(In Progress)
 
 ### REGISTERATION PAGE
 
@@ -37,19 +40,6 @@
 * After entering password click login it will redirect into main page.
 * All the details are stored in local storage.
 
-### LIST OF PLACES
-
-* It includes the five places of Disney world.
-
-### SHOPPING ZONE
-
-* It is categorized based on items.
-* When clicking on images it will redirect into it's page in detail with more shopping pictures.
-
-
-### SHOP BY CATEGORY
-
-* It is categorised by the common names of the products like bags,waterbottles,etc......
 
 ### Ticketbooking
 * Firstname and Lastname allows only alphabets and should be between 3 to 10 letters.
@@ -72,9 +62,30 @@
 
 ### Review page
 * Only logged in users can enter review page or it will throw an alert and redirect to login page.
-* After filling the requires details it will display the details in other page
-* Only alphabets are allowed in name and text area.
-* Name can be within 3 to 15 letters and the text area allows 3 to 225 letters.
-* A person can only use a name once to submit the review or it will show an alert as you have submitted your response
+* After filling the required details it will display the details in other page
+* Loginers name and today's date will automatically show here.
+* Text area allows 3 to 225 letters.
+* A person can only use a name once to submit the review or it will show an alert as you have submitted your response.
 
-                                                                                                 
+### Admin Login Page
+
+* Only it will allow Email ID:"Jerusheya.Johnson@fwsa.freshworks.com" and Password:"JeruJesus@2022"
+* It redirects to an page which we can select what to update.
+
+### Update Category
+
+* By entering an image URL and category's name, we can update the category to the shopping page.
+
+### Update Products
+
+* By entering an image URL, product's name,category's name and cost,we can update the products to the entered category's name  in shopping page.
+
+### Update Product Details:(IN PROGRESS)
+
+
+
+
+
+
+
+
