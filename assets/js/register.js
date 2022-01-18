@@ -43,7 +43,7 @@ function loginAlert(event) {
         console.log()
         userList.push(customerDetail);
         localStorage.setItem("registersname", JSON.stringify(userList));
-        window.location.href = "../pages/Login disney.html"
+        window.location.href = "../pages/LoginDisney.html"
     } 
     else {
         alert("please check your password")

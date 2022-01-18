@@ -36,7 +36,7 @@ function onPageLoad(){
          let forget = JSON.stringify(forgetpassword);
          localStorage.setItem("forgetor_email", forget);
          sendEmail();
-        window.location.href = "/pages/Login disney.html";
+        window.location.href = "/pages/LoginDisney.html";
      }
      else{ 
          alert("dear customer!As you are a new user please signin");
@@ -145,7 +145,7 @@ function updatePass(event) {
     let isMatch = checkPassword();
     console.log(isMatch) ;  
    if (isMatch) {
-       window.location.href = "/pages/Login disney.html"
+       window.location.href = "/pages/LoginDisney.html"
    } 
    else {
        alert("please check your password")
@@ -154,7 +154,7 @@ function updatePass(event) {
 }
 function backToPage(event) {
     event.preventDefault();
-    window.location.replace("../pages/Login disney.html")
+    window.location.replace("../pages/LoginDisney.html")
 }
 function checkPassword() {
  
