@@ -15,10 +15,10 @@ function onPageLoad() {
 function submitHandlers(event) {
   event.preventDefault();
   console.group("submitHandlers");
-  let cardholder = document.getElementById("cardholder").value;
-  let cardno = document.getElementById("cardno").value;
-  let exdate = document.getElementById("exdate").value;
-  let cvv = document.getElementById("cvv").value;
+  const cardholder = document.getElementById("cardholder").value;
+  const cardno = document.getElementById("cardno").value;
+  const exdate = document.getElementById("exdate").value;
+  const cvv = document.getElementById("cvv").value;
 
   let customerDetail = {
     "cardholder": cardholder,

@@ -2,7 +2,7 @@ let userList = [];
 
 function onPageLoad() {
     console.group("onpageload");
-    let store = localStorage.getItem('registersname');
+    const store = localStorage.getItem('registersname');
     let users = JSON.parse(store);
     console.log(users);
     if (users == null){
@@ -16,9 +16,9 @@ function onPageLoad() {
 function loginAlert(event) {
     event.preventDefault();
     console.group("login");
-    let username = document.getElementById("username").value;
-    let email = document.getElementById("email").value.toLowerCase();
-    let password = document.getElementById("password").value;
+    const username = document.getElementById("username").value;
+    const email = document.getElementById("email").value.toLowerCase();
+    const password = document.getElementById("password").value;
     
 
     let customerDetail = {

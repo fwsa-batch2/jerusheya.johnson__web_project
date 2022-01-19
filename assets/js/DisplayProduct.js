@@ -1,6 +1,6 @@
 let storeData="";
-let currentURL=window.location.search;
-let URLparameter=new URLSearchParams(currentURL);
+const currentURL=window.location.search;
+const URLparameter=new URLSearchParams(currentURL);
 let URLname=URLparameter.get("name");
 let nameInParse=typeof(URLname);
 console.log(nameInParse)

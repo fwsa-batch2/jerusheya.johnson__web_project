@@ -54,3 +54,8 @@ function useremailValid(current_email,current_password) {
   return isUsed;
 }
 
+function logOut(event){
+  event.preventDefault();
+  localStorage.removeItem("loginersname");
+  alert("you have been logged out")
+}

@@ -9,15 +9,15 @@ function onPageLoad(){
   }
  
   function ticket(){
-  let  name = document.getElementById("name").value;
-  let  number= document.getElementById("number").value;
-  let  emailid= document.getElementById("email id").value;
-  let  lastname= document.getElementById("lastname").value;
-  let  phonenumber= document.getElementById("phonenumber").value;
-  let  date= document.getElementById("date").value;
-  let  allergies= document.getElementById("input1").value;
-  let  yesSpecialSeat= document.getElementById("yesSpecialSeat").checked;
-  let  yesHandicap= document.getElementById("yesHandicap").checked;
+  const  name = document.getElementById("name").value;
+  const  number= document.getElementById("number").value;
+  const  emailid= document.getElementById("email id").value;
+  const  lastname= document.getElementById("lastname").value;
+  const  phonenumber= document.getElementById("phonenumber").value;
+  const  date= document.getElementById("date").value;
+  const  allergies= document.getElementById("input1").value;
+  const  yesSpecialSeat= document.getElementById("yesSpecialSeat").checked;
+  const  yesHandicap= document.getElementById("yesHandicap").checked;
  
 
  return{
@@ -63,15 +63,15 @@ function StorageOfdetails(event){
 
    event.preventDefault();
 
-  let  name = document.getElementById("name").value;
-  let  number= document.getElementById("number").value;
-  let  emailid= document.getElementById("email id").value;
-  let  lastname= document.getElementById("lastname").value;
-  let  phonenumber= document.getElementById("phonenumber").value;
-  let  date= document.getElementById("date").value;
-  let  allergies= document.getElementById("input1").value;
-  let  yesSpecialSeat= document.getElementById("yesSpecialSeat").checked;
-  let  yesHandicap= document.getElementById("yesHandicap").checked;
+  const  name = document.getElementById("name").value;
+  const  number= document.getElementById("number").value;
+  const  emailid= document.getElementById("email id").value;
+  const  lastname= document.getElementById("lastname").value;
+  const  phonenumber= document.getElementById("phonenumber").value;
+  const  date= document.getElementById("date").value;
+  const  allergies= document.getElementById("input1").value;
+  const  yesSpecialSeat= document.getElementById("yesSpecialSeat").checked;
+  const  yesHandicap= document.getElementById("yesHandicap").checked;
 
  let passengerTicket={
     "name": name,

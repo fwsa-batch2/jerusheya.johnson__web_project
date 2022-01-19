@@ -1,6 +1,6 @@
 let products=[];
 function onload(){
-    let store = localStorage.getItem('products');
+    const store = localStorage.getItem('products');
     let users = JSON.parse(store);
     console.log(users);
     if (users == null){
@@ -11,20 +11,22 @@ function onload(){
 }
 function addProduct(event){
     event.preventDefault();
-    let image=document.getElementById("image").value;
-    let productsName=document.getElementById("productname").value;
-    let categoryName=document.getElementById("categoryname").value;
-    let cost=document.getElementById("Cost").value;
+    console.group("addProduct");
+    const image=document.getElementById("image").value;
+    const productsName=document.getElementById("productname").value;
+    const categoryName=document.getElementById("categoryname").value;
+    const cost=document.getElementById("Cost").value;
     let addproducts={
         "image":image,
         "productsname":productsName,
         "categoryname":categoryName,
         "cost":cost
     }
-    console.log(addproducts);
+    console.table(addproducts);
     products.push(addproducts);
     console.log(products);
     localStorage.setItem("products",JSON.stringify(products));
-    window.location.href="/pages/shoppingzone.html"
+    window.location.href="/pages/shoppingzone.html";
+    console.groupEnd("addProduct");
 }
 onload();
