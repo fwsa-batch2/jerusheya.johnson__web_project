@@ -117,8 +117,8 @@ function updatePass(event) {
               if (currentEmail == gmail) {
                  console.log(gmail);
                  let password=document.getElementById("password").value;
-                 usermail.password = password;
-                 console.log(usermail.password);
+                 i.password = password;
+                 console.log(emailverification.password);
                  localStorage.setItem("registersname", JSON.stringify(emailverification));
                  break;
       }
