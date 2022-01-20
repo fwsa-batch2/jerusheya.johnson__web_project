@@ -6,6 +6,7 @@ let nameInParse=typeof(URLname);
 console.log(nameInParse)
 let categoryHead="<div class='categoryHead'><h4>'"+ URLname+"'</h4></div>";
 console.log(URLname)
+
 function displayProduct(){
     let  getProductData=JSON.parse(localStorage.getItem("products"));
     console.log(getProductData);

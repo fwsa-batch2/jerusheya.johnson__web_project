@@ -3,7 +3,6 @@ function onPageLoad(){
   console.group("onPageLoad");
       let users = JSON.parse(localStorage.getItem('forgetor_email'));
       console.log(users);
-      
       if (users==null) {
           forgetpassword = [];
       }
@@ -16,21 +15,12 @@ function onPageLoad(){
   function signIn(event) {
     event.preventDefault();
       console.group("signIn");
-     
-      let  email= document.getElementById("email").value.toLowerCase();
-     
-  
-      let emaildetails = {
+     let  email= document.getElementById("email").value.toLowerCase();
+     let emaildetails = {
           "email": email
       }
-
-     console.table(emaildetails);
-
-    let isEmailAlreadyExist = emailValid(email);
-    
-      console.log(isEmailAlreadyExist);
-     
-
+     let isEmailAlreadyExist = emailValid(email);
+     console.log(isEmailAlreadyExist);
      if (isEmailAlreadyExist) {
          forgetpassword.push(emaildetails);
          let forget = JSON.stringify(forgetpassword);
@@ -43,31 +33,26 @@ function onPageLoad(){
    
      }
     console.groupEnd("signIn") 
-
-
-  }
-  function emailValid(current_email) {
+}
+  
+function emailValid(current_email) {
      console.group("emailValid");
     let userList = JSON.parse(localStorage.getItem("registersname"));
-  
     let isUsed = false;
-  
     for (let i of userList) {
-  
-      let  user = i.email;
-     
-      
-      if (current_email == user) {
-        console.log("current_email==email");
-        isUsed = true;
-        break;
+        let  user = i.email;
+       if (current_email == user) {
+           console.log("current_email==email");
+           isUsed = true;
+           break;
       }
     }
     console.groupEnd("emailValid");
     return isUsed;
-   
-  }
-  function showPassword(){
+ }
+  
+ 
+ function showPassword(){
     console.group("showpassword");
     let checkBox=document.getElementById("checkbox");
     if(checkBox.checked){
@@ -82,10 +67,7 @@ function onPageLoad(){
 
 }
 
-
-
-
-  onPageLoad();
+onPageLoad();
 
 
 function random() {
@@ -108,6 +90,8 @@ function sendEmail(event) {
      message => alert('Mail Delivered successfully!')
    );
 }
+
+
 function submitOtp(event) {
   event.preventDefault();
   let otpFromUser = document.getElementById('otp').value;
@@ -119,6 +103,8 @@ function submitOtp(event) {
     alert('the entered otp is invalid');
   }
 }
+
+
 function updatePass(event) {
   event.preventDefault();
      let currentEmail=document.getElementById("email").value;
@@ -127,19 +113,14 @@ function updatePass(event) {
      console.log(emailverification);
   
     for (let i of emailverification) {
-  
-     
-      let gmail = i.email;
-    
-
-      if (currentEmail == gmail) {
-        console.log(gmail);
-        let password=document.getElementById("password").value;
-         usermail.password = password;
-         console.log(usermail.password);
-         localStorage.setItem("registersname", JSON.stringify(emailverification));
-        
-        break;
+          let gmail = i.email;
+              if (currentEmail == gmail) {
+                 console.log(gmail);
+                 let password=document.getElementById("password").value;
+                 usermail.password = password;
+                 console.log(usermail.password);
+                 localStorage.setItem("registersname", JSON.stringify(emailverification));
+                 break;
       }
     }
     let isMatch = checkPassword();
@@ -152,26 +133,24 @@ function updatePass(event) {
    }
     console.groupEnd("emailValid");
 }
+
 function backToPage(event) {
     event.preventDefault();
     window.location.replace("../pages/LoginDisney.html")
 }
+
 function checkPassword() {
- 
-  console.group("checkpassword");
-  let password = document.getElementById("password").value;
-  let confirmPassword = document.getElementById("cpassword").value;
-  
-  if (password == confirmPassword) {
-      console.log("password matched");
-      console.groupEnd("checkpassword");
-      return true;
-  }
-  
-  else {
-      return false;
-  }
- 
+       console.group("checkpassword");
+       let password = document.getElementById("password").value;
+       let confirmPassword = document.getElementById("cpassword").value;
+      if (password == confirmPassword) {
+         console.log("password matched");
+         console.groupEnd("checkpassword");
+         return true;
+      }
+      else {
+         return false;
+      }
 }
 
  

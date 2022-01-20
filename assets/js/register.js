@@ -13,7 +13,7 @@ function onPageLoad() {
       console.groupEnd("onpageload");
 }
 
-function loginAlert(event) {
+function register(event) {
     event.preventDefault();
     console.group("login");
     const username = document.getElementById("username").value;
@@ -43,7 +43,7 @@ function loginAlert(event) {
         console.log()
         userList.push(customerDetail);
         localStorage.setItem("registersname", JSON.stringify(userList));
-        window.location.href = "../pages/LoginDisney.html"
+        window.location.href = "/pages/LoginDisney.html"
     } 
     else {
         alert("please check your password")
