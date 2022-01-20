@@ -1,69 +1,69 @@
-let forgetpassword=[];
-function onPageLoad(){
+let forgetpassword = [];
+function onPageLoad() {
   console.group("onPageLoad");
-      let users = JSON.parse(localStorage.getItem('forgetor_email'));
-      console.log(users);
-      if (users==null) {
-          forgetpassword = [];
-      }
-      else{
-          forgetpassword=users;
-      }
-    console.groupEnd("onPageLoad");
+  let users = JSON.parse(localStorage.getItem('forgetor_email'));
+  console.log(users);
+  if (users == null) {
+    forgetpassword = [];
   }
-  
-  function signIn(event) {
-    event.preventDefault();
-      console.group("signIn");
-     let  email= document.getElementById("email").value.toLowerCase();
-     let emaildetails = {
-          "email": email
-      }
-     let isEmailAlreadyExist = emailValid(email);
-     console.log(isEmailAlreadyExist);
-     if (isEmailAlreadyExist) {
-         forgetpassword.push(emaildetails);
-         let forget = JSON.stringify(forgetpassword);
-         localStorage.setItem("forgetor_email", forget);
-         sendEmail();
-        window.location.href = "/pages/LoginDisney.html";
-     }
-     else{ 
-         alert("dear customer!As you are a new user please signin");
-   
-     }
-    console.groupEnd("signIn") 
+  else {
+    forgetpassword = users;
+  }
+  console.groupEnd("onPageLoad");
 }
-  
+
+function signIn(event) {
+  event.preventDefault();
+  console.group("signIn");
+  let email = document.getElementById("email").value.toLowerCase();
+  let emaildetails = {
+    "email": email
+  }
+  let isEmailAlreadyExist = emailValid(email);
+  console.log(isEmailAlreadyExist);
+  if (isEmailAlreadyExist) {
+    forgetpassword.push(emaildetails);
+    let forget = JSON.stringify(forgetpassword);
+    localStorage.setItem("forgetor_email", forget);
+    sendEmail();
+    window.location.href = "/pages/LoginDisney.html";
+  }
+  else {
+    alert("dear customer!As you are a new user please signin");
+
+  }
+  console.groupEnd("signIn")
+}
+
 function emailValid(current_email) {
-     console.group("emailValid");
-    let userList = JSON.parse(localStorage.getItem("registersname"));
-    let isUsed = false;
-    for (let i of userList) {
-        let  user = i.email;
-       if (current_email == user) {
-           console.log("current_email==email");
-           isUsed = true;
-           break;
-      }
+  console.group("emailValid");
+  let userList = JSON.parse(localStorage.getItem("registersname"));
+  let isUsed = false;
+  for (let i of userList) {
+    let user = i.email;
+    if (current_email == user) {
+      console.log("current_email==email");
+      isUsed = true;
+      break;
     }
-    console.groupEnd("emailValid");
-    return isUsed;
- }
-  
- 
- function showPassword(){
-    console.group("showpassword");
-    let checkBox=document.getElementById("checkbox");
-    if(checkBox.checked){
-        document.getElementById("password").type="text";
-        document.getElementById("cpassword").type="text";
-    }
-    else{
-        document.getElementById("password").type="password";
-        document.getElementById("cpassword").type="password";
-    }
-    console.groupEnd("showpassword");
+  }
+  console.groupEnd("emailValid");
+  return isUsed;
+}
+
+
+function showPassword() {
+  console.group("showpassword");
+  let checkBox = document.getElementById("checkbox");
+  if (checkBox.checked) {
+    document.getElementById("password").type = "text";
+    document.getElementById("cpassword").type = "text";
+  }
+  else {
+    document.getElementById("password").type = "password";
+    document.getElementById("cpassword").type = "password";
+  }
+  console.groupEnd("showpassword");
 
 }
 
@@ -71,7 +71,7 @@ onPageLoad();
 
 
 function random() {
-  return Math.floor(Math.random()*999999);
+  return Math.floor(Math.random() * 999999);
 }
 let otpentered = random();
 function sendEmail(event) {
@@ -79,27 +79,27 @@ function sendEmail(event) {
   let email = document.getElementById("email").value.toLowerCase();
   console.log(otpentered);
   Email.send({
-       Host : "smtp.gmail.com",
-       Username : "disneyholidayhype@gmail.com",
-       Password : "jerudisney@2002",
-       To : email,
-       From : "disneyholidayhype@gmail.com",
-       Subject : "This is your otp",
-       Body : otpentered,
-   }).then(
-     message => alert('Mail Delivered successfully!')
-   );
+    Host: "smtp.gmail.com",
+    Username: "disneyholidayhype@gmail.com",
+    Password: "jerudisney@2002",
+    To: email,
+    From: "disneyholidayhype@gmail.com",
+    Subject: "This is your otp",
+    Body: otpentered,
+  }).then(
+    message => alert('Mail Delivered successfully!')
+  );
 }
 
 
 function submitOtp(event) {
   event.preventDefault();
   let otpFromUser = document.getElementById('otp').value;
-  if (otpFromUser == otpentered){
+  if (otpFromUser == otpentered) {
     alert("enter new password");
     document.getElementById('password').disabled = false;
     document.getElementById('cpassword').disabled = false;
-  } else{
+  } else {
     alert('the entered otp is invalid');
   }
 }
@@ -107,50 +107,50 @@ function submitOtp(event) {
 
 function updatePass(event) {
   event.preventDefault();
-     let currentEmail=document.getElementById("email").value;
-     console.log(currentEmail);
-     let emailverification = JSON.parse(localStorage.getItem("registersname"));
-     console.log(emailverification);
-  
-    for (let i of emailverification) {
-          let gmail = i.email;
-              if (currentEmail == gmail) {
-                 console.log(gmail);
-                 let password=document.getElementById("password").value;
-                 i.password = password;
-                 console.log(emailverification.password);
-                 localStorage.setItem("registersname", JSON.stringify(emailverification));
-                 break;
-      }
+  let currentEmail = document.getElementById("email").value;
+  console.log(currentEmail);
+  let emailverification = JSON.parse(localStorage.getItem("registersname"));
+  console.log(emailverification);
+
+  for (let i of emailverification) {
+    let gmail = i.email;
+    if (currentEmail == gmail) {
+      console.log(gmail);
+      let password = document.getElementById("password").value;
+      i.password = password;
+      console.log(emailverification.password);
+      localStorage.setItem("registersname", JSON.stringify(emailverification));
+      break;
     }
-    let isMatch = checkPassword();
-    console.log(isMatch) ;  
-   if (isMatch) {
-       window.location.href = "/pages/LoginDisney.html"
-   } 
-   else {
-       alert("please check your password")
-   }
-    console.groupEnd("emailValid");
+  }
+  let isMatch = checkPassword();
+  console.log(isMatch);
+  if (isMatch) {
+    window.location.href = "/pages/LoginDisney.html"
+  }
+  else {
+    alert("please check your password")
+  }
+  console.groupEnd("emailValid");
 }
 
 function backToPage(event) {
-    event.preventDefault();
-    window.location.replace("../pages/LoginDisney.html")
+  event.preventDefault();
+  window.location.replace("../pages/LoginDisney.html")
 }
 
 function checkPassword() {
-       console.group("checkpassword");
-       let password = document.getElementById("password").value;
-       let confirmPassword = document.getElementById("cpassword").value;
-      if (password == confirmPassword) {
-         console.log("password matched");
-         console.groupEnd("checkpassword");
-         return true;
-      }
-      else {
-         return false;
-      }
+  console.group("checkpassword");
+  let password = document.getElementById("password").value;
+  let confirmPassword = document.getElementById("cpassword").value;
+  if (password == confirmPassword) {
+    console.log("password matched");
+    console.groupEnd("checkpassword");
+    return true;
+  }
+  else {
+    return false;
+  }
 }
 
- 
+
