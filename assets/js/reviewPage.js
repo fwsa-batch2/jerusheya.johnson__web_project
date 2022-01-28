@@ -1,71 +1,93 @@
-let review = [];
-function getback() {
-        let store = localStorage.getItem("Ratings");
+
+let reviews = [];
+
+function OnPageLoad() {
+        let store = localStorage.getItem("ratings");
         let users = JSON.parse(store);
         console.log(users);
         if (users == null){
-           review = [];
+           reviews = [];
         }else {
-        review = users;
+        reviews = users;
         }
     
 }
 
-let getitem=JSON.parse(localStorage.getItem("loginersname"));
-let reviewername=getitem.username;
 
-let name = document.getElementById("name").innerHTML=reviewername;
+function  init(){
+
+// for displaying loginers name in the reviewer's name
+let getitem=JSON.parse(localStorage.getItem("loginersname"));
+console.log(getitem);
+let reviewername=getitem.username;
+document.getElementById("name").innerHTML=reviewername;
+
+
+// for displaying today's date in the date field
 let month = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
 let date = new Date().getDate(); 
-let mon = month[new Date().getMonth()];
+let mon = month[new Date().getMonth()]; 
 let year = new Date().getFullYear();
-document.getElementById("date").innerHTML=date + "-" + mon + "-" + year;
-console.log(getitem);
+document.getElementById("date").innerHTML=year + "-" + mon + "-" + date;
+}
 
 
 function storing(event) {
     event.preventDefault();
+    // Get Form fields
     let feedback = document.getElementById("feedback").value;
     let rstar=document.getElementById("decorate").innerHTML;
+
+    //2. Form Validation ( feedback, rating ) -> feedback =="" , rating < 0 , rating > 5    
     
-    console.log(date + "-" + mon + "-" + year);
-    let Feedback = {
+    //@Todo: To add validation
+    // Store the details in an object
+    const Feedback = {
       "name": reviewername,
       "review":rstar,
       "feedback": feedback,
-      "date":date + "-" + mon + "-" + year,
+      "date":year + "-" + mon + "-" + date,
   }
-    let name = document.getElementById("name").innerHTML=reviewername;
+  //createdDate , ratings: 4
+
+  //date: 2021-01-20
+    let name =reviewername;
+
+    // Business Validation (that prevents multiple reviews by a same person)
     let alreadyExists=exist(name);
     if(alreadyExists){
       alert("you have already submitted your response")
   }
     else{
-    review.unshift(Feedback);
-    localStorage.setItem("Ratings", JSON.stringify(review));
+      // Add items to the 1st index
+    reviews.unshift(Feedback);
+    // store the ratings
+    localStorage.setItem("ratings", JSON.stringify(reviews));
+
+    // redirect to 
     window.location.href="../pages/reviewDisplayPage.html";
     }
 }
-
+// function that prevents multiple reviews by a same person.
 function exist(current_name){
-  let userList = JSON.parse(localStorage.getItem("Ratings"));
-  let isUsed = false;
+  let userList = JSON.parse(localStorage.getItem("ratings"));
+  let exists = false;
     for (let i of userList) {
   
       let names = i.name;
       if (current_name === names) {
-        isUsed = true;
+        exists = true;
         break;
       }
     }
-    return isUsed;
+    return exists;
   }
-
+// function for making checked the review stars.
 function reviewStar(){
     let star="";
       for(let i=0;i<5;i++){
-        let create = "<span class='fa fa-star'></span>"
-        star = star +create;
+
+        star += "<span class='fa fa-star'></span>"
        
       }
       document.getElementById("decorate").innerHTML=star;
@@ -74,12 +96,12 @@ function reviewStar(){
        let lenelement="";
        for( let j=0;j<len;j++){
             document.getElementsByClassName("fa-star")[j].onclick=function (){  
-            document.getElementsByClassName("fa-star")[j].classList.toggle("checked");
-           lenelement=lenelement+j;
-        }
-
+              document.getElementsByClassName("fa-star")[j].classList.toggle("checked");
+              lenelement=lenelement+j;
+            }
        }
 
 }
+init();
 reviewStar();
-getback();
+OnPageLoad();

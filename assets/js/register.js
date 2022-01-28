@@ -1,5 +1,5 @@
 let userList = [];
-
+// this function prevents from making the array null
 function onPageLoad() {
     console.group("onpageload");
     const store = localStorage.getItem('registersname');
@@ -12,7 +12,7 @@ function onPageLoad() {
       }
       console.groupEnd("onpageload");
 }
-
+// this is the main function
 function register(event) {
     event.preventDefault();
     console.group("login");
@@ -20,7 +20,7 @@ function register(event) {
     const email = document.getElementById("email").value.toLowerCase();
     const password = document.getElementById("password").value;
     
-
+// object
     let customerDetail = {
         "username": username,
         "email": email,
@@ -28,7 +28,7 @@ function register(event) {
        }
 
     console.log(customerDetail);
-   
+// function to check whether the email is already registered or not 
     let  isEmailAlreadyExist = emailValid(email);
     console.log(isEmailAlreadyExist);
 
@@ -36,7 +36,7 @@ function register(event) {
         alert("Email alreay exist or enter a valid email");
         return ;
     }
-    
+ // function to check whether the password and confirm password    
     let isMatch = checkPassword();
      console.log(isMatch) ;  
     if (isMatch) {
