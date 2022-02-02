@@ -10,3 +10,7 @@ function OnReview(){
     document.getElementById("get").innerHTML=reviewlen;
 }
 OnReview();
+
+function redirect(){
+    window.location.href="/disneyholidayapp-ui/pages/review.html"
+}

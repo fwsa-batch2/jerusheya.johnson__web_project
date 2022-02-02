@@ -30,7 +30,7 @@ function submitHandlers(event) {
     paymentdetails.push(customerDetail);
     let pay = JSON.stringify(paymentdetails);
     localStorage.setItem("payment", pay);
-    window.location.href = "../pages/thankyouDisney.html";
+    window.location.href = "/disneyholidayapp-ui/pages/thankyouDisney.html";
     console.groupEnd("submitHandlers") ;
 }
 onPageLoad();

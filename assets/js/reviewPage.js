@@ -2,7 +2,7 @@
 let reviews = [];
 
 function OnPageLoad() {
-        let store = localStorage.getItem("ratings");
+        let store = localStorage.getItem("Ratings");
         let users = JSON.parse(store);
         console.log(users);
         if (users == null){
@@ -34,6 +34,13 @@ document.getElementById("date").innerHTML=year + "-" + mon + "-" + date;
 
 function storing(event) {
     event.preventDefault();
+    let getitem=JSON.parse(localStorage.getItem("loginersname"));
+console.log(getitem);
+let month = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+let date = new Date().getDate(); 
+let mon = month[new Date().getMonth()]; 
+let year = new Date().getFullYear();
+let reviewername=getitem.username;
     // Get Form fields
     let feedback = document.getElementById("feedback").value;
     let rstar=document.getElementById("decorate").innerHTML;
@@ -56,21 +63,22 @@ function storing(event) {
     // Business Validation (that prevents multiple reviews by a same person)
     let alreadyExists=exist(name);
     if(alreadyExists){
-      alert("you have already submitted your response")
+      alert("you have already submitted your response");
+      window.location.href="/disneyholidayapp-ui/pages/LoginDisney.html"
   }
     else{
       // Add items to the 1st index
     reviews.unshift(Feedback);
     // store the ratings
-    localStorage.setItem("ratings", JSON.stringify(reviews));
+    localStorage.setItem("Ratings", JSON.stringify(reviews));
 
     // redirect to 
-    window.location.href="../pages/reviewDisplayPage.html";
+    window.location.href="/disneyholidayapp-ui/pages/reviewDisplayPage.html";
     }
 }
 // function that prevents multiple reviews by a same person.
 function exist(current_name){
-  let userList = JSON.parse(localStorage.getItem("ratings"));
+  let userList = JSON.parse(localStorage.getItem("Ratings"));
   let exists = false;
     for (let i of userList) {
   

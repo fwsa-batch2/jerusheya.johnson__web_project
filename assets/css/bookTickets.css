@@ -1,0 +1,473 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Cookie&family=Dancing+Script:wght@700&family=Dongle&family=Lobster&family=Mochiy+Pop+P+One&family=Neonderthaw&family=Patrick+Hand&family=Satisfy&family=Supermercado+One&display=swap');
+
+body{
+    background-image: url('../images/disney background.jpg');
+    background-repeat: no repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    font-family: 'Berkshire Swash';
+ }
+ #upperDiv{
+     background-color: rgb(33, 33, 56);
+ }
+ #upperList{
+     list-style-type: none;
+ }
+ #logo{
+     margin-left: 5px;
+     width:50px ;
+     height:50px;
+ }
+ #list{
+     margin-left:4%;
+     margin-top: -2.5%;
+     color:white;
+     font-size: 30px;
+     height:50px;
+ }
+ #img_wrap{
+     position: relative;
+ }
+ #bookImg{
+   border-radius: 40px;
+ }
+ #bookImg:hover{
+     filter:blur(8px);
+ }
+ #img_description {
+    position: absolute;
+    margin-left: 30%;
+    margin-top: -35%;
+    font-size: 56px;
+    animation: glow1 1s ease-in-out infinite alternate;
+    color:rgb(22, 22, 48);
+    font-family: "Sofia", sans-serif;
+    
+    transform: scale(1.04); transition: 1s;
+  }
+  @-webkit-keyframes glow1 {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #f75ba9, 0 0 40px #fc60ae, 0 0 50px #f152a2, 0 0 60px #e9519d, 0 0 70px #ee4d9d, 0 0 80px #f150a1;
+    }
+  }
+  #ticketButton{
+      bottom: 270px;
+	  left: 180px;
+	  width: 300px;
+      height:53px;
+      margin-top:-30%;
+      margin-left:33%;
+      position:absolute;
+      border-radius: 20px;
+      background-image: linear-gradient(to right ,rgb(30, 30, 58) , rgb(248, 20, 134));
+      color: white; 
+    }
+    #ticketButton:hover{
+        transform: scale(1.04); transition: 1s; 
+        width:350px;
+        height:60px;
+        font-size:44px;
+        cursor:pointer;
+    }
+
+  #slide{
+      font-size:35px;
+      position:absolute;
+      font-family: "Sofia", sans-serif;
+      margin-top:-8%;
+      margin-left:20%;
+      }
+    #slide:hover{
+        animation: 2s slide-right;
+        animation-delay: 0s;
+    }
+    @keyframes slide-right {
+        from {
+           margin-left: -8px;
+        }
+    
+        to {
+           margin-left: 20%;
+        }
+     }
+    #buttonDiv{
+      overflow: hidden;
+    }
+ 
+  .img_wrap:hover #ticketButton{
+    visibility: visible; 
+    display: inline-block;
+    opacity: 1;
+   } 
+  .img_wrap:hover #img_description {
+    visibility: visible;
+    opacity: 1;
+  }
+  #form{
+    position: absolute;
+    height: 630px;
+    width: 1000px;
+    background:linear-gradient(to bottom, rgba(255,255,255,0.55),rgba(105, 96, 96, 0.255));
+    top: 270px;
+    /* filter: blur(2px); */
+    left: 110px;
+    border-radius: 40px;
+
+  background-image: url('/disneyholidayapp-ui/assets/images/4fc1bab194054cd379470cfda1731315--batman--felice.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+#form h3{
+    font-family: 'Patrick Hand', cursive;
+    position: absolute;
+    top: 20px;
+    left: 300px;
+    font-size: 30px;
+}
+#fname{
+    font-family: 'Patrick Hand', cursive;
+    position: absolute;
+    top: 120px;
+    font-size: 25px;
+    left: 200px;
+}
+#lname{
+    font-family: 'Patrick Hand', cursive;
+    position: absolute;
+    top: 120px;
+    font-size: 25px;
+    left: 630px;
+}
+#mail{
+    font-family: 'Patrick Hand', cursive;
+    position: absolute;
+    top: 260px;
+    font-size: 25px;
+    left: 207px;
+}
+#cell{
+    font-family: 'Patrick Hand', cursive;
+    position: absolute;
+    top: 260px;
+    font-size: 25px;
+    left: 645px;
+}
+#visit{
+    font-family: 'Patrick Hand', cursive;
+    position: absolute;
+    top: 400px;
+    font-size: 25px;
+    left: 190px;
+}
+#adultLabel{
+  font-family: 'Patrick Hand', cursive;
+  position: absolute;
+  top: 710px;
+  font-size: 21px;
+  left: 260px;
+}
+#childLabel{
+  font-family: 'Patrick Hand', cursive;
+  position: absolute;
+  top: 710px;
+  font-size: 21px;
+  left: 420px;
+}
+#doj{
+    font-family: 'Patrick Hand', cursive;
+    position: absolute;
+    top: 400px;
+    font-size: 25px;
+    left: 610px;
+}
+#forminput input{
+    position: absolute;
+    font-family: 'Patrick Hand', cursive;
+    height: 38px;
+    font-size: 20px;
+    width: 240px;
+    border-radius: 25px;
+    border: none;
+    box-shadow: 5px 5px 5px;
+    background:linear-gradient(to bottom, rgba(255,255,255,0.55),rgba(105, 96, 96, 0.255));
+    padding-left: 20px;
+}
+#finput{
+    top: 200px;
+    left: 125px;
+}
+#linput{
+    top: 200px;
+    left: 550px;
+}
+#inputmail{
+    top: 340px;
+    left: 125px;
+}
+#inputcell{
+    top: 340px;
+    left: 550px;
+}
+#adults{
+    position: absolute;
+    font-family: 'Patrick Hand', cursive;
+    height: 38px;
+    font-size: 20px;
+    /* width: 240px; */
+    border-radius: 25px;
+    border: none;
+    box-shadow: 5px 5px 5px;
+    background:linear-gradient(to bottom, rgba(255,255,255,0.55),rgba(105, 96, 96, 0.255));
+    padding-left: 20px;
+    /* position: absolute; */
+    width: 60px;
+    top: 760px;
+    left: 245px;
+}
+#child{
+    position: absolute;
+    font-family: 'Patrick Hand', cursive;
+    height: 38px;
+    font-size: 20px;
+    /* width: 240px; */
+    border-radius: 25px;
+    border: none;
+    box-shadow: 5px 5px 5px;
+    background:linear-gradient(to bottom, rgba(255,255,255,0.55),rgba(105, 96, 96, 0.255));
+    padding-left: 20px;
+    /* position: absolute; */
+    width: 60px;
+    top: 760px;
+    left: 400px;
+}
+
+#dateofjurney{
+    top: 490px;
+    left: 550px;
+}
+#others{
+    position: absolute;
+    height: 630px;
+    width: 600px;
+    background:linear-gradient(to bottom, rgba(255,255,255,0.55),rgba(105, 96, 96, 0.255));
+    top: 270px;
+    /* filter: blur(2px); */
+    left: 1200px;
+    border-radius: 40px;
+
+  background-image: url('/disneyholidayapp-ui/assets/images/4fc1bab194054cd379470cfda1731315--batman--felice.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#question{
+    font-family: 'Patrick Hand', cursive;
+    font-size: 30px;
+    position: absolute;
+    left: 70px;
+}
+#allergies{
+    text-align: justify;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 22px;
+    position: absolute;
+    top: 70px;
+    left: 45px;
+}
+#special{
+    font-family: 'Patrick Hand', cursive;
+    font-size: 22px;
+    position: absolute;
+    top: 240px;
+    left: 70px;
+}
+#handicap{
+    font-family: 'Patrick Hand', cursive;
+    font-size: 22px;
+    top: 240px;
+    left: 320px;
+    position: absolute;
+}
+#check1{
+    position: absolute;
+    top: 300px;
+    left: 120px;
+}
+#check2{
+    position: absolute;
+    top: 300px;
+    left: 400px;
+}
+#allergirsinput{
+    position: absolute;
+    font-family: 'Patrick Hand', cursive;
+    height: 38px;
+    top: 150px;
+    left: 120px;
+    font-size: 20px;
+    width: 300px;
+    border-radius: 25px;
+    border: none;
+    box-shadow: 5px 5px 5px;
+    background:linear-gradient(to bottom, rgba(255,255,255,0.55),rgba(105, 96, 96, 0.255));
+    padding-left: 20px;
+}
+#comments{
+    font-family: 'Patrick Hand', cursive;
+    position: absolute;
+    top: 325px;
+    left: 200px;
+}
+#textarea{
+    position: absolute;
+    top: 400px;
+    left: 100px;
+    height: 180px;
+    width: 400px;
+    border: none;
+    border-radius: 30px;
+    font-size: 25px;
+    box-shadow: 5px 5px 5px;
+    background:linear-gradient(to bottom, rgba(255,255,255,0.55),rgba(105, 96, 96, 0.255));
+    padding-left: 20px;
+}
+button{
+    height: 70px;
+    width: 120px;
+    font-size: 25px;
+    border-radius: 30px;
+    font-family: 'Patrick Hand', cursive;
+    border: none;
+    transition: 3s;
+    box-shadow: 5px 5px 5px violet;
+    background: rgb(23,19,88);
+    background: linear-gradient(90deg, rgba(23,19,88,1) 0%, rgba(68,10,112,1) 35%, rgba(223,6,142,1) 100%);
+    color:white;
+
+}
+::placeholder{
+  color:gray;
+  text-align: center;
+}
+button:hover{
+  background: rgb(250,94,116);
+background: linear-gradient(90deg, rgba(250,94,116,0.896796218487395) 0%, rgba(247,140,207,0.9164040616246498) 35%, rgba(255,200,127,1) 100%);
+  color:rgb(22, 22, 65);
+  font-size: 30px;
+  font-weight: 200;
+}
+#reset{
+    position: absolute;
+    top: 1000px;
+    left: 700px;
+}
+#next{
+    position: absolute;
+    top: 1000px;
+    left: 1000px;}
+
+#footer{
+    background-color: white;
+    height: 180px;
+    width: 1820px;
+    position: absolute;
+    top: 1200px;
+    border-radius: 20px;
+    left: 25px;
+    background: rgb(23,19,88);
+    background: linear-gradient(90deg, rgba(23,19,88,1) 0%, rgba(68,10,112,1) 35%, rgba(223,6,142,1) 100%);
+}
+#twit{
+    height: 60px;
+    position: absolute;
+    left: 550px;
+    top: 40px;
+    transition: 1s;
+}
+#twit:hover{
+    transform: translateY(-15px);
+}
+#tele{
+    height: 67px;
+    position: absolute;
+    left: 700px;
+    top: 36px;
+    transition: 1s;
+}
+#tele:hover{
+    transform: translateY(-15px);
+}
+#fb{
+    height: 60px;
+    position: absolute;
+    left: 850px;
+    top: 40px;
+    transition: 1s;
+    background-color: whitesmoke;
+    border-radius: 12px;
+}
+#fb:hover{
+    transform: translateY(-15px);
+}
+#yt{
+    height: 60px;
+    position: absolute;
+    left: 1000px;
+    top: 40px;
+    transition: 1s;
+    background-color: whitesmoke;
+    border-radius: 12px;
+}
+#yt:hover{
+    transform: translateY(-15px);
+}
+#insta{
+    height: 60px;
+    position: absolute;
+    left: 1150px;
+    top: 40px;
+    transition: 1s;
+    /* background-color: whitesmoke; */
+    border-radius: 12px;
+}
+#insta:hover{
+    transform: translateY(-15px);
+}
+#footer img{
+    margin-left: 50px;
+}
+#terms{
+    color: white;
+    position: absolute;
+    top: 80px;
+    left: 800px;
+    font-family: 'Dongle', sans-serif;
+    font-size: 30px;
+    
+}
+#copyright{
+    height: 20px;
+    position: absolute;
+    top: 145px;
+    left: 740px;
+
+}
+#hype{
+    color: white;
+    position: absolute;
+    top: 105px;
+    left: 830px;
+    font-family: 'Dongle', sans-serif;
+    font-size: 30px; 
+}
+#formDiv{
+  position: absolute;
+  top:830px;
+  left:-20px;
+}

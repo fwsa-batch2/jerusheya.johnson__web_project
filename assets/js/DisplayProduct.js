@@ -13,7 +13,7 @@ function displayProduct(){
     
     for(let i of getProductData){
         if(URLname==i.categoryname)
-            storeData+="<a href='/pages/Products.html?name="+ i.productsname+"'><div id='updateProduct'  class='updateCategory1'> <img  src='"+ i.image+"'class='Shoppingimages' alt='image'width='280px'height='280px'><h2 class='id'>"+ i.productsname+"</h2><h2 class='id'>"+ i.cost+"</h2></div></a>"
+            storeData+="<a href='/disneyholidayapp-ui/pages/Products.html?name="+ i.productsname+"'><div id='updateProduct'  class='updateCategory1'> <img  src='"+ i.image+"'class='Shoppingimages' alt='image'width='280px'height='280px'><h2 class='id'>"+ i.productsname+"</h2><h2 class='id'>"+ i.cost+"</h2></div></a>"
        }
     return storeData;
 }

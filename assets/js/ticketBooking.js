@@ -8,19 +8,20 @@ function onPageLoad(){
       }
   }
  
-  function ticket(){
-  const  name = document.getElementById("name").value;
-  const  number= document.getElementById("number").value;
-  const  emailid= document.getElementById("email id").value;
-  const  lastname= document.getElementById("lastname").value;
-  const  phonenumber= document.getElementById("phonenumber").value;
-  const  date= document.getElementById("date").value;
-  const  allergies= document.getElementById("input1").value;
-  const  yesSpecialSeat= document.getElementById("yesSpecialSeat").checked;
-  const  yesHandicap= document.getElementById("yesHandicap").checked;
+  function bookTicket(){
+  const  name = document.getElementById("finput").value;
+  const  number= document.getElementById("linput").value;
+  const  emailid= document.getElementById("inputmail").value;
+  const  lastname= document.getElementById("inputcell").value;
+  const  phonenumber= document.getElementById("dateofjurney").value;
+  const  date= document.getElementById("adults").value;
+  const  allergies= document.getElementById("child").value;
+  const  yesSpecialSeat= document.getElementById("check1").checked;
+  const  yesHandicap= document.getElementById("check2").checked;
+
  
 
- return{
+ let passengerTicket={
     "name": name,
     "number": number,
     "emailid":emailid,
@@ -32,62 +33,11 @@ function onPageLoad(){
     "yesHandicap":yesHandicap,
 }
 
- } 
-
- let tickets = ticket();
-  
-function sendEmail(event) {
-  event.preventDefault();
  
-
-
- let  email= document.getElementById("email id").value.toLowerCase();
-  Email.send({
-       Host : "smtp.gmail.com",
-       Username : "disneyholidayhype@gmail.com",
-       Password : "jerudisney@2002",
-       To : email,
-       From : "disneyholidayhype@gmail.com",
-       Subject : "This is your ticket details",
-       Body : tickets,
-   }).then(
-     message => alert('Mail Delivered successfully!')
-   );
-   
-     
-}
-  
-
-  
-function StorageOfdetails(event){
-
-   event.preventDefault();
-
-  const  name = document.getElementById("name").value;
-  const  number= document.getElementById("number").value;
-  const  emailid= document.getElementById("email id").value;
-  const  lastname= document.getElementById("lastname").value;
-  const  phonenumber= document.getElementById("phonenumber").value;
-  const  date= document.getElementById("date").value;
-  const  allergies= document.getElementById("input1").value;
-  const  yesSpecialSeat= document.getElementById("yesSpecialSeat").checked;
-  const  yesHandicap= document.getElementById("yesHandicap").checked;
-
- let passengerTicket={
-    "name": name,
-    "number": number,
-    "emailid":emailid,
-    "lastname":lastname,
-    "phonenumber":phonenumber,
-    "date":date,
-    "allergies":allergies,
-    "yesSpecialSeat":yesSpecialSeat,
-    "yesHandicap":yesHandicap
-}
   console.table(passengerTicket);
   ticketbooking.push(passengerTicket);
   localStorage.setItem("ticketdetails", JSON.stringify(ticketbooking));
-  window.location.href = "../pages/payment_page.html";
+  window.location.href = "/disneyholidayapp-ui/pages/payment_page.html";
 }
 
 onPageLoad();

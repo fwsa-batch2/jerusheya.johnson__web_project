@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Display review</title>
+    <link rel="shortcut icon" href="/disneyholidayapp-ui/assets/images/mainlogo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
     <style>
         body{
-            background-image: url('../assets/images/disney\ background.jpg');
+            background-image: url('/disneyholidayapp-ui/assets/images/disney\ background.jpg');
             background-repeat: no repeat;
             background-attachment: fixed;
             background-size: 100% 100%;
@@ -26,15 +27,22 @@
         .checked {
             color: orange;
         }
+        button:hover{
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
-    <h1 style="text-align:center">Displaying Reviews</h1>
+    <h1 style="text-align:center">Reviews</h1>
+    <button style="color: white;background-image:linear-gradient(to left, rgb(40, 87, 107), #19305a);
+    margin-left: 80%;margin-top: -5%; height:3%; font-size: 20px; border-radius: 20px;" onclick="redirect()">Click here to submit your Reviews</button>
+    <br>
+    <br>
     <div id="get">
        <div class="reviews"><h2>Name-jeru</h2>
         <div id="stars"></div>
         <h2>Feedback-</h2></div> 
     </div><br>
-    <script src="../assets/js/reviewDisplayPage.js"></script>
+    <script src="/disneyholidayapp-ui/assets/js/reviewDisplayPage.js"></script>
 </body>
 </html>

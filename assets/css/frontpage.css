@@ -1,12 +1,15 @@
+
 body{
-    background-image: url('../images/disney background.jpg');
+    background-image: url('../images/disney\ background.jpg');
     background-repeat: no repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: "Sofia", sans-serif;
     
   }
-  
+  .head2{
+    color:white;
+  }
   a{
     text-decoration: none;
     color:white;
@@ -15,6 +18,26 @@ body{
   p, h1 {
     color:rgb(3, 3, 71);
   
+  }
+  #inline{
+    font-size: 50px;
+    font-family: 'Chelsea Market';
+    animation: glow1 1s ease-in-out infinite alternate;
+  }
+  #inline:hover{
+    transform: scale(1.04); transition: 1s;
+  }
+  @-webkit-keyframes glow1 {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+  }
+  #places:hover{
+     filter: blur(8px);
   }
   pre{
     font-family: Arial, Helvetica, sans-serif;
@@ -25,7 +48,6 @@ body{
     padding:0;
     overflow:hidden;
     background-color: transparent;
-  
     top: 0;
     width: 100%;
   
@@ -37,12 +59,15 @@ body{
   li a{
     display: block;
     text-align: center;
-    padding:10px;
+    padding:15px;
     font-size: 30px;
-
+    transition: 1.5s;
   }
   li a:hover{
-    text-decoration: underline white;
+    text-decoration: underline rgb(250, 107, 131);
+    transform: translateY(-10px);
+    color:rgb(248, 106, 130);
+    
   }
   hr{
     width:80%;
@@ -66,41 +91,17 @@ body{
     }
     .top{
       position: absolute;
-      top: 8px;
+      top: 13px;
       right:16px;
     }
 
-    div.gallery {
-      margin-left: 300px;
-      float: left;
-      width: 600px;
-      height:500px;
-      padding:20px;
-      filter:brightness(60%);
-      cursor:-webkit-zoom-in;
-      }
-  
-    
-    
-    
-    div.gallery img {
-      width: 100%;
-      height: 80%;
-      border-radius: 20px;
-      background-color: white;
-    }
-    
-    div.desc {
-      padding: 20px;
-      text-align: center;
-    }
     #head1{
       font-size:200%;
+      font-family: 'Berkshire Swash';
       color:black;
     }
-    .head2{
+    .head{
       color:white;
-      filter: brightness(100%);
     }
     .head3{
       color:white;
@@ -114,10 +115,16 @@ body{
       font-size:25px; 
       list-style-type: none;
       color:rgb(10, 10, 43);
+      font-family: "Sofia", sans-serif;
     }
+    #dlist:hover{
+        animation: 2s slide-right;
+        animation-delay: 0s;
+    }
+    
     #contactdiv{
-      background-color: rgb(10, 10, 43);
-      margin-top:230vh;
+      background-image:linear-gradient(to left, rgb(32, 21, 32), #111d3a);
+      margin-top:295vh;
     }
     .contact{
       color:white;
@@ -134,9 +141,11 @@ body{
     }
     .register{
       margin-left: 83%;
+      font-family: "Sofia", sans-serif;
       }
     .register1{
       margin-left: 73%;
+      font-family: "Sofia", sans-serif;
       }
     button{
       position:absolute;
@@ -146,7 +155,7 @@ body{
       color:white;
       font-size: 21px;
       text-align: center;
-      background-image:linear-gradient(to left, rgb(5, 119, 148), #111d3a);
+      background-image:linear-gradient(to left, rgb(51, 34, 51), #111d3a);
       text-decoration: none;
       border-color: transparent;
       padding-bottom: 2% ;
@@ -155,5 +164,189 @@ body{
     
    
     button:hover{
-      text-decoration: underline;
+      background-image: linear-gradient(to left, #fc228f ,#d6029d);
+      color:rgb(16, 16, 46);
+      transform: scale(1.04); transition: 1s;
+      font-size: 23px;
     }
+   
+    #paragaraph{
+      color: honeydew;
+      position: absolute;
+      top: 190vh;
+      left: 70px;
+      opacity: 0;
+      font-size: 35px;
+      text-align: center;
+      font-family: 'Charmonman';
+      transition: 3s;
+      cursor: pointer;
+  
+  }
+  #paragaraph:hover{
+      opacity: 1;
+  }
+
+.dc{
+  position: absolute;
+  height: 55vh;
+  left: 920px;
+  top: 185vh;
+  box-shadow: 5px 5px 40px 20px #0ff;
+  border-radius: 35px;
+}
+.dc:hover{
+  filter: blur(8px);
+  transition: 2s;
+}
+.dc1{
+    position: absolute;
+    height: 55vh;
+    left: 70px;
+    top: 260vh;
+    box-shadow: 5px 5px 40px 20px #0ff;
+    border-radius: 35px;
+}
+.dc1:hover{
+    filter: blur(8px);
+    transition: 2s;
+}
+#paragaraph1{
+    color: honeydew;
+    position: absolute;
+    top: 255vh;
+    left: 1160px;
+    opacity: 0;
+    font-size: 35px;
+    text-align: center;
+    font-family: 'Charmonman';
+    transition: 3s;
+    cursor: pointer;
+
+}
+#paragaraph1:hover{
+    opacity: 1;
+}
+
+
+.dc2{
+    position: absolute;
+    height: 55vh;
+    width: 870px;
+    left: 920px;
+    top: 337vh;
+    box-shadow: 5px 5px 40px 20px #0ff;
+    border-radius: 35px;
+}
+.dc2:hover{
+    filter: blur(8px);
+    transition: 2s;
+}
+.dis2{
+    color: snow;
+    position:absolute;
+    top: 1350px;
+    left: 1300px;
+    
+    font-size: 70px;
+    /* transition: 2s; */
+    
+    font-family: 'Dongle', sans-serif; 
+}
+#paragaraph2{
+    color: honeydew;
+    position: absolute;
+    top: 345vh;
+    left: 100px;
+    opacity: 0;
+    font-size: 35px;
+    text-align: center;
+    font-family: 'Charmonman';
+    transition: 3s;
+    cursor: pointer;
+
+}
+#paragaraph2:hover{
+    opacity: 1;
+}
+
+.dc3{
+    position: absolute;
+    height: 55vh;
+    left: 70px;
+    top: 412vh;
+    box-shadow: 5px 5px 40px 20px #0ff;
+    border-radius: 35px;
+}
+.dc3:hover{
+    filter: blur(8px);
+    transition: 2s;
+}
+#paragaraph3{
+    color: honeydew;
+    position: absolute;
+    top: 405vh;
+    left: 1130px;
+    opacity: 0;
+    font-size: 35px;
+    text-align: center;
+    font-family: 'Charmonman';
+    transition: 3s;
+    cursor: pointer;
+
+}
+#paragaraph3:hover{
+    opacity: 1;
+}
+#background1{
+  position: absolute;
+  top: 180vh;
+  left: 0;
+  transition: 2s;
+  filter: blur(5px);
+  height: 70%;
+  width: 100%;
+  box-shadow: 0px 15px 15px wheat;
+}
+#background1:hover{
+  filter: blur(0px);
+}
+#background2{
+  position: absolute;
+  top: 255vh;
+  left: 0;
+  height: 70%;
+  transition: 2s;
+  filter: blur(5px);
+  width: 100%;
+  box-shadow: 0px 15px 15px wheat;
+}
+#background2:hover{
+  filter: blur(0px);
+}
+#background3{
+  position: absolute;
+  top: 330vh;
+  left: 0;
+  height: 70%;
+  transition: 2s;
+  filter: blur(5px);
+  width: 100%;
+  box-shadow: 0px 15px 15px wheat;
+}
+#background3:hover{
+  filter: blur(0px);
+}
+#background4{
+  position: absolute;
+  top: 405vh;
+  left: 0;
+  height: 70%;
+  transition: 2s;
+  filter: blur(5px);
+  width: 100%;
+  box-shadow: 0px 15px 15px wheat;
+}
+#background4:hover{
+  filter: blur(0px);
+}

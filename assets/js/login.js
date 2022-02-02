@@ -22,7 +22,7 @@ function submitHandlers(event) {
   if (isEmailAlreadyExist) {
     let login = JSON.stringify(customerDetail);
     localStorage.setItem("loginersname", login);
-    window.location.href = "../pages/gif.html";
+    window.location.href = "/disneyholidayapp-ui/pages/gif.html";
   }
   else{ 
    alert("dear customer!As you are a new user please signin");

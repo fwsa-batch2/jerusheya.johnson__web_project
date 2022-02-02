@@ -43,7 +43,7 @@ function register(event) {
         console.log()
         userList.push(customerDetail);
         localStorage.setItem("registersname", JSON.stringify(userList));
-        window.location.href = "/pages/LoginDisney.html"
+        window.location.href = "/disneyholidayapp-ui/pages/LoginDisney.html"
     } 
     else {
         alert("please check your password")

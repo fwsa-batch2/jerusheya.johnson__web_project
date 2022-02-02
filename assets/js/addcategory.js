@@ -22,7 +22,7 @@ function addCategory(event){
     Category.push(addingCategory);
     console.log(Category);
     localStorage.setItem("category",JSON.stringify(Category));
-    window.location.href="/pages/shoppingzone.html";
+    window.location.href="/disneyholidayapp-ui/pages/shoppingzone.html";
     console.groupEnd("addCategory");
 }
 onload();

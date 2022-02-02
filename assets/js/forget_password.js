@@ -26,7 +26,7 @@ function signIn(event) {
     let forget = JSON.stringify(forgetpassword);
     localStorage.setItem("forgetor_email", forget);
     sendEmail();
-    window.location.href = "/pages/LoginDisney.html";
+    window.location.href = "/disneyholidayapp-ui/pages/LoginDisney.html";
   }
   else {
     alert("dear customer!As you are a new user please signin");
@@ -126,7 +126,7 @@ function updatePass(event) {
   let isMatch = checkPassword();
   console.log(isMatch);
   if (isMatch) {
-    window.location.href = "/pages/LoginDisney.html"
+    window.location.href = "/disneyholidayapp-ui/pages/LoginDisney.html"
   }
   else {
     alert("please check your password")
@@ -136,7 +136,7 @@ function updatePass(event) {
 
 function backToPage(event) {
   event.preventDefault();
-  window.location.replace("../pages/LoginDisney.html")
+  window.location.replace("/disneyholidayapp-ui/pages/LoginDisney.html")
 }
 
 function checkPassword() {
