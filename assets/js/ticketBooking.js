@@ -38,7 +38,7 @@ function onPageLoad(){
   console.table(passengerTicket);
   ticketbooking.push(passengerTicket);
   localStorage.setItem("ticketdetails", JSON.stringify(ticketbooking));
-  window.location.href = "/disneyholidayapp-ui/pages/payment_page.html";
+  window.location.href = "./../pages/payment_page.html";
 }
 
 onPageLoad();

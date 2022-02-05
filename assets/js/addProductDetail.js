@@ -31,7 +31,7 @@ function addProductDetail(event){
     console.table(addproductDetails);
     productDetail.push(addproductDetails);
     localStorage.setItem("productdetails",JSON.stringify(productDetail));
-    window.location.href="/disneyholidayapp-ui/pages/shoppingzone.html"
+    window.location.href="./../pages/shoppingzone.html"
     console.groupEnd("addProductDetail");
 }
 onload();

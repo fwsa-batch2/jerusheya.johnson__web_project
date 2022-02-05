@@ -25,7 +25,7 @@ function submitHandlers(event) {
   if (isEmailAlreadyExist) {
     let login = JSON.stringify(customerDetail);
     localStorage.setItem("loginersname", login);
-    window.location.href = "/disneyholidayapp-ui/pages/gif.html";
+    window.location.href = "./../pages/gif.html";
   }
   //else show alert to sign in
   else{ 

@@ -30,7 +30,7 @@ function signIn(event) {
     let forget = JSON.stringify(forgetpassword);
     localStorage.setItem("forgetor_email", forget);
     sendEmail();
-    window.location.href = "/disneyholidayapp-ui/pages/LoginDisney.html";
+    window.location.href = "./../pages/LoginDisney.html";
   }
   //else show alert to sign in first
   else {
@@ -135,7 +135,7 @@ function updatePass(event) {
   let isMatch = checkPassword();
   console.log(isMatch);
   if (isMatch) {
-    window.location.href = "/disneyholidayapp-ui/pages/LoginDisney.html"
+    window.location.href = "./../pages/LoginDisney.html"
   }
   else {
     alert("please check your password")
@@ -146,7 +146,7 @@ function updatePass(event) {
 //redirect function to go back 
 function backToPage(event) {
   event.preventDefault();
-  window.location.replace("/disneyholidayapp-ui/pages/LoginDisney.html")
+  window.location.replace("./../pages/LoginDisney.html")
 }
 
 //to check password and confirm password are same and equal

@@ -58,7 +58,7 @@ function storing(event) {
 
   if (alreadyExists) {
     alert("you have already submitted your response");
-    window.location.href="/disneyholidayapp-ui/pages/disneyFrontPage.html"
+    window.location.href="./../pages/disneyFrontPage.html"
   } else {
     // Add items to the 1st index
     reviews.unshift(Feedback);
@@ -66,7 +66,7 @@ function storing(event) {
     // store the ratings
     localStorage.setItem("ratings", JSON.stringify(reviews)); 
     // redirect to 
-    window.location.href = "/disneyholidayapp-ui/pages/reviewDisplayPage.html";
+    window.location.href = "./../pages/reviewDisplayPage.html";
   }
 }           
 // function that prevents multiple reviews by a same person. 
