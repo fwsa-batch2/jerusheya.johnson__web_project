@@ -1,78 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ticket booking</title>
-     <link rel="stylesheet" href="../assets/css/bookTickets.css">
-     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
-     <link href='https://fonts.googleapis.com/css?family=Berkshire Swash' rel='stylesheet'>
+    <link rel="stylesheet" href="../assets/css/bookTickets.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link href='https://fonts.googleapis.com/css?family=Berkshire Swash' rel='stylesheet'>
 </head>
+
 <body>
     <form onsubmit="bookTicket()">
-    <div id="upperDiv">
-        <ul id="upperList">
-            <img src="../assets/images/mainlogo.png" id="logo" alt="logo">
-            <li id="list">Disney Holiday Hype</li>
-        </ul>
-    </div>
-    <div class="img_wrap">
-        <img src="../assets/images/booktickets.jpg" id="bookImg" alt="ticketbooking" width="100%" height="40%">
-        <p id="img_description">Book tickets to your dream world!!</p>
-        <div id="buttonDiv"><button id="ticketButton"><p id="slide">Dream Ticket</p></button></div>
-    </div>
-    <div id="formDiv">
-    <div id="form">
-        <div id="forminput">
-            <h3>Welcome to the land of Dreams</h3>
-        <p id="fname">First Name</p>
-        <input type="text" id="finput"  pattern=[A-Za-z]{3,10} title="only alphabets with 3 to 10 letters" required>
-        <p id="lname">Last Name</p>
-        <input type="text" id="linput" pattern=[A-Za-z]{3,10} title="only alphabets with 3 to 10 letters" required>
-        <p id="mail">E-mail ID</p>
-        <input type="email" id="inputmail" required>
-        <p id="cell">Phone</p>
-        <input type="tel" id="inputcell" min="6000000000" minlength="10" maxlength="10" 
-        title="enter 10 digits of valid mobile number" required>
-        <p id="visit">No of Visitors</p>
-        <p id="doj">Date Of Journey</p>
-        <input type="date" id="dateofjurney" min="2022-01-30" max="2022-12-30" class="input"
-        title="please select between jan30-2022 to dec30-2022" placeholder="date" style="color:gray" required>
+        <div id="upperDiv">
+            <ul id="upperList">
+                <img src="../assets/images/mainlogo.png" id="logo" alt="logo">
+                <li id="list">Disney Holiday Hype</li>
+            </ul>
         </div>
-    </div>
-    <input type="number" id="adults" min="1" max="100" required>
-    <input type="number" id="child" min="0" max="100" required>
-    <p id="adultLabel">adults</p>
-    <p id="childLabel">child</p>
-    <div id="others">
-        <p id="question">Will you be requiring any of the following?</p>
-        <p id="allergies">List any allergies that you have(including food or drug allergies)</p>
-        <p id="special">Special seating</p>
-        <input type="checkbox" name="" id="check1">
-        <input type="checkbox" name="" id="check2">
-        <p id="handicap">Handicapped accomodation</p>
-        <input type="text" id="allergirsinput" pattern=[A-Za-z]{2-100} required>
-        <p id="comments">Questiond And Comments</p>
-        <textarea  id="textarea" cols="30" rows="10" pattern=[A-Za-z]{2-225}></textarea>
-    </div>
-    <button type="reset" id="reset">Reset</button>
-    <button type="submit" id="next">Next</button>
+        <div class="img_wrap">
+            <img src="../assets/images/booktickets.jpg" id="bookImg" alt="ticketbooking" width="100%" height="40%">
+            <p id="img_description">Book tickets to your dream world!!</p>
+            <div id="buttonDiv"><button id="ticketButton">
+                    <p id="slide">Dream Ticket</p>
+                </button></div>
+        </div>
+        <div id="formDiv">
+            <div id="form">
+                <div id="forminput">
+                    <h3>Welcome to the land of Dreams</h3>
+                    <p id="fname">First Name</p>
+                    <input type="text" id="finput" pattern=[A-Za-z]{3,10} title="only alphabets with 3 to 10 letters"
+                        required>
+                    <p id="lname">Last Name</p>
+                    <input type="text" id="linput" pattern=[A-Za-z]{3,10} title="only alphabets with 3 to 10 letters"
+                        required>
+                    <p id="mail">E-mail ID</p>
+                    <input type="email" id="inputmail" required>
+                    <p id="cell">Phone</p>
+                    <input type="tel" id="inputcell" min="6000000000" minlength="10" maxlength="10"
+                        title="enter 10 digits of valid mobile number" required>
+                    <p id="visit">No of Visitors</p>
+                    <p id="doj">Date Of Journey</p>
+                    <input type="date" id="dateofjurney" min="2022-01-30" max="2022-12-30" class="input"
+                        title="please select between jan30-2022 to dec30-2022" placeholder="date" style="color:gray"
+                        required>
+                </div>
+            </div>
+            <input type="number" id="adults" min="1" max="100" required>
+            <input type="number" id="child" min="0" max="100" required>
+            <p id="adultLabel">adults</p>
+            <p id="childLabel">child</p>
+            <div id="others">
+                <p id="question">Will you be requiring any of the following?</p>
+                <p id="allergies">List any allergies that you have(including food or drug allergies)</p>
+                <p id="special">Special seating</p>
+                <input type="checkbox" name="" id="check1">
+                <input type="checkbox" name="" id="check2">
+                <p id="handicap">Handicapped accomodation</p>
+                <input type="text" id="allergirsinput" pattern=[A-Za-z]{2-100} required>
+                <p id="comments">Questiond And Comments</p>
+                <textarea id="textarea" cols="30" rows="10" pattern=[A-Za-z]{2-225}></textarea>
+            </div>
+            <button type="reset" id="reset">Reset</button>
+            <button type="submit" id="next">Next</button>
 
-    <div id="footer">
-        <div>
-         <img src="../assets/images/twitter (1).png" alt="" id="twit">
-         <img src="../assets/images/telegram.png" alt="" id="tele">
-         <img src="../assets/images/youtube (1).png" alt="" id="fb">
-         <img src="../assets/images/facebook (1).png" alt="" id="yt">
-         <img src="../assets/images/Logo-Instagram-vector-PNG.png" alt="" id="insta">
-         <p id="terms">Terms of use - Privacy Policy</p>
-         <img src="../assets/images//images/copyright.png" alt="" id="copyright">
-         <p id="hype">Disney Holiday Hype</p>
+            <div id="footer">
+                <div>
+                    <img src="../assets/images/twitter (1).png" alt="" id="twit">
+                    <img src="../assets/images/telegram.png" alt="" id="tele">
+                    <img src="../assets/images/youtube (1).png" alt="" id="fb">
+                    <img src="../assets/images/facebook (1).png" alt="" id="yt">
+                    <img src="../assets/images/Logo-Instagram-vector-PNG.png" alt="" id="insta">
+                    <p id="terms">Terms of use - Privacy Policy</p>
+                    <img src="../assets/images//images/copyright.png" alt="" id="copyright">
+                    <p id="hype">Disney Holiday Hype</p>
+                </div>
+            </div>
         </div>
-     </div>
-    </div>
-</form>
-<script src="../assets/js/ticketBooking.js"></script>
+    </form>
+    <script src="../assets/js/ticketBooking.js"></script>
 </body>
+
 </html>

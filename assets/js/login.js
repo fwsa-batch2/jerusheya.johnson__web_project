@@ -2,10 +2,11 @@
 function submitHandlers(event) {
   event.preventDefault();
   console.group("submitHandlers");
+  //getting input values
   let email = document.getElementById("email").value.toLowerCase();
   let password = document.getElementById("password").value;
-
   let customerDetail = {};
+  //store in localStorage
   let usernames=JSON.parse(localStorage.getItem("registersname"));
   for( let i of usernames){
     if(email==i.email){
@@ -16,14 +17,17 @@ function submitHandlers(event) {
   }
 
   console.table(customerDetail);
+  //checking whether the email and password is already exists
   let isEmailAlreadyExist = useremailValid(email,password);
 
   console.log(isEmailAlreadyExist);
+  //if stores in localStorage
   if (isEmailAlreadyExist) {
     let login = JSON.stringify(customerDetail);
     localStorage.setItem("loginersname", login);
     window.location.href = "/disneyholidayapp-ui/pages/gif.html";
   }
+  //else show alert to sign in
   else{ 
    alert("dear customer!As you are a new user please signin");
    
@@ -32,7 +36,7 @@ function submitHandlers(event) {
  
 }
 
-
+// function to check whether the email and password is already checked
 function useremailValid(current_email,current_password) {
   
   console.group("useremailValid");
@@ -54,6 +58,7 @@ function useremailValid(current_email,current_password) {
   return isUsed;
 }
 
+// logout function
 function logOut(event){
   event.preventDefault();
   localStorage.removeItem("loginersname");

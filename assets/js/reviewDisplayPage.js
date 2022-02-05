@@ -1,5 +1,6 @@
 function OnReview(){
-    let inputvalue=localStorage.getItem("Ratings");
+    //to display review 
+    let inputvalue=localStorage.getItem("ratings");
     let sting=JSON.parse(inputvalue);
     console.log(sting);
     let reviewlen="";
@@ -12,5 +13,6 @@ function OnReview(){
 OnReview();
 
 function redirect(){
+    //redirect to review page
     window.location.href="/disneyholidayapp-ui/pages/review.html"
 }

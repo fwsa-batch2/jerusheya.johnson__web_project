@@ -1,3 +1,6 @@
+
+//function 
+
 function isUserLoggedIn(){
 let getitem=localStorage.getItem("loginersname");
 if(getitem == null){

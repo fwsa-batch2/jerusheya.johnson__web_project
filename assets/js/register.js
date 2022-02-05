@@ -36,7 +36,9 @@ function register(event) {
         alert("Email alreay exist or enter a valid email");
         return ;
     }
- // function to check whether the password and confirm password    
+
+
+ // function to check whether the password and confirm password  are equal  
     let isMatch = checkPassword();
      console.log(isMatch) ;  
     if (isMatch) {
@@ -54,7 +56,7 @@ function register(event) {
 }
 
 
-
+//to show password and confirm password onclick the checkbox
 function checkPassword() {
     console.group("checkpassword");
     let password = document.getElementById("password").value;
@@ -74,7 +76,7 @@ function checkPassword() {
 
 
 
-
+//to check whether the entered email is already registered
 function emailValid(current_email) {
     console.group("emailvalid");
     let usernames = JSON.parse(localStorage.getItem("registersname"));
@@ -97,6 +99,8 @@ if(usernames){
    return isUsed;
 }
 }
+
+//to show password and confirm password onclick the checkbox
 function showPassword(){
     console.group("showpassword");
     let checkBox=document.getElementById("checkbox");

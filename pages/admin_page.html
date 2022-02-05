@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,36 +9,40 @@
     <link rel="stylesheet" href="../assets/css/adminPage.css">
     <link rel="shortcut icon" href="../assets/images/mainlogo.png">
 </head>
+
 <body>
     <table class="center">
         <caption></caption>
         <tr>
-        <th scope="row">
-            <iframe src="https://www.youtube.com/embed/mEyUzQUH-IY" title="disney world youtube video"
-            alt="about diney world" width="510px"
-              height="630px"></iframe></th>
-       <td><form onsubmit="adminlogin()" id="form">
-            <input  type="email" id="email" placeholder="email"  required>
-            <br>
-            <input type="password" id="password" placeholder="password" required>
-            <br>
-            <button type="submit" id="button">Login</button>
-        </form></td> 
+            <th scope="row">
+                <iframe src="https://www.youtube.com/embed/mEyUzQUH-IY" title="disney world youtube video"
+                    alt="about diney world" width="510px" height="630px"></iframe>
+            </th>
+            <td>
+                <form onsubmit="adminlogin()" id="form">
+                    <input type="text" id="user" placeholder="username" required>
+                    <br>
+                    <input type="password" id="password" placeholder="passkey" required>
+                    <br>
+                    <button type="submit" id="button">Login</button>
+                </form>
+            </td>
         </tr>
-        </table>
+    </table>
     <script>
-        function adminlogin(){
-          event.preventDefault();
-        let email=document.getElementById("email").value;
-        let password=document.getElementById("password").value;
-        if(email=="jerusheya.johnson@fwsa.freshworks.com"  && password=="JeruJesus@2022"){
-            window.location.href="../pages/adminSelection.html"
+        function adminlogin() {
+            event.preventDefault();
+            let user = document.getElementById("user").value;
+            let password = document.getElementById("password").value;
+            if (user == "admin" && password == "JeruJesus@2022") {
+                window.location.href = "../pages/adminSelection.html"
+            }
+            else {
+                alert("this page can only be assessed by admin");
+                window.location.href = "../pages/disney front page.html"
+            }
         }
-        else{
-            alert("this page can only be assessed by admin");
-            window.location.href="../pages/disney front page.html"
-        }
-    }
     </script>
 </body>
+
 </html>

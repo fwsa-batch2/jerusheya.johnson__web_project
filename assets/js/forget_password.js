@@ -1,5 +1,6 @@
 let forgetpassword = [];
 function onPageLoad() {
+  // to prevent the array becoming null
   console.group("onPageLoad");
   let users = JSON.parse(localStorage.getItem('forgetor_email'));
   console.log(users);
@@ -15,12 +16,15 @@ function onPageLoad() {
 function signIn(event) {
   event.preventDefault();
   console.group("signIn");
+  //getting email input value
   let email = document.getElementById("email").value.toLowerCase();
   let emaildetails = {
     "email": email
   }
+  //to check whether the email is already exists
   let isEmailAlreadyExist = emailValid(email);
   console.log(isEmailAlreadyExist);
+  //if exists send mail and stores in localStorage
   if (isEmailAlreadyExist) {
     forgetpassword.push(emaildetails);
     let forget = JSON.stringify(forgetpassword);
@@ -28,6 +32,7 @@ function signIn(event) {
     sendEmail();
     window.location.href = "/disneyholidayapp-ui/pages/LoginDisney.html";
   }
+  //else show alert to sign in first
   else {
     alert("dear customer!As you are a new user please signin");
 
@@ -37,6 +42,7 @@ function signIn(event) {
 
 function emailValid(current_email) {
   console.group("emailValid");
+  //to check whether email already registered
   let userList = JSON.parse(localStorage.getItem("registersname"));
   let isUsed = false;
   for (let i of userList) {
@@ -54,6 +60,7 @@ function emailValid(current_email) {
 
 function showPassword() {
   console.group("showpassword");
+  //to show the new password and confirm password by checkbox.
   let checkBox = document.getElementById("checkbox");
   if (checkBox.checked) {
     document.getElementById("password").type = "text";
@@ -69,11 +76,13 @@ function showPassword() {
 
 onPageLoad();
 
-
+//generate otp
 function random() {
   return Math.floor(Math.random() * 999999);
 }
+
 let otpentered = random();
+//generating and sending email
 function sendEmail(event) {
   event.preventDefault();
   let email = document.getElementById("email").value.toLowerCase();
@@ -91,7 +100,7 @@ function sendEmail(event) {
   );
 }
 
-
+//to check whether sent otp and entered otp are equal
 function submitOtp(event) {
   event.preventDefault();
   let otpFromUser = document.getElementById('otp').value;
@@ -104,7 +113,7 @@ function submitOtp(event) {
   }
 }
 
-
+// function to upadate new password to registersname localStorage
 function updatePass(event) {
   event.preventDefault();
   let currentEmail = document.getElementById("email").value;
@@ -134,11 +143,13 @@ function updatePass(event) {
   console.groupEnd("emailValid");
 }
 
+//redirect function to go back 
 function backToPage(event) {
   event.preventDefault();
   window.location.replace("/disneyholidayapp-ui/pages/LoginDisney.html")
 }
 
+//to check password and confirm password are same and equal
 function checkPassword() {
   console.group("checkpassword");
   let password = document.getElementById("password").value;

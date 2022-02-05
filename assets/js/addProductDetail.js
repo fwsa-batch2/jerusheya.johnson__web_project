@@ -1,12 +1,12 @@
 let productDetail=[];
 function onload(){
-    const store = localStorage.getItem('productDetails');
-    let users = JSON.parse(store);
-    console.log(users);
-    if (users == null){
+    const store = localStorage.getItem('productdetails');
+    let productDetailsStorage = JSON.parse(store);
+    console.log(productDetailsStorage);
+    if (productDetailsStorage == null){
         productDetail = []
     }else {
-        productDetail = users;
+        productDetail = productDetailsStorage;
     }
 }
 function addProductDetail(event){
@@ -30,7 +30,7 @@ function addProductDetail(event){
     }
     console.table(addproductDetails);
     productDetail.push(addproductDetails);
-    localStorage.setItem("productDetails",JSON.stringify(productDetail));
+    localStorage.setItem("productdetails",JSON.stringify(productDetail));
     window.location.href="/disneyholidayapp-ui/pages/shoppingzone.html"
     console.groupEnd("addProductDetail");
 }

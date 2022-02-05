@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,74 +9,80 @@
     <link rel="stylesheet" href="../assets/css/register.css">
     <link rel="shortcut icon" href="../assets/images/mainlogo.png">
 </head>
+
 <body>
-    
+
     <h1 id="head1">Register New Account</h1>
     <br>
     <form onsubmit="register(event)">
         <table id="shadow">
             <caption></caption>
-    <tr>
-    <th scope="row"> <img src="../assets/images/register1.jpg" alt="mickymouse" width="600px" height="600px" id="image"></th>   
-   
-        <td>
-            <table id="innertable">
-                <caption></caption>
-        <tr>
-            <th scope="row">
-               <label>Username</label>
-            </th>
-            <td>
-               <input type="text" placeholder="Username" id="username" pattern="[A-Za-z]{3,15}"
-             title="enter only alphabets,character 3 to 15" required>
-            </td>
-        </tr>
-        <tr>
-            <th scope="row">
-              <label>Email</label>
-            </th>
-            <td>
-                <input type="email" placeholder="email" id="email" required> 
-            </td>
-        </tr>
-        <tr>
-            <th scope="row">
-                <label>Password</label>
-            </th>
-            <td>
-                <input type="password" placeholder="password" id="password" pattern="/^[a-zA-Z0-9!@#\$%\^\&*_=+-]{6,15}$/g"
-                minlength="6" maxlength="15" title="At least 1 Uppercase, 1 Lowercase, 1 Number, 1 Symbol, symbol allowed --> !@#$%^&*_=+-
-                Min 8 chars and Max 12 chars"
-               required>
-            </td>
-        </tr>
-        <tr>
-            <th scope="row">
-                <label>Confirm password</label>
-            </th>
-            <td>
-                <input type="password" placeholder="confirm password" id="cpassword" pattern="/^[a-zA-Z0-9!@#\$%\^\&*_=+-]{6,15}$/"
-                minlength="6" maxlength="15" title="At least 1 Uppercase, 1 Lowercase, 1 Number, 1 Symbol, symbol allowed --> !@#$%^&*_=+-
+            <tr>
+                <th scope="row"> <img src="../assets/images/register1.jpg" alt="mickymouse" width="600px" height="600px"
+                        id="image"></th>
+
+                <td>
+                    <table id="innertable">
+                        <caption></caption>
+                        <tr>
+                            <th scope="row">
+                                <label>Username</label>
+                            </th>
+                            <td>
+                                <input type="text" placeholder="Username" id="username" pattern="[A-Za-z]{3,15}"
+                                    title="enter only alphabets,character 3 to 15" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <label>Email</label>
+                            </th>
+                            <td>
+                                <input type="email" placeholder="email" id="email" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <label>Password</label>
+                            </th>
+                            <td>
+                                <input type="password" placeholder="password" id="password"
+                                    pattern="/^[a-zA-Z0-9!@#\$%\^\&*_=+-]{6,15}$/g" minlength="6" maxlength="15" title="At least 1 Uppercase, 1 Lowercase, 1 Number, 1 Symbol, symbol allowed --> !@#$%^&*_=+-
                 Min 8 chars and Max 12 chars" required>
-            </td>
-        </tr>
-        <tr>
-            <th scope="row"></th>
-            <td>
-        <span margin="center"><input type="checkbox" onchange="showPassword(event)" id="checkbox"><p1>Show password</p1></span>
-           </td>
-        </tr>
-        <tr>
-            <th scope="row"><button id="button"><a href="../pages/LoginDisney.html">back</a></button></th>
-            <td><button class="button" type="submit"> login </button></td>
-        </tr>
-    </table>
-    </td>
-    </tr>
-    </table>
-    
-    
-</form>
-<script src="../assets/js/register.js"></script>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <label>Confirm password</label>
+                            </th>
+                            <td>
+                                <input type="password" placeholder="confirm password" id="cpassword"
+                                    pattern="/^[a-zA-Z0-9!@#\$%\^\&*_=+-]{6,15}$/" minlength="6" maxlength="15" title="At least 1 Uppercase, 1 Lowercase, 1 Number, 1 Symbol, symbol allowed --> !@#$%^&*_=+-
+                Min 8 chars and Max 12 chars" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row"></th>
+                            <td>
+                                <span margin="center"><input type="checkbox" onchange="showPassword(event)"
+                                        id="checkbox">
+                                    <p1>Show password</p1>
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><button id="button"><a href="../pages/LoginDisney.html">back</a></button>
+                            </th>
+                            <td><button class="button" type="submit"> login </button></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+
+
+    </form>
+    <script src="../assets/js/register.js"></script>
 </body>
+
 </html>

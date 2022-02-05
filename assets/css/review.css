@@ -7,6 +7,9 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     font-size:medium;
 }
+div{
+    text-align: center;
+}
 select {
     width : 200px;
     border-radius : 10%;
@@ -59,6 +62,7 @@ textarea {
     margin-left: 41%;
     margin-top: -5px;
     padding-top:10px;
+
 }
 #date{
     text-align: center;

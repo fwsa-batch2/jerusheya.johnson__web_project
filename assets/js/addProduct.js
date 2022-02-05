@@ -1,21 +1,23 @@
 let products=[];
 function onload(){
     const store = localStorage.getItem('products');
-    let users = JSON.parse(store);
-    console.log(users);
-    if (users == null){
+    let productDetails = JSON.parse(store);
+    console.log(productDetails);
+    if (productDetails == null){
         products = []
       }else {
-        products = users;
+        products = productDetails;
       }
 }
 function addProduct(event){
     event.preventDefault();
     console.group("addProduct");
+    //getting input values
     const image=document.getElementById("image").value;
     const productsName=document.getElementById("productname").value;
     const categoryName=document.getElementById("categoryname").value;
     const cost=document.getElementById("Cost").value;
+    //creating object
     let addproducts={
         "image":image,
         "productsname":productsName,
@@ -23,6 +25,7 @@ function addProduct(event){
         "cost":cost
     }
     console.table(addproducts);
+    //pushing into array
     products.push(addproducts);
     console.log(products);
     localStorage.setItem("products",JSON.stringify(products));

@@ -1,5 +1,12 @@
 # html-project-template
 
+#### Disney Holiday Hype
+
+github link: https://github.com/fwsa-batch2/jerusheya.johnson__web_project/
+live url link:https://fwsa-batch2.github.io/jerusheya.johnson__web_project/
+Sonarcloud link:https://sonarcloud.io/project/overview?id=fwsa-batch2_jerusheya.johnson__web_project
+
+
 ### Features
 
 1.  REGISTERATION PAGE (Completed)

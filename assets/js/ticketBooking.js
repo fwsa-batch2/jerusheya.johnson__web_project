@@ -9,6 +9,7 @@ function onPageLoad(){
   }
  
   function bookTicket(){
+    // getting input values
   const  name = document.getElementById("finput").value;
   const  number= document.getElementById("linput").value;
   const  emailid= document.getElementById("inputmail").value;
@@ -20,7 +21,7 @@ function onPageLoad(){
   const  yesHandicap= document.getElementById("check2").checked;
 
  
-
+ //stores in an object
  let passengerTicket={
     "name": name,
     "number": number,
@@ -33,7 +34,7 @@ function onPageLoad(){
     "yesHandicap":yesHandicap,
 }
 
- 
+ // pushing into array and storing it in local Storage
   console.table(passengerTicket);
   ticketbooking.push(passengerTicket);
   localStorage.setItem("ticketdetails", JSON.stringify(ticketbooking));
