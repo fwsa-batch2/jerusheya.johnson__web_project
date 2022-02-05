@@ -10,7 +10,7 @@ body{
   .h3{
     font-size:400%;
     color:rgb(3, 3, 71);
-    font-family: Arial, Helvetica, sans-serif;
+   
     
   }
   button{
@@ -19,7 +19,7 @@ body{
     font-size:20px; 
     width:100px; 
     height:40px;
-    
+    font-family: 'Chelsea Market';
 
   }
   a{
@@ -40,6 +40,8 @@ body{
 #innerlist{
   background-color:rgb(23, 23, 53);
   height:50px;
+  
+  font-family: 'Berkshire Swash';
 }
 li{
   color:white;
@@ -65,13 +67,16 @@ li{
   }
   .head2, .contact{
     color:white;
+    font-family: 'Chelsea Market';
   }
   .list{
     color:rgb(13, 13, 83);
+    font-family: 'Charmonman';
   }
   
   .cost{
     color:rgb(13, 13, 83);
+    font-family: 'Berkshire Swash';
   }
   td{
     padding:50px;

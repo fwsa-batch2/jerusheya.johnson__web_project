@@ -14,5 +14,5 @@ OnReview();
 
 function redirect(){
     //redirect to review page
-    window.location.href="/disneyholidayapp-ui/pages/review.html"
+    window.location.href="../../pages/review.html"
 }
