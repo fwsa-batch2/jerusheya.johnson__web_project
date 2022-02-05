@@ -27,7 +27,7 @@ function addCategory(event){
     //storing in localstorage
     localStorage.setItem("category",JSON.stringify(categories));
     //redirection
-    window.location.href="/disneyholidayapp-ui/pages/shoppingzone.html";
+    window.location.href="./../pages/shoppingzone.html";
     console.groupEnd("addCategory");
 }
 onload();
